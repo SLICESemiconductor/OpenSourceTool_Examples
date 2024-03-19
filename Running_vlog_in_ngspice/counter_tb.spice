@@ -1,0 +1,78 @@
+** sch_path: /home/slice/mmsim/counter_top/counter_tb.sch
+**.subckt counter_tb
+Vvssa vssa GND 0
+Vvin clk vssa pulse ({xvdda} 0 0 {xtrf} {xtrf} {xtpw} {xT})
+Vreset reset vssa pwl (0 0 xT 0 {xT+xtrf} {xvdda} {xT+(xT/2)} {xvdda} {xT+(xT/2)+xtrf} 0)
+x1 d3 clk d2 reset d1 d0 counter
+R1 d0 vssa 1k m=1
+R2 d1 vssa 1k m=1
+R3 d2 vssa 1k m=1
+R4 d3 vssa 1k m=1
+Vvdda vdda vssa xvdda
+**** begin user architecture code
+
+* Parameters
+.param xvdda = 3.3
+.param xtrf = 50p
+.param xfreq = 1Meg
+.param xT = {1/xfreq}
+.param xtpw = {(xT/2)-xtrf}
+.param numPeriods = 17
+.csparam xtsim = {numPeriods*xT}
+
+  .control
+
+  save all
+  echo $&xtsim
+
+** 1. TRAN SIM **
+
+  tran 1n $&xtsim
+
+  remzerovec
+  write tran_data.raw
+
+  *plot tran.v(clk) tran.v(reset)
+  *plot tran.v(reset)
+  *plot clk reset+2 d0+4 d1+5.5 d2+7 d3+8.5
+
+  *compose d0 xspice
+
+  set filetype=ascii
+  remzerovec
+  write tran_data_ascii.raw
+
+  setplot
+
+  .endc
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  counter.sym # of pins=6
+** sym_path: /home/slice/mmsim/counter_top/counter.sym
+** sch_path: /home/slice/mmsim/counter_top/counter.sch
+.subckt counter d3 clk d2 reset d1 d0
+*.ipin clk
+*.ipin reset
+*.opin d3
+*.opin d2
+*.opin d1
+*.opin d0
+* noconn d3
+* noconn d2
+* noconn d1
+* noconn d0
+* noconn clk
+* noconn reset
+**** begin user architecture code
+adut [ clk reset] [d3 d2 d1 d0] null dut
+.model dut d_cosim simulation="./counter.so"
+**** end user architecture code
+.ends
+
+.GLOBAL GND
+.end

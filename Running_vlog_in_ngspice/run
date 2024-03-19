@@ -1,0 +1,10 @@
+# https://steveicarus.github.io/iverilog/usage/gtkwave.html
+
+# compile vlog files
+iverilog -o dsn counter_tb.v counter.v
+
+# execute vlog files
+vvp dsn
+
+#open gtkwave to view them
+gtkwave counter_data.vcd &
