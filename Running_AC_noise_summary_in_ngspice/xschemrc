@@ -1,0 +1,31 @@
+#### xschemrc configuration file for xschem ####
+
+#### xschem symbol library (ideal components, pins, labels etc).
+set XSCHEM_LIBRARY_PATH $XSCHEM_SHAREDIR/xschem_library/devices
+#### append current directory to xschem library search path.
+#### [pwd] will be expanded by tcl to the current dir.
+append XSCHEM_LIBRARY_PATH :[pwd]
+#### append any additional folders if needed:
+# append XSCHEM_LIBRARY_PATH :/path/to/some/library
+#### make xschem put netlist and run simulations in current directory instead of ~/.xschem/simulations
+set netlist_dir [pwd]
+### customising my xterm setup (tried xterm for a few months, didnt like it. gnome-terminal much easier to view)
+set terminal gnome-terminal
+### increase font setting
+#set terminal {xterm -fn 10x20}
+#set terminal {xterm -fn 12x24}
+# replace Insert key with i. The meaning is when 'i' is pressed translate it to Insert
+set replace_key(i) Insert
+# set gedit as my text editor. Note: -w option is required to force gedit to hang the xschem until it is closed.
+# xschem needs this to be sure all gedits are finished before it proceeds with the simulation
+set editor {gedit -w}
+# I dont like gvim but below is the command. Note -f in gvim is equivalent to -w in gedit
+#set editor {gvim -f}
+# enable crosshair function which I never use
+#set draw_crosshair 1
+# set grid axis (undecided if I want to use this or not!)
+set draw_grid_axes 0 
+# add the following setting to have the schematic centered in the window instead of aligned on the bottom
+set zoom_full_center 1
+# replace stim file edit (Shift+Q) with d. Reason is I keep mixing it up with Ctrl+Q and exit out of xschem by mistake!
+set replace_key(d) Shift-Q
