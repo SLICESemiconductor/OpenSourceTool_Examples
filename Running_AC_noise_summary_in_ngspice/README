@@ -1,1 +1,2 @@
-This folder contains the code to run AC noise summary breakdown in ngspice. 
+All the required files to run a basic example illustrating AC noise analysis breakdown in ngspice (using Stefan Schippers AWK script).
+Full instructions contained in the attached ppt. 
