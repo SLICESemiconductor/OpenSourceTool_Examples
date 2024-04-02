@@ -128,14 +128,11 @@ grid on
 % only it
 
 % first move all the contents of P1 into new array which can be manipulated
-for i=1:1:length(P1)
-  P1_scaled(i,1) = P1(i,1);
-end
+%for i=1:1:length(P1)
+%  P1_scaled(i,1) = P1(i,1);
+%end
 
-% find the max signal level 
-sig_max = max(P1);
-
-
+% scale each spectral magnitude by ACF
 CG = 0.36
 ACF = 1/CG
 for i=1:1:length(P1)

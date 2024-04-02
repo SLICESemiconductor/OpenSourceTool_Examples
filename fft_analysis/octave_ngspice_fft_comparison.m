@@ -46,10 +46,10 @@ end
 
 % 5. Create a window of equal length to the data
 %fft_win=hann(length(lin_data4(:,2)));
-%fft_win=blackmanharris(length(lin_data4(:,2)));
+fft_win=blackmanharris(length(lin_data4(:,2)));
 %fft_win=blackman(length(lin_data4(:,2)));
 %fft_win=bartlett(length(lin_data4(:,2)));
-fft_win=rectwin(length(lin_data4(:,2)));
+%fft_win=rectwin(length(lin_data4(:,2)));
 %fft_win=gausswin(length(lin_data4(:,2)));
 %fft_win=flattopwin(length(lin_data4(:,2)));
 
@@ -116,14 +116,60 @@ xlabel('f (kHz)')
 ylabel('|Mag| (dB)')
 grid on
 
+% 9. If you want to amplitude correct
+% Set the amplitude correction factor (ACF) according to the chosen window.
+% The coherant gains (CG) for each window are provided in Table 1 of [1]
+% => ACF = 1/CG
+% Window = none (or you simply don't want to AC): CG = 1 => ACF = 1
+% Window = Hann: CG = 0.5 => ACF = 2 
+% Window = Blackman: CG =0.42 => ACF = 2.381 (not 2.8!)
+% Window = Blackmanharris(4term): CG =0.36 => ACF = 2.778 (not 2.8!)
+
+% Assuming the max component is the signal, simply find that amplitude correct
+% only it
+
+% Determine the ACF
+CG = 0.36
+ACF = 1/CG
+
+% Move all the contents of P1 into new array which can be manipulated
+%for i=1:1:length(P1)
+%  P1_scaled(i,1) = P1(i,1);
+%end
+
+% find the max signal level 
+%i_max = find(P1_scaled==max(P1_scaled),1,'first');
+%P1_scaled(i_max,1) = P1_scaled(i_max,1)*ACF; 
+
+%for i=1:1:length(P1)
+%  P1_full_scaled(i,1) = P1(i,1)*ACF;
+%end
+
+for i=1:1:length(P1)
+  P1_AC(i,1) = P1(i,1)*ACF;
+end
+
+% 10. Plot the FFT
+figure(3)
+% Use this line if you want to plot magnitude in V
+%plot(f,P1)
+% Use this line if you want to plot magnitude in dB (reccomended)
+plot(f,20*log10(P1_AC))
+%semilogx(f,20*log10(P1))
+title('FFT plot (amplitude corrected)')
+axis("tight")
+xlabel('f (kHz)')
+ylabel('|Mag| (dB)')
+grid on
+
 %%%%%%%%%%%%%%%%%%%%%%%%%% 4. READ IN NGSPICE FFT DATA %%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % 10. Read in fft data vector from NGSPICE
-fft_data1 = textread('vsquare_fft_data_rec.txt',"%f");
+%fft_data1 = textread('vsquare_fft_data_rec.txt',"%f");
 %fft_data1 = textread('vsquare_fft_data_black.txt',"%f");
 %fft_data1 = textread('vsquare_fft_data_gauss.txt',"%f");
 %fft_data1 = textread('vsquare_fft_data_flat.txt',"%f");
-%fft_data1 = textread('vsquare_fft_data_blackmanharris.txt',"%f");
+fft_data1 = textread('vsquare_fft_data_blackmanharris.txt',"%f");
 %fft_data1 = textread('vsquare_fft_data_hann.txt',"%f");
 %fft_data1 = textread('vsquare_fft_data_bart.txt',"%f");
 
@@ -165,11 +211,11 @@ end
 %%%%%%%%%%%%%%%%%%%%%%%% 6. PLOT / COMPARE FFT DATA %%%%%%%%%%%%%%%%%%%%%%%%
 
 % 8. Plot the FFT
-figure(3)
+figure(4)
 % Use this line if you want to plot magnitude in V
 %plot(f,P1)
 % Use this line if you want to plot magnitude in dB (reccomended)
-plot(f,20*log10(P1))
+plot(f,20*log10(P1_AC))
 %hold on
 %plot(f,20*log10(fft_data5))
 hold on
