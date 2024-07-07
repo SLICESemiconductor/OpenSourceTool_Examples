@@ -1,0 +1,25 @@
+# Supply voltage corner sweep for vdda_min = 1.7, vdda_max = 1.9, vdda_typ = 1.8
+# Assumes stim file has set vdda to 1.8
+name=h4
+descr="Supply voltage corner group"
+tclcommand="
+set spicefile $netlist_dir/tb_OTA_PVT.spice
+xschem netlist
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# set vdda = vdda_min
+exec sed -i {/^\.param xvdda/s/1.8/1.7/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran.raw/tb_OTA_PVT_tran_1v7.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1.raw/tb_OTA_PVT_ac1_1v7.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2.raw/tb_OTA_PVT_ac2_1v7.raw/} $spicefile
+exec sed -i {s/ac_measures.txt/ac_measures_1v7.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# set vdda = vdda_max
+exec sed -i {/^\.param xvdda/s/1.7/1.9/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_1v7.raw/tb_OTA_PVT_tran_1v9.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_1v7.raw/tb_OTA_PVT_ac1_1v9.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_1v7.raw/tb_OTA_PVT_ac2_1v9.raw/} $spicefile
+exec sed -i {s/ac_measures_1v7.txt/ac_measures_1v9.txt/} $spicefile
+simulate
+"

@@ -1,0 +1,83 @@
+# Temp corner sweep for Tmin = -40C, Tmax = 125C, Trt = 27C
+# Assumes stim file has set temp to 27C 
+# Process corner sweep for tt, ff, ss, sf, fs
+# Assumes stim file has set corner to tt
+name=h3
+descr="Process / temp corner group"
+tclcommand="
+set spicefile $netlist_dir/tb_OTA_PVT.spice
+xschem netlist
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+
+################## change to n40 corner ################################
+exec sed -i {/^\.temp/s/27/-40/} $spicefile
+
+# change to ff corner
+exec sed -i {/^\.lib/s/tt/ff/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran.raw/tb_OTA_PVT_tran_ff_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1.raw/tb_OTA_PVT_ac1_ff_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2.raw/tb_OTA_PVT_ac2_ff_n40.raw/} $spicefile
+exec sed -i {s/ac_measures.txt/ac_measures_ff_n40.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to ss corner
+exec sed -i {/^\.lib/s/ff/ss/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_ff_n40.raw/tb_OTA_PVT_tran_ss_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_ff_n40.raw/tb_OTA_PVT_ac1_ss_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_ff_n40.raw/tb_OTA_PVT_ac2_ss_n40.raw/} $spicefile
+exec sed -i {s/ac_measures_ff_n40.txt/ac_measures_ss_n40.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to sf corner
+exec sed -i {/^\.lib/s/ss/sf/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_ss_n40.raw/tb_OTA_PVT_tran_sf_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_ss_n40.raw/tb_OTA_PVT_ac1_sf_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_ss_n40.raw/tb_OTA_PVT_ac2_sf_n40.raw/} $spicefile
+exec sed -i {s/ac_measures_ss_n40.txt/ac_measures_sf_n40.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to fs corner
+exec sed -i {/^\.lib/s/sf/fs/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_sf_n40.raw/tb_OTA_PVT_tran_fs_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_sf_n40.raw/tb_OTA_PVT_ac1_fs_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_sf_n40.raw/tb_OTA_PVT_ac2_fs_n40.raw/} $spicefile
+exec sed -i {s/ac_measures_sf_n40.txt/ac_measures_fs_n40.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+
+################## change to 125 corner ################################
+exec sed -i {/^\.temp/s/-40/125/} $spicefile
+
+# change to ff corner
+exec sed -i {/^\.lib/s/fs/ff/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_fs_n40.raw/tb_OTA_PVT_tran_ff_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_fs_n40.raw/tb_OTA_PVT_ac1_ff_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_fs_n40.raw/tb_OTA_PVT_ac2_ff_125.raw/} $spicefile
+exec sed -i {s/ac_measures_fs_n40.txt/ac_measures_ff_125.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to ss corner
+exec sed -i {/^\.lib/s/ff/ss/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_ff_125.raw/tb_OTA_PVT_tran_ss_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_ff_125.raw/tb_OTA_PVT_ac1_ss_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_ff_125.raw/tb_OTA_PVT_ac2_ss_125.raw/} $spicefile
+exec sed -i {s/ac_measures_ff_125.txt/ac_measures_ss_125.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to sf corner
+exec sed -i {/^\.lib/s/ss/sf/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_ss_125.raw/tb_OTA_PVT_tran_sf_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_ss_125.raw/tb_OTA_PVT_ac1_sf_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_ss_125.raw/tb_OTA_PVT_ac2_sf_125.raw/} $spicefile
+exec sed -i {s/ac_measures_ss_125.txt/ac_measures_sf_125.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to fs corner
+exec sed -i {/^\.lib/s/sf/fs/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_sf_125.raw/tb_OTA_PVT_tran_fs_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_sf_125.raw/tb_OTA_PVT_ac1_fs_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_sf_125.raw/tb_OTA_PVT_ac2_fs_125.raw/} $spicefile
+exec sed -i {s/ac_measures_sf_125.txt/ac_measures_fs_125.txt/} $spicefile
+simulate
+"

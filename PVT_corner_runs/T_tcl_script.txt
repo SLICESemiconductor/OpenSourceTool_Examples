@@ -1,0 +1,25 @@
+# Temp corner sweep for Tmin = -40C, Tmax = 125C, Trt = 27C
+# Assumes stim file has set temp to 27C
+name=h1
+descr="Temp corner group"
+tclcommand="
+set spicefile $netlist_dir/tb_OTA_PVT.spice
+xschem netlist
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# set T = 125C
+exec sed -i {/^\.temp/s/27/125/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran.raw/tb_OTA_PVT_tran_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1.raw/tb_OTA_PVT_ac1_125.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2.raw/tb_OTA_PVT_ac2_125.raw/} $spicefile
+exec sed -i {s/ac_measures.txt/ac_measures_125.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# set T = -40C
+exec sed -i {/^\.temp/s/125/-40/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_125.raw/tb_OTA_PVT_tran_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_125.raw/tb_OTA_PVT_ac1_n40.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_125.raw/tb_OTA_PVT_ac2_n40.raw/} $spicefile
+exec sed -i {s/ac_measures_125.txt/ac_measures_n40.txt/} $spicefile
+simulate
+"

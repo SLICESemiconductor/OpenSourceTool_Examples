@@ -1,0 +1,41 @@
+# Process corner sweep for tt, ff, ss, sf, fs
+# Assumes stim file has set corner to tt
+name=h2
+descr="Process corner group"
+tclcommand="
+set spicefile $netlist_dir/tb_OTA_PVT.spice
+xschem netlist
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to ff corner
+exec sed -i {/^\.lib/s/tt/ff/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran.raw/tb_OTA_PVT_tran_ff.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1.raw/tb_OTA_PVT_ac1_ff.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2.raw/tb_OTA_PVT_ac2_ff.raw/} $spicefile
+exec sed -i {s/ac_measures.txt/ac_measures_ff.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to ss corner
+exec sed -i {/^\.lib/s/ff/ss/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_ff.raw/tb_OTA_PVT_tran_ss.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_ff.raw/tb_OTA_PVT_ac1_ss.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_ff.raw/tb_OTA_PVT_ac2_ss.raw/} $spicefile
+exec sed -i {s/ac_measures_ff.txt/ac_measures_ss.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to sf corner
+exec sed -i {/^\.lib/s/ss/sf/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_ss.raw/tb_OTA_PVT_tran_sf.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_ss.raw/tb_OTA_PVT_ac1_sf.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_ss.raw/tb_OTA_PVT_ac2_sf.raw/} $spicefile
+exec sed -i {s/ac_measures_ss.txt/ac_measures_sf.txt/} $spicefile
+simulate
+after 1000 ;# wait 1sec for ngspice to start and read netlist
+# change to fs corner
+exec sed -i {/^\.lib/s/sf/fs/} $spicefile
+exec sed -i {s/tb_OTA_PVT_tran_sf.raw/tb_OTA_PVT_tran_fs.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac1_sf.raw/tb_OTA_PVT_ac1_fs.raw/} $spicefile
+exec sed -i {s/tb_OTA_PVT_ac2_sf.raw/tb_OTA_PVT_ac2_fs.raw/} $spicefile
+exec sed -i {s/ac_measures_sf.txt/ac_measures_fs.txt/} $spicefile
+simulate
+"
