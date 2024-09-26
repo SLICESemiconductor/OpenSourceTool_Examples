@@ -1,0 +1,30 @@
+v {xschem version=3.4.5 file_version=1.2
+}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -20 -90 -20 -30 {}
+L 4 20 -120 20 -100 {}
+L 4 40 -60 60 -60 {}
+L 4 -40 -60 -20 -60 {}
+L 4 20 -20 20 0 {}
+L 4 -20 -100 -20 -90 {}
+L 4 -20 -100 40 -100 {}
+L 4 40 -100 40 -20 {}
+L 4 -20 -20 40 -20 {}
+L 4 -20 -30 -20 -20 {}
+B 5 17.5 -122.5 22.5 -117.5 {name=source dir=in}
+B 5 57.5 -62.5 62.5 -57.5 {name=bulk dir=in}
+B 5 -42.5 -62.5 -37.5 -57.5 {name=gate dir=in}
+B 5 17.5 -2.5 22.5 2.5 {name=drain dir=out}
+T {@symname} -11.5 -146 0 0 0.3 0.3 {}
+T {@name} -15 -42 0 0 0.2 0.2 {}
+T {source} 5 -94 0 0 0.2 0.2 {}
+T {bulk} 15 -64 0 0 0.2 0.2 {}
+T {gate} -15 -64 0 0 0.2 0.2 {}
+T {drain} 35 -34 0 1 0.2 0.2 {}
