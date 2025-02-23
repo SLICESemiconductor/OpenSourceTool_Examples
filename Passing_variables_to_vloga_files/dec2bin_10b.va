@@ -1,0 +1,802 @@
+// VerilogA for work_dc, dec2bin_10b, veriloga
+// Says 10b but I've only coded up to 6b (my code is very inefficient because the transistion statement doesnt compile in openvaf!)
+// Typically I only ever need up to 6b so will leave as is until more bits are required. 
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module dec2bin_10b(bin_out_9,bin_out_8,bin_out_7,bin_out_6,bin_out_5,bin_out_4,bin_out_3,bin_out_2,bin_out_1,bin_out_0,vdda,vssa);
+
+output bin_out_9;
+output bin_out_8;
+output bin_out_7;
+output bin_out_6;
+output bin_out_5;
+output bin_out_4;
+output bin_out_3;
+output bin_out_2;
+output bin_out_1;
+output bin_out_0;
+
+electrical bin_out_9,bin_out_8,bin_out_7,bin_out_6,bin_out_5,bin_out_4,bin_out_3,bin_out_2,bin_out_1,bin_out_0;
+
+input vdda;
+electrical vdda;
+
+input vssa;
+electrical vssa;
+
+(* desc="dec_code", units="", type="instance" *)   parameter integer dec_code = 0 from [0: 1023];
+
+    analog begin
+
+	if (dec_code == 0) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 1) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 2) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 3) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 4) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 5) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 6) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 7) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 8) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 9) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 10) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 11) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 12) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 13) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 14) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 15) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 16) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 17) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 18) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 19) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 20) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 21) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 22) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 23) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 24) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 25) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 26) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 27) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 28) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 29) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 30) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 31) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 32) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 33) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 34) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 35) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 36) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 37) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 38) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 39) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 40) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 41) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 42) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 43) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 44) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 45) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 46) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 47) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 48) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 49) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 50) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 51) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 52) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 53) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 54) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 55) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 56) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+       else if (dec_code == 57) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+      else if (dec_code == 58) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    else if (dec_code == 59) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+   else if (dec_code == 60) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 61) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 62) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+  else if (dec_code == 63) begin
+		V(bin_out_0,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_1,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_2,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_3,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_4,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_5,vssa) <+ V(vdda,vssa)*1;
+                V(bin_out_6,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_7,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_8,vssa) <+ V(vdda,vssa)*0;
+                V(bin_out_9,vssa) <+ V(vdda,vssa)*0;
+                end
+    end
+endmodule

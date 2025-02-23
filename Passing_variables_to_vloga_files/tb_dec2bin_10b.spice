@@ -1,0 +1,111 @@
+** sch_path: /home/slice/xschem/tb_ina_pa/tb_dec2bin_10b.sch
+**.subckt tb_dec2bin_10b
+x2 bin_out_9 bin_out_8 bin_out_7 bin_out_6 bin_out_5 bin_out_4 bin_out_3 bin_out_2 bin_out_1 bin_out_0 avdd vssa dec2bin_10b
++ dec_code=dec_code_var
+Vavdd avdd vssa xavdd
+Vvssa vssa GND 0
+R2 bin_out_6 vssa 1k m=1
+R3 bin_out_5 vssa 1k m=1
+R4 bin_out_4 vssa 1k m=1
+R5 bin_out_9 vssa 1k m=1
+R6 bin_out_8 vssa 1k m=1
+R7 bin_out_7 vssa 1k m=1
+R8 bin_out_3 vssa 1k m=1
+R9 bin_out_2 vssa 1k m=1
+R10 bin_out_1 vssa 1k m=1
+R11 bin_out_0 vssa 1k m=1
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+*.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+*.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice ss
+*.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice ff
+*.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice sf
+*.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice fs
+
+.include /home/slice/pdk/SW130/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+* Parameters
+.param xavdd = 3.3
+.param xdvdd = 1.8
+.param xvcm = xavdd/2
+.param xibias = 100n
+.param xCload = 100f
+.param xRload = 100Meg
+.param xtsim = 5u
+.param xvin_se = 0.5m
+.param dec_code_var=15
+.csparam xdec_code_var = 'dec_code_var'
+.csparam xtsim_var = 'xtsim'
+
+.temp 27
+
+.model dec2bin_10b dec2bin_10b
+
+  .control
+
+  pre_osdi dec2bin_10b.osdi
+  *save all
+  save v(vout) v(vcm) v(vinp) v(vinn) v(avdd) v(dvdd) v(bin_out_9) v(bin_out_8) v(bin_out_7) v(bin_out_6) v(bin_out_5) v(bin_out_4) v(bin_out_3) v(bin_out_2) v(bin_out_1) v(bin_out_0)
+  save i(Vavdd)
+  *.option savecurrents
+  echo $&xtsim_var
+  echo $&xdec_code_var
+
+** 1. TRAN ANALYSIS **
+
+  tran 10n $&xtsim_var
+  remzerovec
+  write tb_ina_pa_tran_data_15.raw
+
+** 2. MEASURES **
+  echo "$&xdec_code_var" >> code_measures.txt
+
+  setplot
+
+quit 0
+.endc
+
+
+
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  dec2bin_10b.sym # of pins=12
+** sym_path: /home/slice/xschem/tb_ina_pa/dec2bin_10b.sym
+** sch_path: /home/slice/xschem/tb_ina_pa/dec2bin_10b.sch
+.subckt dec2bin_10b bin_out_9 bin_out_8 bin_out_7 bin_out_6 bin_out_5 bin_out_4 bin_out_3 bin_out_2 bin_out_1 bin_out_0 vdda vssa
++  dec_code=0
+*.ipin vdda
+*.opin bin_out_9
+*.opin bin_out_8
+*.opin bin_out_7
+*.opin bin_out_6
+*.opin bin_out_5
+*.opin bin_out_4
+*.opin bin_out_3
+*.opin bin_out_2
+*.opin bin_out_1
+*.opin bin_out_0
+*.ipin vssa
+* noconn bin_out_9
+* noconn bin_out_8
+* noconn bin_out_7
+* noconn bin_out_6
+* noconn bin_out_5
+* noconn bin_out_4
+* noconn bin_out_3
+* noconn bin_out_2
+* noconn bin_out_1
+* noconn bin_out_0
+* noconn vdda
+* noconn vssa
+**** begin user architecture code
+N1 bin_out_9 bin_out_8 bin_out_7 bin_out_6 bin_out_5 bin_out_4 bin_out_3 bin_out_2 bin_out_1 bin_out_0 vdda vssa dec2bin_10b dec_code = dec_code
+**** end user architecture code
+.ends
+
+.GLOBAL GND
+.end

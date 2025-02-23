@@ -1,0 +1,51 @@
+v {xschem version=3.4.6 file_version=1.2}
+G {}
+K {type=subcircuit
+format="@name @pinlist @symname dec_code=@dec_code"
+template="name=x1 dec_code=0"
+}
+V {}
+S {}
+E {}
+L 4 -130 -100 130 -100 {}
+L 4 -130 100 130 100 {}
+L 4 -130 -100 -130 100 {}
+L 4 130 -100 130 100 {}
+L 4 130 -90 150 -90 {}
+L 4 -150 -90 -130 -90 {}
+L 4 -150 -70 -130 -70 {}
+L 4 130 -70 150 -70 {}
+L 4 130 -50 150 -50 {}
+L 4 130 -30 150 -30 {}
+L 4 130 -10 150 -10 {}
+L 4 130 10 150 10 {}
+L 4 130 30 150 30 {}
+L 4 130 50 150 50 {}
+L 4 130 70 150 70 {}
+L 4 130 90 150 90 {}
+B 5 147.5 -92.5 152.5 -87.5 {name=bin_out_9 dir=out}
+B 5 147.5 -72.5 152.5 -67.5 {name=bin_out_8 dir=out}
+B 5 147.5 -52.5 152.5 -47.5 {name=bin_out_7 dir=out}
+B 5 147.5 -32.5 152.5 -27.5 {name=bin_out_6 dir=out}
+B 5 147.5 -12.5 152.5 -7.5 {name=bin_out_5 dir=out}
+B 5 147.5 7.5 152.5 12.5 {name=bin_out_4 dir=out}
+B 5 147.5 27.5 152.5 32.5 {name=bin_out_3 dir=out}
+B 5 147.5 47.5 152.5 52.5 {name=bin_out_2 dir=out}
+B 5 147.5 67.5 152.5 72.5 {name=bin_out_1 dir=out}
+B 5 147.5 87.5 152.5 92.5 {name=bin_out_0 dir=out}
+B 5 -152.5 -92.5 -147.5 -87.5 {name=vdda dir=in}
+B 5 -152.5 -72.5 -147.5 -67.5 {name=vssa dir=in}
+T {@symname} -103.5 -6 0 0 0.3 0.3 {}
+T {@name} -25 -92 0 0 0.2 0.2 {}
+T {bin_out_9} 125 -94 0 1 0.2 0.2 {}
+T {vdda} -125 -94 0 0 0.2 0.2 {}
+T {vssa} -125 -74 0 0 0.2 0.2 {}
+T {bin_out_8} 125 -74 0 1 0.2 0.2 {}
+T {bin_out_7} 125 -54 0 1 0.2 0.2 {}
+T {bin_out_6} 125 -34 0 1 0.2 0.2 {}
+T {bin_out_5} 125 -14 0 1 0.2 0.2 {}
+T {bin_out_4} 125 6 0 1 0.2 0.2 {}
+T {bin_out_3} 125 26 0 1 0.2 0.2 {}
+T {bin_out_2} 125 46 0 1 0.2 0.2 {}
+T {bin_out_1} 125 66 0 1 0.2 0.2 {}
+T {bin_out_0} 125 86 0 1 0.2 0.2 {}
