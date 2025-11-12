@@ -1,0 +1,15 @@
+** sch_path: /home/slice/xschem/tb_OTA_1stage_ihp/OTA.sch
+.subckt OTA_final vdda vinp vinn vssa vout ibias
+*.PININFO ibias:B vdda:I vssa:I vinp:I vinn:I vout:O
+M6 pdio pdio vdda vdda sg13_lv_pmos w=4u l=2u ng=2 m=2
+M1 vtail ibias vssa vssa sg13_lv_nmos w=4u l=2u ng=4 m=2
+M2 ibias ibias vssa vssa sg13_lv_nmos w=4u l=2u ng=4 m=2
+M3 vtail vtail vtail vtail sg13_lv_nmos w=16u l=0.5u ng=16 m=2
+M10 pdio vinp vtail vtail sg13_lv_nmos w=8u l=0.5u ng=8 m=4
+M14 vssa vssa vssa vssa sg13_lv_nmos w=2u l=1u ng=2 m=4
+M16 vout vinn vtail vtail sg13_lv_nmos w=8u l=0.5u ng=8 m=4
+M36 vout pdio vdda vdda sg13_lv_pmos w=4u l=2u ng=2 m=2
+M40 vdda vdda vdda vdda sg13_lv_pmos w=2u l=1u ng=2 m=4
+M4 vdda vdda vdda vdda sg13_lv_pmos w=8u l=2u ng=2 m=2
+M5 vssa vssa vssa vssa sg13_lv_nmos w=8u l=2u ng=8 m=2
+.ends

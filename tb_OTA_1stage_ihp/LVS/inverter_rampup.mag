@@ -1,0 +1,43 @@
+magic
+tech ihp-sg13g2
+timestamp 1756966305
+<< error_p >>
+rect -51 106 86 110
+rect -125 100 210 106
+rect -20 90 86 100
+rect -15 45 -5 62
+rect 40 45 50 62
+rect -15 0 102 45
+rect -46 -35 81 -34
+rect -15 -140 10 -65
+rect 25 -140 50 -65
+rect -15 -165 50 -140
+<< nwell >>
+rect -80 45 115 110
+rect -80 0 -15 45
+rect -5 0 40 45
+rect 50 0 115 45
+rect -80 -35 115 0
+<< pwell >>
+rect -15 0 -5 45
+rect 40 0 50 45
+<< nmos >>
+rect 10 -140 25 -65
+<< pmos >>
+rect 10 0 25 45
+<< ndiff >>
+rect -20 90 55 100
+rect -15 -140 10 -65
+rect 25 -140 50 -65
+rect -15 -165 50 -140
+<< pdiff >>
+rect -5 0 10 45
+rect 25 0 40 45
+<< poly >>
+rect 10 45 25 80
+rect 10 -65 25 0
+<< metal1 >>
+rect -125 90 210 100
+<< labels >>
+rlabel metal1 160 90 180 95 1 vdd
+<< end >>

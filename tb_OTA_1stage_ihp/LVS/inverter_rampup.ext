@@ -1,0 +1,25 @@
+timestamp 1756963541
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+node "vdd" 4 236.327 -250 180 m1 0 0 0 0 13400 1380 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n30_n330#" 0 0 -30 -330 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_50_0#" 0 0 50 0 pdif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n10_0#" 0 0 -10 0 pdif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_20_n280#" 0 181.158 20 -280 nmos 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_n40_180#" 0 0 -40 180 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n160_n70#" 0 0 -160 -70 nw 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "VSUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "a_n40_180#" "vdd" 4.3626
+cap "vdd" "w_n160_n70#" 37.2778
+cap "a_20_n280#" "vdd" 5.72932
+cap "a_50_0#" "vdd" 1.39339
+cap "vdd" "a_n30_n330#" 2.72016
+cap "a_n10_0#" "vdd" 1.39339
+cap "a_20_n280#" "w_n160_n70#" 57.0185
+device msubckt sg13_lv_nmos 20 -280 21 -279 l=30 w=150 "VSUB" "a_20_n280#" 30 0 "a_n30_n330#" 0 0 "a_n30_n330#" 330 21500,960
+device msubckt sg13_lv_pmos 20 0 21 1 l=30 w=90 "w_n160_n70#" "a_20_n280#" 60 0 "a_n10_0#" 90 2700,240 "a_50_0#" 90 2700,240

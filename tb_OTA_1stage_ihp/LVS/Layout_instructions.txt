@@ -1,0 +1,33 @@
+********** STRATEGY ********************
+- Odd metal layers are horizontal
+- Even metal layers are vertical
+- Keep the same poly direction (you dont need to at 130nm, but it messes with my head otherwise and is good practice)
+- Gate contacts will always be at the top of each device
+- Gate lines will always route in on M1. Poly direction accomodates horizontal routes i.e. M1. Higher R doesnt matter since lines are hiZ.
+- S/D lines will always route out in M2 (vertically)
+- Dummies on either side will be 2um L (elliminates LOD)
+- Dummies on top / bottom will be 2um wide (elliminates WPE ... but need to verify how to accurately determine distance from well edge)
+- Dummies will surround complete matched block where possible
+- Single strip of tap to be included in each row. Low noise, high LU (SELU) immunity. More area but we have lots. 
+- Aim is always to create a Pcell with M1 gate connection and M2 S/D connections. 
+- Pins to come in at the edge of the block. 
+- Common centroid pattern = ABBA. Will double check with a layouter but dont see what is wrong with choosing this the simplest possible pattern (as opposed to something like ABABBABA). It elliminates process gradients with the simplest routing possible for common centroid. 
+- GRs??? Around each block or sub-block? 1 / 2 / 3 GRs?
+
+********** PROCEDURE ********************
+1. Determine number of active devices per row. Then instantiate that as a single row. 
+2. Place gate extension on top of a single device with max no. of contacts (check DRC)
+3. Short gate contacts with a single strip of M1 to device edge (assuming that wont short the gate to the adjacent device ... check) (check DRC)
+3. Copy that contact/M1 structure across all devices in the same row. 
+4. Place max no of source drain contacts on a single device. On top of these, overlay V1 contacts (check DRC) 
+5. Short S/D contacts with a single strip of M2 to device edge (assuming that wont short the gate to the adjacent device ... check) (check DRC)
+6. Copy that contact/M2 structure across all devices in the same row. 
+7. Include dummies on the sides (L = 2um, W = Wactive devices). Tie off as required (dont leave gate floating, tie it off also).
+8. Assuming more than 1 row is required, copy a 2nd row 
+9. Place tap in between each row. Need to take great care with DRCs here. Single strip of tap with contacts up to M2 to connect to S/Ds. 
+10. Once you are good with DRCs, assuming more rows are required, copy as required, taking care to line up.
+11. Place dummies along top and bottom: L (excl. edge devices) = Lactive_device. L (edge devices) = 2um. W = 2um. Tie off as required (check DRC to ensure you are spaced far enough away from the active device as I wont be including tap at top / bottom)
+12. Finally, simply connect all the rows to the external pins of the block. 
+
+13. All vias to be boxes of 0.19mm dimensions
+14. Min widths = 1um (allows for 3 contacts, while 0.5um allows for only 1)

@@ -1,0 +1,26 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 17/09/2025 06:43
+
+.SUBCKT OTA_final vssa ibias vdda vout vinp vinn
+M$1 vssa vssa vssa vssa sg13_lv_nmos L=1u W=8u AS=2.2p AD=2.12p PS=16.4u
++ PD=16.24u
+M$2 vssa vssa vssa vssa sg13_lv_nmos L=2u W=16u AS=3.04p AD=3.04p PS=22.08u
++ PD=22.08u
+M$12 vssa ibias \$20 vssa sg13_lv_nmos L=2u W=8u AS=1.52p AD=1.52p PS=11.04u
++ PD=11.04u
+M$14 vssa ibias ibias vssa sg13_lv_nmos L=2u W=8u AS=1.52p AD=1.52p PS=11.04u
++ PD=11.04u
+M$41 vdda vdda vdda vdda sg13_lv_pmos L=1u W=8u AS=2.12p AD=2.12p PS=16.24u
++ PD=16.24u
+M$42 vdda vdda vdda vdda sg13_lv_pmos L=2u W=16u AS=3.04p AD=3.04p PS=22.08u
++ PD=22.08u
+M$52 vdda \$64 vout vdda sg13_lv_pmos L=2u W=8u AS=1.52p AD=1.52p PS=11.04u
++ PD=11.04u
+M$54 vdda \$64 \$64 vdda sg13_lv_pmos L=2u W=8u AS=1.52p AD=1.52p PS=11.04u
++ PD=11.04u
+M$81 \$20 \$20 \$20 \$20 sg13_lv_nmos L=0.5u W=32u AS=6.38p AD=6.38p PS=46.76u
++ PD=46.76u
+M$113 \$20 vinp \$64 \$20 sg13_lv_nmos L=0.5u W=32u AS=6.38p AD=6.38p PS=46.76u
++ PD=46.76u
+M$121 \$20 vinn vout \$20 sg13_lv_nmos L=0.5u W=32u AS=6.38p AD=6.38p PS=46.76u
++ PD=46.76u
+.ENDS OTA_final

@@ -1,0 +1,4 @@
+* SPICE3 file created from inverter_rampup.ext - technology: ihp-sg13g2
+
+X0 a_n30_n330# a_20_n280# a_n30_n330# VSUB sg13_lv_nmos ad=0.5375p pd=4.8u as=0 ps=0 w=0.75u l=0.15u
+X1 a_50_0# a_20_n280# a_n10_0# w_n160_n70# sg13_lv_pmos ad=67.49999f pd=1.2u as=67.49999f ps=1.2u w=0.45u l=0.15u

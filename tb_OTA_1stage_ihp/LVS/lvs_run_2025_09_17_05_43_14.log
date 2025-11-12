@@ -1,0 +1,3 @@
+17-Sep-2025 06:43:14 | INFO    | Your Klayout version is: KLayout 0.30.0
+17-Sep-2025 06:43:14 | INFO    | Running SG13G2 LVS checks on design /home/slice/xschem/tb_OTA_1stage_ihp/LVS/OTA_magic.gds on cell OTA_final
+17-Sep-2025 06:43:17 | INFO    | Total execution time 3.19551157951355s
