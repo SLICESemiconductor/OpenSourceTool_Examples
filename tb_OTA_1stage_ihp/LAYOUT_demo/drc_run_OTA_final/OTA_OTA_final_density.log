@@ -1,0 +1,130 @@
+# Logfile created on 2025-11-10 13:20:05 +0000 by logger.rb/v1.4.3
+2025-11-10 13:20:05 +0000: Memory Usage (441856K) : Starting running IHP-SG13G2 Klayout DRC Density runset on /home/slice/xschem/tb_OTA_1stage_ihp/LAYOUT_demo/OTA.gds
+2025-11-10 13:20:05 +0000: Memory Usage (441856K) : Ruby Version for klayout: 3.0.2
+2025-11-10 13:20:05 +0000: Memory Usage (442976K) : Loading database to memory is complete.
+2025-11-10 13:20:05 +0000: Memory Usage (442976K) : IHP-SG13G2 Klayout DRC Density runset output at: /home/slice/xschem/tb_OTA_1stage_ihp/LAYOUT_demo/drc_run_OTA_final/OTA_OTA_final_density.lyrdb
+2025-11-10 13:20:05 +0000: Memory Usage (443136K) : Evaluate switches.
+2025-11-10 13:20:05 +0000: Memory Usage (443136K) : Klayout will use 1 thread(s)
+2025-11-10 13:20:05 +0000: Memory Usage (443136K) : Deep mode enabled: reading layers and preparing general derivations.
+2025-11-10 13:20:05 +0000: Memory Usage (443136K) : PreCheck DRC enabled: false
+2025-11-10 13:20:05 +0000: Memory Usage (443136K) : Read in polygons from layers.
+2025-11-10 13:20:05 +0000: Memory Usage (444096K) : activ_drw has 394 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444096K) : activ_mask has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444096K) : activ_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : gatpoly_drw has 661 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : gatpoly_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal1_drw has 902 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal1_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal1_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal2_drw has 221 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal2_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal2_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal3_drw has 104 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal3_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal3_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal4_drw has 34 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444256K) : metal4_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : metal4_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : metal5_drw has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : metal5_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : metal5_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : topmetal1_drw has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : topmetal1_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : topmetal1_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : topmetal2_drw has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : topmetal2_filler has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : topmetal2_slit has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : lbe_drw has 0 polygons
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : Loaded TECH DRC rules values from /home/slice/pdk/iHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+2025-11-10 13:20:05 +0000: Memory Usage (444416K) : Loaded default DRC rules values from /home/slice/pdk/iHP/IHP-Open-PDK/ihp-sg13g2/libs.tech/klayout/tech/drc/rule_decks/sg13g2_tech_default.json
+2025-11-10 13:20:05 +0000: Memory Usage (445536K) : Total area of the design is 1203.5276 um^2.
+2025-11-10 13:20:05 +0000: Memory Usage (445536K) : Starting density IHP-SG13G2 derivations.
+2025-11-10 13:20:06 +0000: Memory Usage (446336K) : Starting IHP-SG13G2 DENSITY DRC rules.
+2025-11-10 13:20:06 +0000: Memory Usage (446336K) : Tiling mode enabled: executing rules with chip tiling applied.
+2025-11-10 13:20:06 +0000: Memory Usage (446336K) : Computing activ area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (446976K) : Executing rule AFil.g
+2025-11-10 13:20:06 +0000: Memory Usage (447136K) : Executing rule AFil.g1
+2025-11-10 13:20:06 +0000: Memory Usage (447136K) : Executing rule AFil.g2
+2025-11-10 13:20:06 +0000: Memory Usage (447296K) : Executing rule AFil.g3
+2025-11-10 13:20:06 +0000: Memory Usage (447296K) : Computing poly area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (447616K) : Executing rule GFil.g
+2025-11-10 13:20:06 +0000: Memory Usage (447616K) : Computing metal1 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (447776K) : Executing rule M1.j
+2025-11-10 13:20:06 +0000: Memory Usage (447776K) : Executing rule M1.k
+2025-11-10 13:20:06 +0000: Memory Usage (447776K) : Computing metal2 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (447936K) : Computing metal3 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (447936K) : Computing metal4 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (447936K) : Computing metal5 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (447936K) : Executing rule M2.j
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M2.k
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M3.j
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M3.k
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M4.j
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M4.k
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M5.j
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M5.k
+2025-11-10 13:20:06 +0000: Memory Usage (448096K) : Executing rule M1Fil.h
+2025-11-10 13:20:06 +0000: Memory Usage (448256K) : Executing rule M1Fil.k
+2025-11-10 13:20:06 +0000: Memory Usage (448256K) : Executing rule M2Fil.h
+2025-11-10 13:20:06 +0000: Memory Usage (448416K) : Executing rule M2Fil.k
+2025-11-10 13:20:06 +0000: Memory Usage (448416K) : Executing rule M3Fil.h
+2025-11-10 13:20:06 +0000: Memory Usage (448576K) : Executing rule M3Fil.k
+2025-11-10 13:20:06 +0000: Memory Usage (448576K) : Executing rule M4Fil.h
+2025-11-10 13:20:06 +0000: Memory Usage (448736K) : Executing rule M4Fil.k
+2025-11-10 13:20:06 +0000: Memory Usage (448736K) : Executing rule M5Fil.h
+2025-11-10 13:20:06 +0000: Memory Usage (448896K) : Executing rule M5Fil.k
+2025-11-10 13:20:06 +0000: Memory Usage (448896K) : Computing TopMetal1 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (449056K) : Executing rule TM1.c
+2025-11-10 13:20:06 +0000: Memory Usage (449056K) : Executing rule TM1.d
+2025-11-10 13:20:06 +0000: Memory Usage (449056K) : Computing TopMetal2 area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (449056K) : Executing rule TM2.c
+2025-11-10 13:20:06 +0000: Memory Usage (449216K) : Executing rule TM2.d
+2025-11-10 13:20:06 +0000: Memory Usage (449216K) : Computing LBE area and density...
+2025-11-10 13:20:06 +0000: Memory Usage (449216K) : Executing rule LBE.i
+2025-11-10 13:20:06 +0000: Memory Usage (449216K) : Executing rule Slt.i_M1
+2025-11-10 13:20:06 +0000: Memory Usage (449536K) : Executing rule Slt.i_M2
+2025-11-10 13:20:06 +0000: Memory Usage (449856K) : Executing rule Slt.i_M3
+2025-11-10 13:20:06 +0000: Memory Usage (450016K) : Executing rule Slt.i_M4
+2025-11-10 13:20:06 +0000: Memory Usage (450336K) : Executing rule Slt.i_M5
+2025-11-10 13:20:06 +0000: Memory Usage (450656K) : Executing rule Slt.i_TM1
+2025-11-10 13:20:06 +0000: Memory Usage (450816K) : Executing rule Slt.i_TM2
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : ##################################################
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) :                  Density Report                 #
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : ##################################################
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Layer areas and percentages (units: um^2)
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : --------------------------------------------------
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Total Area     = 1203.53 um^2
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Activ      Area      = 381.64 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Activ      Density % = 31.71%  [Min = 35.00%,  Max = 55.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : GatPoly    Area      = 316.92 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : GatPoly    Density % = 26.33%  [Min = 15.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal1     Area      = 221.29 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal1     Density % = 18.39%  [Min = 35.00%,  Max = 60.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal2     Area      = 34.63 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal2     Density % =  2.88%  [Min = 35.00%,  Max = 60.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal3     Area      = 56.14 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal3     Density % =  4.66%  [Min = 35.00%,  Max = 60.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal4     Area      = 18.65 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal4     Density % =  1.55%  [Min = 35.00%,  Max = 60.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal5     Area      =  0.00 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : Metal5     Density % =  0.00%  [Min = 35.00%,  Max = 60.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : TopMetal1  Area      =  0.00 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : TopMetal1  Density % =  0.00%  [Min = 25.00%,  Max = 70.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : TopMetal2  Area      =  0.00 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : TopMetal2  Density % =  0.00%  [Min = 25.00%,  Max = 70.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : LBE        Area      =  0.00 µm²
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : LBE        Density % =  0.00%  [Max = 70.00%]
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : 
+2025-11-10 13:20:06 +0000: Memory Usage (451136K) : KLayout DRC run for density table completed in 0.19 seconds

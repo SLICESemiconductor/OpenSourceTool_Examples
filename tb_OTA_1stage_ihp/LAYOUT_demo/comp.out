@@ -1,0 +1,28 @@
+
+Class OTA_final (0):  Merged 2 parallel devices.
+Class OTA_final (1):  Merged 2 parallel devices.
+Subcircuit summary:
+Circuit 1: OTA_final                       |Circuit 2: OTA_final                       
+-------------------------------------------|-------------------------------------------
+sg13_lv_nmos (7->6)                        |sg13_lv_nmos (20->6)                       
+sg13_lv_pmos (4->3)                        |sg13_lv_pmos (10->3)                       
+Number of devices: 9                       |Number of devices: 9                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: OTA_final                       |Circuit 2: OTA_final                       
+-------------------------------------------|-------------------------------------------
+vinp                                       |vinp                                       
+vinn                                       |vinn                                       
+vout                                       |vout                                       
+ibias                                      |ibias                                      
+vdda                                       |vdda                                       
+vssa                                       |vssa                                       
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes OTA_final and OTA_final are equivalent.
+
+Final result: Circuits match uniquely.
+.

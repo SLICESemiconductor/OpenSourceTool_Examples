@@ -1,0 +1,110 @@
+#### Below details the flow to extract the following netlists:
+
+- RC
+- R
+- C
+- FE
+- RC without vdda/vssa
+- R without vdda/vssa
+
+### Cell is called "OTA_final"
+### After you run all this it is important not to save when exiting magic. This is because we flatten the
+### the gds file for extractions but dont want to save this flattened gds file since hierarchical gds files 
+### run much better for DRC/LVS
+
+### Accurate C extraction is at present only possible when R is not extracting. Current algorithm
+### does not support accurate C extraction for segmented nets (which occur when extracting R). It has been
+### seen to overestimate but dont take that as general. As of 13/09 Tim is currently working on improving this.
+### For the time being it means you can get an accurate R (with or without C) or an accurate C (without R)
+
+#1 Generate full RC extracted netlist
+
+-- In magic
+
+    gds read OTA_magic
+    load OTA_final
+    select top cell
+    flatten OTA_flat
+    load OTA_flat
+    #cellname delete OTA_final ... not needed as you can just refer to OTA_flat in xschem
+    #cellname rename OTA_flat OTA_final ... not needed as you can just refer to OTA_flat in xschem
+    #load OTA_final ... not needed as you can just refer to OTA_flat in xschem
+    select top cell
+    extract all
+    feedback save warnings.txt
+    ext2sim labels on
+    ext2sim
+    extresist tolerance 10
+    extresist
+    ext2spice lvs
+    ext2spice cthresh 0.1
+    ext2spice extresist on
+    ext2spice
+
+-- In your terminal
+
+   cp OTA_final.spice OTA_final_RC.spice
+    
+     
+#2 Generate full C extracted netlist
+
+-- In magic
+
+    ext2spice extresist off
+    ext2spice
+    
+-- In your terminal
+
+   cp OTA_final.spice OTA_final_C.spice
+   
+   
+#3 Generate full R extracted netlist
+
+-- In magic
+
+    ext2spice cthresh infinite
+    ext2spice
+    
+-- In your terminal
+
+   cp OTA_final.spice OTA_final_R.spice
+   
+#4 Generate full FE extracted netlist
+
+-- In magic
+
+    ext2spice extresist off
+    ext2spice
+    
+-- In your terminal
+
+   cp OTA_final.spice OTA_final_FE.spice
+   
+   
+#5 Generate full RC extracted netlist without vdda or vssa
+
+-- In magic
+
+    extresist ignore vdda
+    extresist ignore vssa
+    extresist
+    ext2spice lvs
+    ext2spice cthresh 0.1
+    ext2spice extresist on
+    ext2spice
+    
+-- In your terminal
+
+   cp OTA_final.spice OTA_final_RC_no_vdda_vssa.spice
+   
+   
+#6 Generate full R extracted netlist without vdda or vssa
+
+-- In magic
+
+    ext2spice cthresh infinite
+    ext2spice
+    
+-- In your terminal
+
+   cp OTA_final.spice OTA_final_R_no_vdda_vssa.spice

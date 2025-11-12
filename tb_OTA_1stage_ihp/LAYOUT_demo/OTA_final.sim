@@ -1,0 +1,203 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=3940 y=88 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1457 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1809 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2689 y=4808 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=608 y=88 sg13_lv_nmos
+x ibias vssa w_833_2071# vssa s=7600,276 d=7600,276 l=400 w=200 x=3464 y=541 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1457 y=2712 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2689 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1809 y=2712 sg13_lv_nmos
+x vdda vdda vdda vdda d=13600,536 l=200 w=200 x=334 y=7933 sg13_lv_pmos
+x a_610_6649# vout vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=3942 y=7339 sg13_lv_pmos
+x ibias vssa w_833_2071# vssa s=7600,276 d=7600,276 l=400 w=200 x=608 y=541 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1281 y=3235 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1457 y=2273 sg13_lv_nmos
+x vdda vdda vdda vdda d=13600,536 l=200 w=200 x=334 y=6745 sg13_lv_pmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1985 y=4275 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1809 y=2273 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1633 y=3235 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2689 y=2273 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2865 y=3235 sg13_lv_nmos
+x a_610_6649# a_610_6649# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2038 y=7339 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1281 y=4808 sg13_lv_nmos
+x vssa vssa vssa vssa d=14400,544 l=200 w=200 x=332 y=541 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1633 y=4808 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=2512 y=994 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2865 y=4808 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1281 y=2712 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=610 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=3942 y=7933 sg13_lv_pmos
+x a_610_6649# a_610_6649# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2990 y=7339 sg13_lv_pmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1633 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3217 y=4275 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1985 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2865 y=2712 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=2036 y=88 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1084 y=541 sg13_lv_nmos
+x a_610_6649# vout vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=3942 y=6745 sg13_lv_pmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=2512 y=1434 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1281 y=2273 sg13_lv_nmos
+x a_610_6649# vout vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1086 y=7339 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1633 y=2273 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=2038 y=7933 sg13_lv_pmos
+x vssa vssa vssa vssa d=7600,276 l=200 w=200 x=4416 y=88 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2988 y=994 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2865 y=2273 sg13_lv_nmos
+x a_610_6649# a_610_6649# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2038 y=6745 sg13_lv_pmos
+x vssa vssa vssa vssa d=7600,276 l=200 w=200 x=4416 y=1434 sg13_lv_nmos
+x vdda vdda vdda vdda d=13600,536 l=200 w=200 x=334 y=6151 sg13_lv_pmos
+x ibias vssa w_833_2071# vssa s=7600,276 d=7600,276 l=400 w=200 x=3464 y=994 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=608 y=1434 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=2990 y=7933 sg13_lv_pmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3217 y=3755 sg13_lv_nmos
+x a_610_6649# a_610_6649# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2990 y=6745 sg13_lv_pmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3041 y=4275 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=1560 y=1434 sg13_lv_nmos
+x ibias vssa w_833_2071# vssa s=7600,276 d=7600,276 l=400 w=200 x=608 y=994 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=1086 y=7933 sg13_lv_pmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=3940 y=541 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1985 y=3235 sg13_lv_nmos
+x a_610_6649# vout vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1086 y=6745 sg13_lv_pmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=3464 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa d=14400,544 l=200 w=200 x=332 y=994 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=3942 y=6151 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1985 y=4808 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3041 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=13600,536 d=7600,276 l=100 w=200 x=1105 y=4275 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=200 w=200 x=4416 y=541 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=2038 y=6151 sg13_lv_pmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2337 y=4275 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1985 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3569 y=4275 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1084 y=994 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3217 y=3235 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=1084 y=88 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=1985 y=2273 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=3464 y=88 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=2990 y=6151 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3217 y=4808 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=1560 y=541 sg13_lv_nmos
+x a_610_6649# vdda a_610_6649# vdda s=7600,276 d=7600,276 l=400 w=200 x=2514 y=7339 sg13_lv_pmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=13600,536 d=7600,276 l=100 w=200 x=1105 y=3755 sg13_lv_nmos
+x vssa vssa vssa vssa d=14400,544 l=200 w=200 x=332 y=88 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=1086 y=6151 sg13_lv_pmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2337 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3217 y=2712 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=200 w=200 x=4418 y=7339 sg13_lv_pmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3569 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2161 y=4275 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2513 y=4275 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3393 y=4275 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3041 y=3235 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=3940 y=994 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3217 y=2273 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=13600,536 l=100 w=200 x=3745 y=4275 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2036 y=541 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=2988 y=1434 sg13_lv_nmos
+x a_610_6649# vdda a_610_6649# vdda s=7600,276 d=7600,276 l=400 w=200 x=1562 y=7339 sg13_lv_pmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=2514 y=7933 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3041 y=4808 sg13_lv_nmos
+x vssa vssa vssa vssa d=14400,544 l=200 w=200 x=332 y=1434 sg13_lv_nmos
+x a_610_6649# vdda a_610_6649# vdda s=7600,276 d=7600,276 l=400 w=200 x=2514 y=6745 sg13_lv_pmos
+x a_610_6649# vdda vout vdda s=7600,276 d=7600,276 l=400 w=200 x=3466 y=7339 sg13_lv_pmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3041 y=2712 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=200 w=200 x=4418 y=7933 sg13_lv_pmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2161 y=3755 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=200 w=200 x=4416 y=994 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3393 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2513 y=3755 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=200 w=200 x=4418 y=6745 sg13_lv_pmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1457 y=4275 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=13600,536 d=7600,276 l=100 w=200 x=1105 y=3235 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=13600,536 l=100 w=200 x=3745 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1809 y=4275 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2689 y=4275 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2337 y=3235 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=2512 y=88 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3041 y=2273 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3569 y=3235 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=2988 y=88 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=1562 y=7933 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=13600,536 l=100 w=200 x=1105 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2337 y=4808 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=1560 y=994 sg13_lv_nmos
+x a_610_6649# vdda a_610_6649# vdda s=7600,276 d=7600,276 l=400 w=200 x=1562 y=6745 sg13_lv_pmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=3940 y=1434 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=3466 y=7933 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3569 y=4808 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=13600,536 d=7600,276 l=100 w=200 x=1105 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1457 y=3755 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2337 y=2712 sg13_lv_nmos
+x a_610_6649# vdda vout vdda s=7600,276 d=7600,276 l=400 w=200 x=3466 y=6745 sg13_lv_pmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=2036 y=1434 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3569 y=2712 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1281 y=4275 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1809 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2689 y=3755 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=13600,536 l=100 w=200 x=1105 y=2273 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1633 y=4275 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2161 y=3235 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2337 y=2273 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=2514 y=6151 sg13_lv_pmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2865 y=4275 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2036 y=994 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3393 y=3235 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2513 y=3235 sg13_lv_nmos
+x a_610_6649# vdda vout vdda s=7600,276 d=7600,276 l=400 w=200 x=610 y=7339 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3569 y=2273 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=13600,536 l=100 w=200 x=3745 y=3235 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=200 w=200 x=4418 y=6151 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2161 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2513 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3393 y=4808 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=2512 y=541 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3745 y=4808 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=1084 y=1434 sg13_lv_nmos
+x vinp w_833_2071# a_610_6649# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2161 y=2712 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1281 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=3393 y=2712 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2513 y=2712 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1633 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# w_833_2071# s=7600,276 d=13600,536 l=100 w=200 x=3745 y=2712 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2865 y=3755 sg13_lv_nmos
+x vdda vdda vdda vdda d=13600,536 l=200 w=200 x=334 y=7339 sg13_lv_pmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=1562 y=6151 sg13_lv_pmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1457 y=3235 sg13_lv_nmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=610 y=7933 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2161 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3393 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=2513 y=2273 sg13_lv_nmos
+x vinp a_610_6649# w_833_2071# w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=2689 y=3235 sg13_lv_nmos
+x vinn w_833_2071# vout w_833_2071# s=7600,276 d=7600,276 l=100 w=200 x=1809 y=3235 sg13_lv_nmos
+x vssa vssa vssa vssa d=7600,276 l=400 w=200 x=1560 y=88 sg13_lv_nmos
+x a_610_6649# vdda vout vdda s=7600,276 d=7600,276 l=400 w=200 x=610 y=6745 sg13_lv_pmos
+x vdda vdda vdda vdda d=7600,276 l=400 w=200 x=3466 y=6151 sg13_lv_pmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2988 y=541 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# w_833_2071# d=7600,276 l=100 w=200 x=3745 y=2273 sg13_lv_nmos
+C vinn w_833_2071# 12.8
+C vdda a_610_6649# 12.9
+C vinp w_833_2071# 12.1
+C vinn vout 2.7
+C vinp a_610_6649# 2.7
+C vout w_833_2071# 4.8
+C a_610_6649# w_833_2071# 4.3
+C vdda w_833_2071# 3.1
+C vinp vinn 6.9
+C vout a_610_6649# 7.8
+C ibias0 20.1
+R ibias 35
+C vinp0 3.2
+R vinp 41
+C vinn0 3.4
+R vinn 43
+C vout0 2.3
+R vout 81
+C vdda0 5.6
+R vdda 135
+R vssa 94
+C a_610_6649#0 3.0
+R a_610_6649# 100
+C w_833_2071#0 3.2
+R w_833_2071# 3228
+R w_609_1847# 1086643
