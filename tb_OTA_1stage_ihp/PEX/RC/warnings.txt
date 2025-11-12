@@ -1,0 +1,48 @@
+box 4326 4806 4328 4808
+feedback add "Label \"vout\" attached to more than one unconnected node: m4_4327_2915#" pale
+box 5209 5189 5211 5191
+feedback add "Label \"vout\" attached to more than one unconnected node: m3_4327_5190#" pale
+box -501 3716 -499 3718
+feedback add "Label \"vinn\" attached to more than one unconnected node: m3_n500_3717#" pale
+box 1136 3039 1138 3041
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_2513_2938#" pale
+box 1057 3481 1059 3483
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_1105_3461#" pale
+box 1136 4082 1138 4084
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_2513_3981#" pale
+box 1057 4521 1059 4523
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_1105_4501#" pale
+box -501 3837 -499 3839
+feedback add "Label \"vinp\" attached to more than one unconnected node: m3_n500_3838#" pale
+box 1057 2958 1059 2960
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_1105_2938#" pale
+box 1136 3562 1138 3564
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_2513_3461#" pale
+box 1057 4001 1059 4003
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_1105_3981#" pale
+box 1136 4602 1138 4604
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_2513_4501#" pale
+box 4326 4806 4328 4808
+feedback add "Label \"vout\" attached to more than one unconnected node: m4_4327_2915#" pale
+box 5209 5189 5211 5191
+feedback add "Label \"vout\" attached to more than one unconnected node: m3_4327_5190#" pale
+box -501 3716 -499 3718
+feedback add "Label \"vinn\" attached to more than one unconnected node: m3_n500_3717#" pale
+box 1136 3039 1138 3041
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_2513_2938#" pale
+box 1057 3481 1059 3483
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_1105_3461#" pale
+box 1136 4082 1138 4084
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_2513_3981#" pale
+box 1057 4521 1059 4523
+feedback add "Label \"vinn\" attached to more than one unconnected node: a_1105_4501#" pale
+box -501 3837 -499 3839
+feedback add "Label \"vinp\" attached to more than one unconnected node: m3_n500_3838#" pale
+box 1057 2958 1059 2960
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_1105_2938#" pale
+box 1136 3562 1138 3564
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_2513_3461#" pale
+box 1057 4001 1059 4003
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_1105_3981#" pale
+box 1136 4602 1138 4604
+feedback add "Label \"vinp\" attached to more than one unconnected node: a_2513_4501#" pale

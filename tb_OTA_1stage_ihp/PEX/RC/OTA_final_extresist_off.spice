@@ -1,0 +1,193 @@
+* NGSPICE file created from OTA_final.ext - technology: ihp-sg13g2
+
+.subckt nmos$2 a_268_0# a_68_n36# VSUB a_0_0#
+X0 a_268_0# a_68_n36# a_0_0# VSUB sg13_lv_nmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+C0 a_68_n36# VSUB 0.32912f
+.ends
+
+.subckt pmos$2 a_268_0# a_68_n36# w_n62_n62# VSUB a_0_0#
+X0 a_268_0# a_68_n36# a_0_0# w_n62_n62# sg13_lv_pmos ad=0.34p pd=2.68u as=0.34p ps=2.68u w=1u l=1u
+C0 w_n62_n62# a_68_n36# 0.14892f
+C1 a_68_n36# VSUB 0.1802f
+.ends
+
+.subckt nmos a_944_0# a_1496_n36# a_1896_0# a_68_n36# a_3324_0# a_2372_0# a_3400_n36#
++ a_3800_0# VSUB a_2924_n36# a_1020_n36# a_2448_n36# a_468_0# a_1420_0# a_0_0# a_1972_n36#
++ a_544_n36# a_2848_0#
+X0 a_2372_0# a_1972_n36# a_1896_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X1 a_2848_0# a_2448_n36# a_2372_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X2 a_1420_0# a_1020_n36# a_944_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X3 a_944_0# a_544_n36# a_468_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X4 a_3324_0# a_2924_n36# a_2848_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X5 a_3800_0# a_3400_n36# a_3324_0# VSUB sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=2u
+X6 a_468_0# a_68_n36# a_0_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=2u
+X7 a_1896_0# a_1496_n36# a_1420_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+C0 a_3400_n36# VSUB 0.52706f
+C1 a_2924_n36# VSUB 0.51701f
+C2 a_2448_n36# VSUB 0.51701f
+C3 a_1972_n36# VSUB 0.51701f
+C4 a_1496_n36# VSUB 0.51701f
+C5 a_1020_n36# VSUB 0.51701f
+C6 a_544_n36# VSUB 0.51701f
+C7 a_68_n36# VSUB 0.52706f
+.ends
+
+.subckt pmos$1 a_944_0# a_1496_n36# a_1896_0# a_68_n36# a_3324_0# w_n62_n62# a_2372_0#
++ a_3400_n36# a_3800_0# VSUB a_2924_n36# a_1020_n36# a_2448_n36# a_468_0# a_1420_0#
++ a_0_0# a_1972_n36# a_544_n36# a_2848_0#
+X0 a_2372_0# a_1972_n36# a_1896_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X1 a_2848_0# a_2448_n36# a_2372_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X2 a_1420_0# a_1020_n36# a_944_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X3 a_3324_0# a_2924_n36# a_2848_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X4 a_944_0# a_544_n36# a_468_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+X5 a_3800_0# a_3400_n36# a_3324_0# w_n62_n62# sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=2u
+X6 a_468_0# a_68_n36# a_0_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=2u
+X7 a_1896_0# a_1496_n36# a_1420_0# w_n62_n62# sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=2u
+C0 a_2924_n36# w_n62_n62# 0.27514f
+C1 w_n62_n62# a_544_n36# 0.27514f
+C2 a_1020_n36# w_n62_n62# 0.27514f
+C3 a_1496_n36# w_n62_n62# 0.27514f
+C4 w_n62_n62# a_68_n36# 0.27782f
+C5 a_3400_n36# w_n62_n62# 0.27782f
+C6 a_1972_n36# w_n62_n62# 0.27514f
+C7 a_2448_n36# w_n62_n62# 0.27514f
+C8 a_3400_n36# VSUB 0.24924f
+C9 a_2924_n36# VSUB 0.24187f
+C10 a_2448_n36# VSUB 0.24187f
+C11 a_1972_n36# VSUB 0.24187f
+C12 a_1496_n36# VSUB 0.24187f
+C13 a_1020_n36# VSUB 0.24187f
+C14 a_544_n36# VSUB 0.24187f
+C15 a_68_n36# VSUB 0.24924f
+.ends
+
+.subckt nmos$4 a_2280_0# a_1300_n36# a_2632_0# a_2708_n36# a_2004_n36# a_1400_0# a_68_n36#
++ a_344_0# a_872_0# a_1652_n36# a_2356_n36# a_948_n36# a_244_n36# a_1048_0# a_520_0#
++ a_1928_0# a_1576_0# a_2532_n36# a_596_n36# a_2456_0# a_1828_n36# a_2808_0# a_1124_n36#
++ a_420_n36# a_1224_0# a_168_0# a_0_0# a_2104_0# a_1752_0# a_2180_n36# a_696_0# a_1476_n36#
++ a_772_n36#
+X0 a_1576_0# a_1476_n36# a_1400_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X1 a_2280_0# a_2180_n36# a_2104_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X2 a_1224_0# a_1124_n36# a_1048_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X3 a_1928_0# a_1828_n36# a_1752_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X4 a_2632_0# a_2532_n36# a_2456_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X5 a_872_0# a_772_n36# a_696_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X6 a_520_0# a_420_n36# a_344_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X7 a_696_0# a_596_n36# a_520_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X8 a_2456_0# a_2356_n36# a_2280_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X9 a_168_0# a_68_n36# a_0_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.5u
+X10 a_1752_0# a_1652_n36# a_1576_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X11 a_2104_0# a_2004_n36# a_1928_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X12 a_344_0# a_244_n36# a_168_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X13 a_1048_0# a_948_n36# a_872_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X14 a_1400_0# a_1300_n36# a_1224_0# VSUB sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.5u
+X15 a_2808_0# a_2708_n36# a_2632_0# VSUB sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.5u
+C0 a_2708_n36# VSUB 0.21509f
+C1 a_2532_n36# VSUB 0.20504f
+C2 a_2356_n36# VSUB 0.20504f
+C3 a_2180_n36# VSUB 0.20504f
+C4 a_2004_n36# VSUB 0.20504f
+C5 a_1828_n36# VSUB 0.20504f
+C6 a_1652_n36# VSUB 0.20504f
+C7 a_1476_n36# VSUB 0.20504f
+C8 a_1300_n36# VSUB 0.20504f
+C9 a_1124_n36# VSUB 0.20504f
+C10 a_948_n36# VSUB 0.20504f
+C11 a_772_n36# VSUB 0.20504f
+C12 a_596_n36# VSUB 0.20504f
+C13 a_420_n36# VSUB 0.20504f
+C14 a_244_n36# VSUB 0.20504f
+C15 a_68_n36# VSUB 0.21509f
+.ends
+
+.subckt OTA_final ibias vinn vinp vout vdda vssa
+Xnmos$2_3 vssa vssa vssa vssa nmos$2
+Xnmos$2_4 vssa vssa vssa vssa nmos$2
+Xnmos$2_5 vssa vssa vssa vssa nmos$2
+Xnmos$2_6 vssa vssa vssa vssa nmos$2
+Xnmos$2_7 vssa vssa vssa vssa nmos$2
+Xpmos$2_0 vdda vdda vdda vssa vdda pmos$2
+Xpmos$2_1 vdda vdda vdda vssa vdda pmos$2
+Xpmos$2_2 vdda vdda vdda vssa vdda pmos$2
+Xpmos$2_3 vdda vdda vdda vssa vdda pmos$2
+Xpmos$2_4 vdda vdda vdda vssa vdda pmos$2
+Xpmos$2_5 vdda vdda vdda vssa vdda pmos$2
+Xnmos_0 vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa
++ vssa vssa vssa nmos
+Xpmos$2_6 vdda vdda vdda vssa vdda pmos$2
+Xnmos_1 vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa vssa
++ vssa vssa vssa nmos
+Xpmos$2_7 vdda vdda vdda vssa vdda pmos$2
+Xnmos_2 vssa ibias vssa ibias w_833_2071# ibias ibias vssa vssa ibias ibias ibias
++ w_833_2071# ibias vssa ibias ibias vssa nmos
+Xnmos_3 vssa ibias vssa ibias w_833_2071# ibias ibias vssa vssa ibias ibias ibias
++ w_833_2071# ibias vssa ibias ibias vssa nmos
+Xpmos$1_0 vdda a_610_7243# vdda a_610_7243# vout vdda a_610_7243# a_610_7243# vdda
++ vssa a_610_7243# a_610_7243# a_610_7243# vout a_610_7243# vdda a_610_7243# a_610_7243#
++ vdda pmos$1
+Xnmos$4_0 w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# nmos$4
+Xpmos$1_1 vdda a_610_7243# vdda a_610_7243# vout vdda a_610_7243# a_610_7243# vdda
++ vssa a_610_7243# a_610_7243# a_610_7243# vout a_610_7243# vdda a_610_7243# a_610_7243#
++ vdda pmos$1
+Xnmos$4_1 w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071#
++ w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# w_833_2071# nmos$4
+Xpmos$1_2 vdda vdda vdda vdda vdda vdda vdda vdda vdda vssa vdda vdda vdda vdda vdda
++ vdda vdda vdda vdda pmos$1
+Xnmos$4_2 a_610_7243# vinn a_610_7243# vinp vinp w_833_2071# vinn w_833_2071# vout
++ vinp vinp vinn vinn w_833_2071# vout a_610_7243# a_610_7243# vinp vinn w_833_2071#
++ vinp w_833_2071# vinn vinn vout vout w_833_2071# w_833_2071# w_833_2071# vinp w_833_2071#
++ vinp vinn nmos$4
+Xpmos$1_3 vdda vdda vdda vdda vdda vdda vdda vdda vdda vssa vdda vdda vdda vdda vdda
++ vdda vdda vdda vdda pmos$1
+Xnmos$4_3 vout vinp vout vinn vinn w_833_2071# vinp w_833_2071# a_610_7243# vinn vinn
++ vinp vinp w_833_2071# a_610_7243# vout vout vinn vinp w_833_2071# vinn w_833_2071#
++ vinp vinp a_610_7243# a_610_7243# w_833_2071# w_833_2071# w_833_2071# vinn w_833_2071#
++ vinn vinp nmos$4
+Xnmos$2_0 vssa vssa vssa vssa nmos$2
+Xnmos$4_4 a_610_7243# vinn a_610_7243# vinp vinp w_833_2071# vinn w_833_2071# vout
++ vinp vinp vinn vinn w_833_2071# vout a_610_7243# a_610_7243# vinp vinn w_833_2071#
++ vinp w_833_2071# vinn vinn vout vout w_833_2071# w_833_2071# w_833_2071# vinp w_833_2071#
++ vinp vinn nmos$4
+Xnmos$2_1 vssa vssa vssa vssa nmos$2
+Xnmos$4_5 vout vinp vout vinn vinn w_833_2071# vinp w_833_2071# a_610_7243# vinn vinn
++ vinp vinp w_833_2071# a_610_7243# vout vout vinn vinp w_833_2071# vinn w_833_2071#
++ vinp vinp a_610_7243# a_610_7243# w_833_2071# w_833_2071# w_833_2071# vinn w_833_2071#
++ vinn vinp nmos$4
+Xnmos$2_2 vssa vssa vssa vssa nmos$2
+C0 vinp vinn 6.87412f
+C1 ibias w_833_2071# 1.24667f
+C2 w_833_2071# vinn 12.46422f
+C3 vout a_610_7243# 7.62832f
+C4 vssa w_833_2071# 0.4743f
+C5 w_609_1847# vdda 0.26354f
+C6 vdda a_610_7243# 8.12678f
+C7 vinp a_610_7243# 2.40929f
+C8 vout vdda 1.6423f
+C9 w_833_2071# a_610_7243# 2.88472f
+C10 vinp vout 0.91461f
+C11 vinp vdda 0.13084f
+C12 w_833_2071# vout 3.33794f
+C13 ibias vssa 2.12991f
+C14 w_833_2071# vdda 3.14708f
+C15 w_833_2071# vinp 11.80362f
+C16 vinn a_610_7243# 0.6084f
+C17 vout vinn 2.34373f
+C18 vdda vinn 0.43281f
+C19 vout via_stack$2_1/VSUB 2.45928f
+C20 ibias via_stack$2_1/VSUB 17.57771f
+C21 w_609_1847# via_stack$2_1/VSUB 0.11231f $ **FLOATING
+C22 vinn via_stack$2_1/VSUB 3.41262f
+C23 vinp via_stack$2_1/VSUB 3.23043f
+C24 vssa via_stack$2_1/VSUB 3.12579f
+C25 w_833_2071# via_stack$2_1/VSUB 2.6544f
+C26 vdda via_stack$2_1/VSUB 5.36855f
+C27 a_610_7243# via_stack$2_1/VSUB 3.05375f
+.ends
+

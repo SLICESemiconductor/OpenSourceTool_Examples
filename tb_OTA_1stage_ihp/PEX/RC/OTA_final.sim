@@ -1,0 +1,836 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=4416 y=541 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=332 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=332 y=994 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=332 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=332 y=541 sg13_lv_nmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=334 y=7339 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=334 y=6745 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=334 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=334 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=4418 y=7339 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=4418 y=6745 sg13_lv_pmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2512 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2988 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1560 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1084 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=3464 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=13600,536 l=400 w=200 x=3940 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=7600,276 l=400 w=200 x=608 y=88 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2036 y=88 sg13_lv_nmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=4418 y=6151 sg13_lv_pmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2512 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2988 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1560 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1084 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=3464 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=13600,536 l=400 w=200 x=3940 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=7600,276 l=400 w=200 x=608 y=1434 sg13_lv_nmos
+x vssa vssa vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2036 y=1434 sg13_lv_nmos
+x vdda vdda vdda vdda s=13600,536 d=13600,536 l=200 w=200 x=4418 y=7933 sg13_lv_pmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=2512 y=994 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2988 y=994 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=1560 y=994 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1084 y=994 sg13_lv_nmos
+x ibias vssa w_833_2071# vssa s=7600,276 d=7600,276 l=400 w=200 x=3464 y=994 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=13600,536 l=400 w=200 x=3940 y=994 sg13_lv_nmos
+x ibias vssa w_833_2071# vssa s=13600,536 d=7600,276 l=400 w=200 x=608 y=994 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2036 y=994 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=2512 y=541 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2988 y=541 sg13_lv_nmos
+x ibias vssa ibias vssa s=7600,276 d=7600,276 l=400 w=200 x=1560 y=541 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=1084 y=541 sg13_lv_nmos
+x ibias vssa w_833_2071# vssa s=7600,276 d=7600,276 l=400 w=200 x=3464 y=541 sg13_lv_nmos
+x ibias w_833_2071# vssa vssa s=7600,276 d=13600,536 l=400 w=200 x=3940 y=541 sg13_lv_nmos
+x ibias vssa w_833_2071# vssa s=13600,536 d=7600,276 l=400 w=200 x=608 y=541 sg13_lv_nmos
+x ibias ibias vssa vssa s=7600,276 d=7600,276 l=400 w=200 x=2036 y=541 sg13_lv_nmos
+x a_610_7243# vdda a_610_7243# vdda s=7600,276 d=7600,276 l=400 w=200 x=2514 y=7339 sg13_lv_pmos
+x a_610_7243# a_610_7243# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2990 y=7339 sg13_lv_pmos
+x a_610_7243# vdda a_610_7243# vdda s=7600,276 d=7600,276 l=400 w=200 x=1562 y=7339 sg13_lv_pmos
+x a_610_7243# vdda vout vdda s=7600,276 d=7600,276 l=400 w=200 x=3466 y=7339 sg13_lv_pmos
+x a_610_7243# vout vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1086 y=7339 sg13_lv_pmos
+x a_610_7243# vout vdda vdda s=7600,276 d=13600,536 l=400 w=200 x=3942 y=7339 sg13_lv_pmos
+x a_610_7243# vdda vout vdda s=13600,536 d=7600,276 l=400 w=200 x=610 y=7339 sg13_lv_pmos
+x a_610_7243# a_610_7243# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2038 y=7339 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2513 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3217 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2161 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2865 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3569 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1809 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1457 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1633 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3393 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=13600,536 d=7600,276 l=100 w=200 x=1105 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2689 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3041 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1281 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1985 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2337 y=4808 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_0/VSUB s=7600,276 d=13600,536 l=100 w=200 x=3745 y=4808 sg13_lv_nmos
+x a_610_7243# vdda a_610_7243# vdda s=7600,276 d=7600,276 l=400 w=200 x=2514 y=6745 sg13_lv_pmos
+x a_610_7243# a_610_7243# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2990 y=6745 sg13_lv_pmos
+x a_610_7243# vdda a_610_7243# vdda s=7600,276 d=7600,276 l=400 w=200 x=1562 y=6745 sg13_lv_pmos
+x a_610_7243# vdda vout vdda s=7600,276 d=7600,276 l=400 w=200 x=3466 y=6745 sg13_lv_pmos
+x a_610_7243# vout vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1086 y=6745 sg13_lv_pmos
+x a_610_7243# vout vdda vdda s=7600,276 d=13600,536 l=400 w=200 x=3942 y=6745 sg13_lv_pmos
+x a_610_7243# vdda vout vdda s=13600,536 d=7600,276 l=400 w=200 x=610 y=6745 sg13_lv_pmos
+x a_610_7243# a_610_7243# vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2038 y=6745 sg13_lv_pmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2513 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3217 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2161 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2865 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3569 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1809 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1457 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1633 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3393 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=13600,536 d=7600,276 l=100 w=200 x=1105 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2689 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3041 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1281 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1985 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2337 y=2273 sg13_lv_nmos
+x w_833_2071# w_833_2071# w_833_2071# nmos$4_1/VSUB s=7600,276 d=13600,536 l=100 w=200 x=3745 y=2273 sg13_lv_nmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2514 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2990 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1562 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=3466 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1086 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=13600,536 l=400 w=200 x=3942 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=7600,276 l=400 w=200 x=610 y=6151 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2038 y=6151 sg13_lv_pmos
+x vinp w_833_2071# a_610_7243# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2513 y=4275 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3217 y=4275 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2161 y=4275 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2865 y=4275 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3569 y=4275 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1809 y=4275 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1457 y=4275 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1633 y=4275 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3393 y=4275 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_2/VSUB s=13600,536 d=7600,276 l=100 w=200 x=1105 y=4275 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2689 y=4275 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3041 y=4275 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1281 y=4275 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1985 y=4275 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_2/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2337 y=4275 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_2/VSUB s=7600,276 d=13600,536 l=100 w=200 x=3745 y=4275 sg13_lv_nmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2514 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2990 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1562 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=3466 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=1086 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=13600,536 l=400 w=200 x=3942 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=13600,536 d=7600,276 l=400 w=200 x=610 y=7933 sg13_lv_pmos
+x vdda vdda vdda vdda s=7600,276 d=7600,276 l=400 w=200 x=2038 y=7933 sg13_lv_pmos
+x vinn w_833_2071# vout nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2513 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3217 y=3755 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2161 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2865 y=3755 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3569 y=3755 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1809 y=3755 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1457 y=3755 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1633 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3393 y=3755 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_3/VSUB s=13600,536 d=7600,276 l=100 w=200 x=1105 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2689 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3041 y=3755 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1281 y=3755 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1985 y=3755 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_3/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2337 y=3755 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_3/VSUB s=7600,276 d=13600,536 l=100 w=200 x=3745 y=3755 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=4416 y=1434 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2513 y=3235 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3217 y=3235 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2161 y=3235 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2865 y=3235 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3569 y=3235 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1809 y=3235 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1457 y=3235 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1633 y=3235 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3393 y=3235 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_4/VSUB s=13600,536 d=7600,276 l=100 w=200 x=1105 y=3235 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2689 y=3235 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3041 y=3235 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1281 y=3235 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1985 y=3235 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_4/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2337 y=3235 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_4/VSUB s=7600,276 d=13600,536 l=100 w=200 x=3745 y=3235 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=4416 y=994 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2513 y=2712 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3217 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2161 y=2712 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2865 y=2712 sg13_lv_nmos
+x vinn w_833_2071# vout nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3569 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1809 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1457 y=2712 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1633 y=2712 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3393 y=2712 sg13_lv_nmos
+x vinp w_833_2071# a_610_7243# nmos$4_5/VSUB s=13600,536 d=7600,276 l=100 w=200 x=1105 y=2712 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2689 y=2712 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=3041 y=2712 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1281 y=2712 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=1985 y=2712 sg13_lv_nmos
+x vinp a_610_7243# w_833_2071# nmos$4_5/VSUB s=7600,276 d=7600,276 l=100 w=200 x=2337 y=2712 sg13_lv_nmos
+x vinn vout w_833_2071# nmos$4_5/VSUB s=7600,276 d=13600,536 l=100 w=200 x=3745 y=2712 sg13_lv_nmos
+x vssa vssa vssa vssa s=13600,536 d=13600,536 l=200 w=200 x=4416 y=88 sg13_lv_nmos
+C a_610_7243# vdda 12.9
+C ibias vssa 2.5
+C vdda w_833_2071# 3.1
+C vinn vout 2.7
+C vinp vinn 6.9
+C a_610_7243# vout 7.8
+C vinn w_833_2071# 12.8
+C a_610_7243# vinp 2.7
+C w_833_2071# vout 4.8
+C a_610_7243# w_833_2071# 4.3
+C vinp w_833_2071# 12.1
+C vout0 2.5
+R vout 82
+= vout via_stack$4_8/m3_n29_n29#
+= vout via_stack$2_34/m2_n29_n29#
+= vout pmos$1_0/a_3324_0#
+= vout via_stack$8_7/m1_n29_n70#
+= vout pmos$1_1/a_3324_0#
+= vout via_stack$8_4/m1_n29_n70#
+= vout m2_3875_6791#
+= vout via_stack$2_26/m2_n29_n29#
+= vout m3_1019_7668#
+= vout pmos$1_0/a_468_0#
+= vout via_stack$8_1/m1_n29_n70#
+= vout pmos$1_1/a_468_0#
+= vout via_stack$8_0/m1_n29_n70#
+= vout m2_1019_6791#
+= vout via_stack$4_9/m3_n29_n29#
+= vout via_stack$4_7/m3_n29_n29#
+= vout via_stack$2_24/m2_n29_n29#
+= vout nmos$4_2/a_168_0#
+= vout m2_1214_4389#
+= vout via_stack_32/m1_n29_n111#
+= vout via_stack$2_27/m2_n29_n29#
+= vout nmos$4_2/a_520_0#
+= vout m2_1566_4389#
+= vout via_stack_33/m1_n29_n111#
+= vout via_stack$2_28/m2_n29_n29#
+= vout nmos$4_2/a_1224_0#
+= vout m2_2270_4389#
+= vout via_stack_35/m1_n29_n111#
+= vout via_stack$2_29/m2_n29_n29#
+= vout m3_555_4640#
+= vout nmos$4_2/a_872_0#
+= vout m2_1918_4389#
+= vout via_stack_34/m1_n29_n111#
+= vout via_stack$4_2/m3_n29_n29#
+= vout nmos$4_3/a_2632_0#
+= vout nmos$4_3/a_2280_0#
+= vout nmos$4_3/a_1928_0#
+= vout nmos$4_3/a_1576_0#
+= vout via_stack$2_12/m2_n29_n29#
+= vout via_stack_13/m1_n29_n111#
+= vout m2_3326_3869#
+= vout via_stack$2_11/m2_n29_n29#
+= vout via_stack_12/m1_n29_n111#
+= vout m2_3678_3869#
+= vout via_stack$2_10/m2_n29_n29#
+= vout via_stack_15/m1_n29_n111#
+= vout m2_2622_3869#
+= vout via_stack$2_9/m2_n29_n29#
+= vout m3_555_3959#
+= vout via_stack_14/m1_n29_n111#
+= vout m2_2974_3869#
+= vout via_stack$4_1/m3_n29_n29#
+= vout via_stack$2_22/m2_n29_n29#
+= vout nmos$4_4/a_1224_0#
+= vout via_stack_18/m1_n29_n111#
+= vout m2_2270_3349#
+= vout via_stack$2_23/m2_n29_n29#
+= vout nmos$4_4/a_872_0#
+= vout via_stack_27/m1_n29_n111#
+= vout m2_1918_3349#
+= vout via_stack$2_16/m2_n29_n29#
+= vout nmos$4_4/a_520_0#
+= vout via_stack_26/m1_n29_n111#
+= vout m2_1566_3349#
+= vout via_stack$2_17/m2_n29_n29#
+= vout m3_555_3600#
+= vout nmos$4_4/a_168_0#
+= vout via_stack_25/m1_n29_n111#
+= vout m2_1214_3349#
+= vout via_stack$4_0/m3_n29_n29#
+= vout m3_555_2914#
+= vout nmos$4_5/a_2632_0#
+= vout nmos$4_5/a_2280_0#
+= vout nmos$4_5/a_1928_0#
+= vout nmos$4_5/a_1576_0#
+= vout via_stack_7/m1_n29_n111#
+= vout via_stack_6/m1_n29_n111#
+= vout via_stack$2_5/m2_n29_n29#
+= vout m2_2622_2826#
+= vout via_stack_5/m1_n29_n111#
+= vout via_stack_4/m1_n29_n111#
+= vout via_stack$2_4/m2_n29_n29#
+= vout m2_2974_2826#
+= vout via_stack$2_3/m2_n29_n29#
+= vout m2_3326_2826#
+= vout via_stack$2_2/m2_n29_n29#
+= vout m2_3678_2826#
+C ibias0 17.6
+R ibias 35
+= ibias nmos_2/a_3400_n36#
+= ibias nmos_3/a_3400_n36#
+= ibias via_stack$2_0/m2_n29_n29#
+= ibias nmos_2/a_2372_0#
+= ibias nmos_2/a_2924_n36#
+= ibias nmos_2/a_2448_n36#
+= ibias nmos_2/a_1972_n36#
+= ibias via_stack_9/m1_n29_n111#
+= ibias m2_2921_1191#
+= ibias nmos_3/a_2372_0#
+= ibias nmos_3/a_2924_n36#
+= ibias nmos_3/a_2448_n36#
+= ibias nmos_3/a_1972_n36#
+= ibias via_stack_10/m1_n29_n111#
+= ibias m2_2921_738#
+= ibias via_stack$2_15/m2_n29_n29#
+= ibias a_608_774#
+= ibias nmos_2/a_1420_0#
+= ibias nmos_2/a_1496_n36#
+= ibias nmos_2/a_1020_n36#
+= ibias nmos_2/a_544_n36#
+= ibias nmos_2/a_68_n36#
+= ibias via_stack_20/m1_n29_n111#
+= ibias m2_1969_1191#
+= ibias a_608_1227#
+= ibias nmos_3/a_1420_0#
+= ibias nmos_3/a_1496_n36#
+= ibias nmos_3/a_1020_n36#
+= ibias nmos_3/a_544_n36#
+= ibias nmos_3/a_68_n36#
+= ibias via_stack_21/m1_n29_n111#
+= ibias m2_1969_738#
+R w_609_1847# 1086643
+C vinn0 3.4
+R vinn 43
+= vinn via_stack$3_5/m1_n29_n29#
+= vinn nmos$4_2/a_1300_n36#
+= vinn nmos$4_2/a_1124_n36#
+= vinn nmos$4_2/a_948_n36#
+= vinn nmos$4_2/a_772_n36#
+= vinn nmos$4_2/a_596_n36#
+= vinn nmos$4_2/a_420_n36#
+= vinn nmos$4_2/a_244_n36#
+= vinn nmos$4_2/a_68_n36#
+= vinn nmos$4_3/a_2708_n36#
+= vinn nmos$4_3/a_2532_n36#
+= vinn nmos$4_3/a_2356_n36#
+= vinn nmos$4_3/a_2180_n36#
+= vinn nmos$4_3/a_2004_n36#
+= vinn nmos$4_3/a_1828_n36#
+= vinn nmos$4_3/a_1652_n36#
+= vinn nmos$4_3/a_1476_n36#
+= vinn via_stack$3_7/m1_n29_n29#
+= vinn via_stack$2_13/m2_n29_n29#
+= vinn via_stack$3_1/m1_n29_n29#
+= vinn nmos$4_4/a_1300_n36#
+= vinn nmos$4_4/a_1124_n36#
+= vinn nmos$4_4/a_948_n36#
+= vinn nmos$4_4/a_772_n36#
+= vinn nmos$4_4/a_596_n36#
+= vinn nmos$4_4/a_420_n36#
+= vinn nmos$4_4/a_244_n36#
+= vinn nmos$4_4/a_68_n36#
+= vinn via_stack$3_0/m1_n29_n29#
+= vinn m2_817_3028#
+= vinn nmos$4_5/a_2708_n36#
+= vinn nmos$4_5/a_2532_n36#
+= vinn nmos$4_5/a_2356_n36#
+= vinn nmos$4_5/a_2180_n36#
+= vinn nmos$4_5/a_2004_n36#
+= vinn nmos$4_5/a_1828_n36#
+= vinn nmos$4_5/a_1652_n36#
+= vinn nmos$4_5/a_1476_n36#
+C vinp0 3.2
+R vinp 41
+= vinp nmos$4_2/a_2708_n36#
+= vinp nmos$4_2/a_2532_n36#
+= vinp nmos$4_2/a_2356_n36#
+= vinp nmos$4_2/a_2180_n36#
+= vinp nmos$4_2/a_2004_n36#
+= vinp nmos$4_2/a_1828_n36#
+= vinp nmos$4_2/a_1652_n36#
+= vinp nmos$4_2/a_1476_n36#
+= vinp via_stack$3_6/m1_n29_n29#
+= vinp nmos$4_4/a_2708_n36#
+= vinp nmos$4_4/a_2532_n36#
+= vinp nmos$4_4/a_2356_n36#
+= vinp nmos$4_4/a_2180_n36#
+= vinp nmos$4_4/a_2004_n36#
+= vinp nmos$4_4/a_1828_n36#
+= vinp nmos$4_4/a_1652_n36#
+= vinp nmos$4_4/a_1476_n36#
+= vinp via_stack$3_4/m1_n29_n29#
+= vinp nmos$4_3/a_1300_n36#
+= vinp nmos$4_3/a_1124_n36#
+= vinp nmos$4_3/a_948_n36#
+= vinp nmos$4_3/a_772_n36#
+= vinp nmos$4_3/a_596_n36#
+= vinp nmos$4_3/a_420_n36#
+= vinp nmos$4_3/a_244_n36#
+= vinp nmos$4_3/a_68_n36#
+= vinp via_stack$2_14/m2_n29_n29#
+= vinp via_stack$3_2/m1_n29_n29#
+= vinp via_stack$3_3/m1_n29_n29#
+= vinp m2_940_2946#
+= vinp nmos$4_5/a_1300_n36#
+= vinp nmos$4_5/a_1124_n36#
+= vinp nmos$4_5/a_948_n36#
+= vinp nmos$4_5/a_772_n36#
+= vinp nmos$4_5/a_596_n36#
+= vinp nmos$4_5/a_420_n36#
+= vinp nmos$4_5/a_244_n36#
+= vinp nmos$4_5/a_68_n36#
+C vssa0 3.1
+R vssa 94
+= vssa pmos$2_7/VSUB
+= vssa via_stack$4_8/VSUB
+= vssa pmos$2_4/VSUB
+= vssa via_stack$2_34/VSUB
+= vssa via_stack$8_5/VSUB
+= vssa via_stack$8_7/VSUB
+= vssa pmos$1_3/VSUB
+= vssa pmos$2_3/VSUB
+= vssa via_stack$2_26/VSUB
+= vssa pmos$1_0/VSUB
+= vssa pmos$2_0/VSUB
+= vssa via_stack$8_1/VSUB
+= vssa via_stack$8_2/VSUB
+= vssa pmos$2_5/VSUB
+= vssa pmos$2_6/VSUB
+= vssa via_stack$2_35/VSUB
+= vssa via_stack$8_6/VSUB
+= vssa via_stack$8_4/VSUB
+= vssa pmos$1_1/VSUB
+= vssa via_stack$8_3/VSUB
+= vssa via_stack$4_6/VSUB
+= vssa via_stack$8_0/VSUB
+= vssa via_stack$2_25/VSUB
+= vssa pmos$2_1/VSUB
+= vssa pmos$1_2/VSUB
+= vssa pmos$2_2/VSUB
+= vssa nmos$2_0/VSUB
+= vssa nmos$2_0/a_268_0#
+= vssa nmos$2_0/a_0_0#
+= vssa nmos$2_0/a_68_n36#
+= vssa nmos_1/a_3800_0#
+= vssa nmos_1/a_3400_n36#
+= vssa nmos$2_1/VSUB
+= vssa nmos$2_1/a_268_0#
+= vssa nmos$2_1/a_0_0#
+= vssa nmos$2_1/a_68_n36#
+= vssa nmos_2/a_3800_0#
+= vssa nmos$2_3/VSUB
+= vssa nmos$2_3/a_268_0#
+= vssa nmos$2_3/a_0_0#
+= vssa nmos$2_3/a_68_n36#
+= vssa nmos_3/a_3800_0#
+= vssa nmos$2_2/VSUB
+= vssa nmos$2_2/a_268_0#
+= vssa nmos$2_2/a_0_0#
+= vssa nmos$2_2/a_68_n36#
+= vssa nmos_0/a_3800_0#
+= vssa nmos_0/a_3400_n36#
+= vssa nmos_1/a_3324_0#
+= vssa nmos_1/a_2848_0#
+= vssa nmos_1/a_2372_0#
+= vssa nmos_1/a_2924_n36#
+= vssa nmos_1/a_2448_n36#
+= vssa nmos_1/a_1972_n36#
+= vssa via_stack$2_0/VSUB
+= vssa nmos_2/a_2848_0#
+= vssa via_stack_0/VSUB
+= vssa via_stack_9/VSUB
+= vssa via_stack$5_1/VSUB
+= vssa nmos_3/a_2848_0#
+= vssa via_stack$5_0/VSUB
+= vssa via_stack_10/VSUB
+= vssa via_stack_11/VSUB
+= vssa nmos_0/a_3324_0#
+= vssa nmos_0/a_2848_0#
+= vssa nmos_0/a_2372_0#
+= vssa nmos_0/a_2924_n36#
+= vssa nmos_0/a_2448_n36#
+= vssa nmos_0/a_1972_n36#
+= vssa nmos$2_4/VSUB
+= vssa nmos$2_4/a_268_0#
+= vssa nmos$2_4/a_0_0#
+= vssa a_260_1434#
+= vssa nmos$2_4/a_68_n36#
+= vssa nmos_1/VSUB
+= vssa nmos_1/a_1896_0#
+= vssa nmos_1/a_1420_0#
+= vssa nmos_1/a_944_0#
+= vssa nmos_1/a_468_0#
+= vssa nmos_1/a_0_0#
+= vssa nmos_1/a_1496_n36#
+= vssa nmos_1/a_1020_n36#
+= vssa nmos_1/a_544_n36#
+= vssa nmos_1/a_68_n36#
+= vssa via_stack$2_15/VSUB
+= vssa nmos$2_5/VSUB
+= vssa nmos$2_5/a_268_0#
+= vssa nmos$2_5/a_0_0#
+= vssa a_260_994#
+= vssa nmos$2_5/a_68_n36#
+= vssa nmos_2/VSUB
+= vssa nmos_2/a_1896_0#
+= vssa nmos_2/a_944_0#
+= vssa nmos_2/a_0_0#
+= vssa via_stack_20/VSUB
+= vssa via_stack_22/VSUB
+= vssa via_stack$5_3/VSUB
+= vssa nmos$2_7/VSUB
+= vssa nmos$2_7/a_268_0#
+= vssa nmos$2_7/a_0_0#
+= vssa a_260_541#
+= vssa nmos$2_7/a_68_n36#
+= vssa nmos_3/VSUB
+= vssa nmos_3/a_1896_0#
+= vssa nmos_3/a_944_0#
+= vssa nmos_3/a_0_0#
+= vssa via_stack_19/VSUB
+= vssa via_stack$5_2/VSUB
+= vssa via_stack_21/VSUB
+= vssa nmos$2_6/VSUB
+= vssa nmos$2_6/a_268_0#
+= vssa nmos$2_6/a_0_0#
+= vssa a_260_88#
+= vssa nmos$2_6/a_68_n36#
+= vssa nmos_0/VSUB
+= vssa nmos_0/a_1896_0#
+= vssa nmos_0/a_1420_0#
+= vssa nmos_0/a_944_0#
+= vssa nmos_0/a_468_0#
+= vssa nmos_0/a_0_0#
+= vssa nmos_0/a_1496_n36#
+= vssa nmos_0/a_1020_n36#
+= vssa nmos_0/a_544_n36#
+= vssa nmos_0/a_68_n36#
+C w_833_2071#0 2.7
+R w_833_2071# 3228
+= w_833_2071# nmos$4_0/a_2808_0#
+= w_833_2071# nmos$4_0/a_2632_0#
+= w_833_2071# nmos$4_0/a_2456_0#
+= w_833_2071# nmos$4_0/a_2280_0#
+= w_833_2071# nmos$4_0/a_2104_0#
+= w_833_2071# nmos$4_0/a_1928_0#
+= w_833_2071# nmos$4_0/a_1752_0#
+= w_833_2071# nmos$4_0/a_1576_0#
+= w_833_2071# nmos$4_0/a_2708_n36#
+= w_833_2071# nmos$4_0/a_2532_n36#
+= w_833_2071# nmos$4_0/a_2356_n36#
+= w_833_2071# nmos$4_0/a_2180_n36#
+= w_833_2071# nmos$4_0/a_2004_n36#
+= w_833_2071# nmos$4_0/a_1828_n36#
+= w_833_2071# nmos$4_0/a_1652_n36#
+= w_833_2071# nmos$4_0/a_1476_n36#
+= w_833_2071# via_stack$7_2/m1_n70_n29#
+= w_833_2071# nmos$4_0/a_1400_0#
+= w_833_2071# nmos$4_0/a_1224_0#
+= w_833_2071# nmos$4_0/a_1048_0#
+= w_833_2071# nmos$4_0/a_872_0#
+= w_833_2071# nmos$4_0/a_696_0#
+= w_833_2071# nmos$4_0/a_520_0#
+= w_833_2071# nmos$4_0/a_344_0#
+= w_833_2071# nmos$4_0/a_168_0#
+= w_833_2071# nmos$4_0/a_0_0#
+= w_833_2071# nmos$4_0/a_1300_n36#
+= w_833_2071# nmos$4_0/a_1124_n36#
+= w_833_2071# nmos$4_0/a_948_n36#
+= w_833_2071# nmos$4_0/a_772_n36#
+= w_833_2071# nmos$4_0/a_596_n36#
+= w_833_2071# nmos$4_0/a_420_n36#
+= w_833_2071# nmos$4_0/a_244_n36#
+= w_833_2071# nmos$4_0/a_68_n36#
+= w_833_2071# via_stack$6_4/m1_n29_n70#
+= w_833_2071# nmos$4_2/a_2808_0#
+= w_833_2071# nmos$4_2/a_2456_0#
+= w_833_2071# nmos$4_2/a_2104_0#
+= w_833_2071# nmos$4_2/a_1752_0#
+= w_833_2071# nmos$4_3/a_2808_0#
+= w_833_2071# nmos$4_3/a_2456_0#
+= w_833_2071# nmos$4_3/a_2104_0#
+= w_833_2071# nmos$4_3/a_1752_0#
+= w_833_2071# nmos$4_4/a_2808_0#
+= w_833_2071# nmos$4_4/a_2456_0#
+= w_833_2071# nmos$4_4/a_2104_0#
+= w_833_2071# nmos$4_4/a_1752_0#
+= w_833_2071# via_stack$6_5/m1_n29_n70#
+= w_833_2071# nmos$4_2/a_1400_0#
+= w_833_2071# nmos$4_2/a_1048_0#
+= w_833_2071# nmos$4_2/a_696_0#
+= w_833_2071# nmos$4_2/a_344_0#
+= w_833_2071# nmos$4_2/a_0_0#
+= w_833_2071# nmos$4_3/a_1400_0#
+= w_833_2071# nmos$4_3/a_1048_0#
+= w_833_2071# nmos$4_3/a_696_0#
+= w_833_2071# nmos$4_3/a_344_0#
+= w_833_2071# nmos$4_3/a_0_0#
+= w_833_2071# via_stack$6_2/m1_n29_n70#
+= w_833_2071# nmos$4_4/a_1400_0#
+= w_833_2071# nmos$4_4/a_1048_0#
+= w_833_2071# nmos$4_4/a_696_0#
+= w_833_2071# nmos$4_4/a_344_0#
+= w_833_2071# nmos$4_4/a_0_0#
+= w_833_2071# via_stack$6_3/m1_n29_n70#
+= w_833_2071# nmos$4_5/a_2808_0#
+= w_833_2071# nmos$4_5/a_2456_0#
+= w_833_2071# nmos$4_5/a_2104_0#
+= w_833_2071# nmos$4_5/a_1752_0#
+= w_833_2071# nmos$4_1/a_2808_0#
+= w_833_2071# nmos$4_1/a_2632_0#
+= w_833_2071# nmos$4_1/a_2456_0#
+= w_833_2071# nmos$4_1/a_2280_0#
+= w_833_2071# nmos$4_1/a_2104_0#
+= w_833_2071# nmos$4_1/a_1928_0#
+= w_833_2071# nmos$4_1/a_1752_0#
+= w_833_2071# nmos$4_1/a_1576_0#
+= w_833_2071# nmos$4_1/a_2708_n36#
+= w_833_2071# nmos$4_1/a_2532_n36#
+= w_833_2071# nmos$4_1/a_2356_n36#
+= w_833_2071# nmos$4_1/a_2180_n36#
+= w_833_2071# nmos$4_1/a_2004_n36#
+= w_833_2071# nmos$4_1/a_1828_n36#
+= w_833_2071# nmos$4_1/a_1652_n36#
+= w_833_2071# nmos$4_1/a_1476_n36#
+= w_833_2071# via_stack$7_0/m1_n70_n29#
+= w_833_2071# nmos_2/a_3324_0#
+= w_833_2071# via_stack_0/m1_n29_n111#
+= w_833_2071# via_stack$5_1/m1_n29_n111#
+= w_833_2071# nmos_3/a_3324_0#
+= w_833_2071# via_stack$5_0/m1_n29_n111#
+= w_833_2071# m4_3876_572#
+= w_833_2071# via_stack_11/m1_n29_n111#
+= w_833_2071# nmos$4_5/a_1400_0#
+= w_833_2071# nmos$4_5/a_1048_0#
+= w_833_2071# nmos$4_5/a_696_0#
+= w_833_2071# nmos$4_5/a_344_0#
+= w_833_2071# nmos$4_5/a_0_0#
+= w_833_2071# via_stack$6_0/m1_n29_n70#
+= w_833_2071# nmos$4_1/a_1400_0#
+= w_833_2071# nmos$4_1/a_1224_0#
+= w_833_2071# nmos$4_1/a_1048_0#
+= w_833_2071# nmos$4_1/a_872_0#
+= w_833_2071# nmos$4_1/a_696_0#
+= w_833_2071# nmos$4_1/a_520_0#
+= w_833_2071# nmos$4_1/a_344_0#
+= w_833_2071# nmos$4_1/a_168_0#
+= w_833_2071# nmos$4_1/a_0_0#
+= w_833_2071# nmos$4_1/a_1300_n36#
+= w_833_2071# nmos$4_1/a_1124_n36#
+= w_833_2071# nmos$4_1/a_948_n36#
+= w_833_2071# nmos$4_1/a_772_n36#
+= w_833_2071# nmos$4_1/a_596_n36#
+= w_833_2071# nmos$4_1/a_420_n36#
+= w_833_2071# nmos$4_1/a_244_n36#
+= w_833_2071# nmos$4_1/a_68_n36#
+= w_833_2071# via_stack$7_1/m1_n70_n29#
+= w_833_2071# via_stack$6_1/m1_n29_n70#
+= w_833_2071# via_stack$7_3/m1_n70_n29#
+= w_833_2071# m4_2446_2150#
+= w_833_2071# m3_1020_2150#
+= w_833_2071# m4_1020_571#
+= w_833_2071# nmos_2/a_468_0#
+= w_833_2071# via_stack_22/m1_n29_n111#
+= w_833_2071# via_stack$5_3/m1_n29_n111#
+= w_833_2071# nmos_3/a_468_0#
+= w_833_2071# via_stack_19/m1_n29_n111#
+= w_833_2071# via_stack$5_2/m1_n29_n111#
+C vdda0 5.4
+R vdda 132
+= vdda pmos$1_3/a_3400_n36#
+= vdda pmos$1_3/a_3800_0#
+= vdda pmos$2_7/a_68_n36#
+= vdda pmos$2_7/a_268_0#
+= vdda pmos$2_7/a_0_0#
+= vdda pmos$2_7/w_n62_n62#
+= vdda pmos$1_0/a_3800_0#
+= vdda pmos$2_4/a_68_n36#
+= vdda pmos$2_4/a_268_0#
+= vdda pmos$2_4/a_0_0#
+= vdda pmos$2_4/w_n62_n62#
+= vdda pmos$1_3/a_2924_n36#
+= vdda pmos$1_3/a_2448_n36#
+= vdda pmos$1_3/a_1972_n36#
+= vdda pmos$1_3/a_3324_0#
+= vdda pmos$1_3/a_2848_0#
+= vdda pmos$1_3/a_2372_0#
+= vdda pmos$1_0/a_2848_0#
+= vdda pmos$1_3/a_1496_n36#
+= vdda pmos$1_3/a_1020_n36#
+= vdda pmos$1_3/a_544_n36#
+= vdda pmos$1_3/a_68_n36#
+= vdda pmos$1_3/a_1896_0#
+= vdda pmos$1_3/a_1420_0#
+= vdda pmos$1_3/a_944_0#
+= vdda pmos$1_3/a_468_0#
+= vdda pmos$1_3/a_0_0#
+= vdda pmos$1_3/w_n62_n62#
+= vdda pmos$2_3/a_68_n36#
+= vdda pmos$2_3/a_268_0#
+= vdda pmos$2_3/a_0_0#
+= vdda pmos$2_3/w_n62_n62#
+= vdda pmos$1_0/a_1896_0#
+= vdda pmos$1_0/a_944_0#
+= vdda pmos$1_0/a_0_0#
+= vdda pmos$1_0/w_n62_n62#
+= vdda pmos$2_0/a_68_n36#
+= vdda pmos$2_0/a_268_0#
+= vdda pmos$2_0/a_0_0#
+= vdda pmos$2_0/w_n62_n62#
+= vdda pmos$1_1/a_3800_0#
+= vdda pmos$2_5/a_68_n36#
+= vdda pmos$2_5/a_268_0#
+= vdda pmos$2_5/a_0_0#
+= vdda pmos$2_5/w_n62_n62#
+= vdda pmos$1_2/a_3400_n36#
+= vdda pmos$1_2/a_3800_0#
+= vdda pmos$2_6/a_68_n36#
+= vdda pmos$2_6/a_268_0#
+= vdda pmos$2_6/a_0_0#
+= vdda pmos$2_6/w_n62_n62#
+= vdda pmos$1_1/a_2848_0#
+= vdda pmos$1_2/a_2924_n36#
+= vdda pmos$1_2/a_2448_n36#
+= vdda pmos$1_2/a_1972_n36#
+= vdda pmos$1_2/a_3324_0#
+= vdda pmos$1_2/a_2848_0#
+= vdda pmos$1_2/a_2372_0#
+= vdda pmos$1_1/a_1896_0#
+= vdda pmos$1_1/a_944_0#
+= vdda pmos$1_1/a_0_0#
+= vdda pmos$1_1/w_n62_n62#
+= vdda pmos$2_1/a_68_n36#
+= vdda pmos$2_1/a_268_0#
+= vdda pmos$2_1/a_0_0#
+= vdda pmos$2_1/w_n62_n62#
+= vdda pmos$1_2/a_1496_n36#
+= vdda pmos$1_2/a_1020_n36#
+= vdda pmos$1_2/a_544_n36#
+= vdda pmos$1_2/a_68_n36#
+= vdda pmos$1_2/a_1896_0#
+= vdda pmos$1_2/a_1420_0#
+= vdda pmos$1_2/a_944_0#
+= vdda pmos$1_2/a_468_0#
+= vdda pmos$1_2/a_0_0#
+= vdda pmos$1_2/w_n62_n62#
+= vdda pmos$2_2/a_68_n36#
+= vdda pmos$2_2/a_268_0#
+= vdda pmos$2_2/a_0_0#
+= vdda pmos$2_2/w_n62_n62#
+C a_610_7243#0 3.1
+R a_610_7243# 100
+= a_610_7243# pmos$1_0/a_3400_n36#
+= a_610_7243# pmos$1_0/a_2924_n36#
+= a_610_7243# pmos$1_0/a_2448_n36#
+= a_610_7243# pmos$1_0/a_1972_n36#
+= a_610_7243# pmos$1_0/a_2372_0#
+= a_610_7243# via_stack$8_5/m1_n29_n70#
+= a_610_7243# pmos$1_0/a_1496_n36#
+= a_610_7243# pmos$1_0/a_1020_n36#
+= a_610_7243# pmos$1_0/a_544_n36#
+= a_610_7243# pmos$1_0/a_68_n36#
+= a_610_7243# pmos$1_0/a_1420_0#
+= a_610_7243# via_stack$8_2/m1_n29_n70#
+= a_610_7243# a_610_6649#
+= a_610_7243# pmos$1_1/a_3400_n36#
+= a_610_7243# pmos$1_1/a_2924_n36#
+= a_610_7243# pmos$1_1/a_2448_n36#
+= a_610_7243# pmos$1_1/a_1972_n36#
+= a_610_7243# pmos$1_1/a_2372_0#
+= a_610_7243# via_stack$2_35/m2_n29_n29#
+= a_610_7243# via_stack$8_6/m1_n29_n70#
+= a_610_7243# m2_2923_6590#
+= a_610_7243# pmos$1_1/a_1496_n36#
+= a_610_7243# pmos$1_1/a_1020_n36#
+= a_610_7243# pmos$1_1/a_544_n36#
+= a_610_7243# pmos$1_1/a_68_n36#
+= a_610_7243# pmos$1_1/a_1420_0#
+= a_610_7243# via_stack$8_3/m1_n29_n70#
+= a_610_7243# m4_582_2905#
+= a_610_7243# via_stack$4_6/m3_n29_n29#
+= a_610_7243# via_stack$2_25/m2_n29_n29#
+= a_610_7243# m3_574_6590#
+= a_610_7243# m2_1971_6590#
+= a_610_7243# via_stack$2_30/m2_n29_n29#
+= a_610_7243# nmos$4_2/a_1576_0#
+= a_610_7243# m2_2622_4389#
+= a_610_7243# via_stack_38/m1_n29_n111#
+= a_610_7243# via_stack$2_31/m2_n29_n29#
+= a_610_7243# nmos$4_2/a_2632_0#
+= a_610_7243# m2_3678_4389#
+= a_610_7243# via_stack_39/m1_n29_n111#
+= a_610_7243# via_stack$2_32/m2_n29_n29#
+= a_610_7243# nmos$4_2/a_2280_0#
+= a_610_7243# m2_3326_4389#
+= a_610_7243# via_stack_36/m1_n29_n111#
+= a_610_7243# via_stack$2_33/m2_n29_n29#
+= a_610_7243# nmos$4_2/a_1928_0#
+= a_610_7243# m2_2974_4389#
+= a_610_7243# via_stack_37/m1_n29_n111#
+= a_610_7243# via_stack$4_5/m3_n29_n29#
+= a_610_7243# m3_555_4478#
+= a_610_7243# via_stack$2_7/m2_n29_n29#
+= a_610_7243# nmos$4_4/a_2632_0#
+= a_610_7243# via_stack_8/m1_n29_n111#
+= a_610_7243# m2_3678_3349#
+= a_610_7243# via_stack$2_8/m2_n29_n29#
+= a_610_7243# nmos$4_4/a_2280_0#
+= a_610_7243# via_stack_1/m1_n29_n111#
+= a_610_7243# m2_3326_3349#
+= a_610_7243# via_stack$2_1/m2_n29_n29#
+= a_610_7243# nmos$4_4/a_1928_0#
+= a_610_7243# via_stack_2/m1_n29_n111#
+= a_610_7243# m2_2974_3349#
+= a_610_7243# via_stack$2_6/m2_n29_n29#
+= a_610_7243# nmos$4_4/a_1576_0#
+= a_610_7243# via_stack_3/m1_n29_n111#
+= a_610_7243# m2_2622_3349#
+= a_610_7243# via_stack$2_39/m2_n29_n29#
+= a_610_7243# nmos$4_3/a_1224_0#
+= a_610_7243# via_stack_29/m1_n29_n111#
+= a_610_7243# m2_2270_3869#
+= a_610_7243# via_stack$2_37/m2_n29_n29#
+= a_610_7243# nmos$4_3/a_872_0#
+= a_610_7243# via_stack_30/m1_n29_n111#
+= a_610_7243# m2_1918_3869#
+= a_610_7243# via_stack$2_38/m2_n29_n29#
+= a_610_7243# nmos$4_3/a_520_0#
+= a_610_7243# via_stack_31/m1_n29_n111#
+= a_610_7243# m2_1566_3869#
+= a_610_7243# via_stack$2_36/m2_n29_n29#
+= a_610_7243# nmos$4_3/a_168_0#
+= a_610_7243# via_stack_28/m1_n29_n111#
+= a_610_7243# m2_1214_3869#
+= a_610_7243# via_stack$4_10/m3_n29_n29#
+= a_610_7243# m3_555_4121#
+= a_610_7243# via_stack$4_4/m3_n29_n29#
+= a_610_7243# m3_555_3438#
+= a_610_7243# via_stack$2_18/m2_n29_n29#
+= a_610_7243# nmos$4_5/a_1224_0#
+= a_610_7243# via_stack_23/m1_n29_n111#
+= a_610_7243# m2_2270_2826#
+= a_610_7243# via_stack$2_19/m2_n29_n29#
+= a_610_7243# nmos$4_5/a_872_0#
+= a_610_7243# via_stack_16/m1_n29_n111#
+= a_610_7243# m2_1918_2826#
+= a_610_7243# via_stack$2_20/m2_n29_n29#
+= a_610_7243# nmos$4_5/a_520_0#
+= a_610_7243# via_stack_17/m1_n29_n111#
+= a_610_7243# m2_1566_2826#
+= a_610_7243# via_stack$2_21/m2_n29_n29#
+= a_610_7243# via_stack$4_3/m3_n29_n29#
+= a_610_7243# m3_555_3076#
+= a_610_7243# m2_1214_2826#
+= a_610_7243# nmos$4_5/a_168_0#
+= a_610_7243# via_stack_24/m1_n29_n111#
