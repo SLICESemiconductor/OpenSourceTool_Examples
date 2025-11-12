@@ -1,0 +1,3 @@
+11-May-2025 20:29:16 | INFO    | Your Klayout version is: KLayout 0.30.0
+11-May-2025 20:29:16 | INFO    | Running SG13G2 LVS checks on design /home/slice/xschem/tb_inverter_demo/LVS/inverter.gds on cell inverter
+11-May-2025 20:29:20 | INFO    | Total execution time 4.428694248199463s

@@ -1,0 +1,6 @@
+** sch_path: /home/slice/xschem/tb_inverter_demo/inverter.sch
+.subckt inverter vin vout vddd vssd
+*.PININFO vddd:I vssd:I vin:I vout:O
+M_PMOS vout vin vddd vddd sg13_lv_pmos w=0.15u l=0.13u ng=1 m=1
+M_NMOS vout vin vssd vssd sg13_lv_nmos w=0.15u l=0.13u ng=1 m=1
+.ends
