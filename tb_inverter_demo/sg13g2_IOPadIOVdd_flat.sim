@@ -1,0 +1,348 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7363 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13651 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10027 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=4518 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss sg13g2_Clamp_N43N43D4R_0.gate iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=946 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9779 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6155 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10987 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=10854 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss sg13g2_Clamp_N43N43D4R_0.gate iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=946 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=13403 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=2531 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4947 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=4591 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9175 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7007 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=5551 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=11558 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=11910 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4343 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11235 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7967 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12195 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6759 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10027 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=9270 y=18282 sg13_hv_pmos
+x a_11695_7542# a_11365_11542# a_11695_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=11695 y=7542 rppd
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=10502 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10987 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=3990 y=18282 sg13_hv_pmos
+x a_9055_7542# a_8725_11542# a_9055_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=9055 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13047 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2175 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=11591 y=2718 sg13_hv_nmos
+x a_10045_7542# a_10045_11542# a_9715_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=10045 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8215 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9175 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10383 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7007 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11839 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=5551 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=11206 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12799 y=4654 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=4694 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=13506 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7967 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=13506 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=8571 y=2718 sg13_hv_nmos
+x a_4435_7542# a_4105_11542# a_4435_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=4435 y=7542 rppd
+x a_7735_7542# a_7405_11542# a_7735_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=7735 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=6403 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2779 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7363 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8819 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=130240,2056 l=120 w=880 x=14255 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9779 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10631 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13047 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=5398 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=5750 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=11591 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovss iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=1474 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=14007 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3135 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11839 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=7862 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovss iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=1474 y=15258 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=4342 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovss iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=770 y=13408 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=5602 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=1927 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5195 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=12443 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=9974 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovss iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=770 y=15258 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=5602 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=82720,1948 d=103840,1116 l=120 w=880 x=1571 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=6454 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=11530 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7611 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=8571 y=1750 sg13_hv_nmos
+x a_5095_7542# a_4765_11542# a_5095_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=5095 y=7542 rppd
+x a_8395_7542# a_8065_11542# a_8395_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=8395 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11235 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3987 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=6403 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=11530 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2779 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=8566 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8819 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=5046 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3739 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=11382 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovss iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=1122 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3383 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=14007 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=9423 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=7158 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=7510 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovss iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=1122 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2175 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5799 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8215 y=4654 sg13_hv_nmos
+x a_11035_7542# a_10705_11542# a_11035_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=11035 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13651 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=9622 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=12443 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=6102 y=18282 sg13_hv_pmos
+x a_3775_7542# iovdd a_3775_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=3775 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6155 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=12086 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=13403 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=2531 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=8214 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4947 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=11030 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=4591 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3739 y=1750 sg13_hv_nmos
+x a_5425_7542# a_5425_11542# a_5095_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=5425 y=7542 rppd
+x a_8725_7542# a_8725_11542# a_8395_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=8725 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=130240,2056 l=120 w=880 x=14255 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3383 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=9423 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10631 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5799 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4343 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6759 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12195 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3135 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10027 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=95200,2936 d=53200,1476 l=100 w=1400 x=3638 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=9554 y=13408 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=9554 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10987 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=1927 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5195 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=13403 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=82720,1948 d=103840,1116 l=120 w=880 x=1571 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7611 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3987 y=4654 sg13_hv_nmos
+x a_6085_7542# a_6085_11542# a_5755_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=6085 y=7542 rppd
+x a_9385_7542# a_9385_11542# a_9055_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=9385 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9175 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10383 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=5551 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7007 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12799 y=2718 sg13_hv_nmos
+x a_10375_7542# a_10045_11542# a_10375_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=10375 y=7542 rppd
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=10678 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7967 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4343 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=6806 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6759 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=8390 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=8918 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13651 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7363 y=2718 sg13_hv_nmos
+x a_12025_7542# sg13g2_RCClampResistor_0.pin2 a_11695_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=12025 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6155 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9779 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13047 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=11734 y=18282 sg13_hv_pmos
+x a_4765_7542# a_4765_11542# a_4435_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=4765 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=11591 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=2531 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10383 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=9094 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4947 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12799 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11839 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovdd sg13g2_Clamp_N43N43D4R_0.gate iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=10326 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=4591 y=4654 sg13_hv_nmos
+x a_9715_7542# a_9385_11542# a_9715_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=9715 y=7542 rppd
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=3626 y=13408 sg13_hv_nmos
+x a_6415_7542# a_6085_11542# a_6415_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=6415 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11235 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=3626 y=15258 sg13_hv_nmos
+x a_10705_7542# a_10705_11542# a_10375_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=10705 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12195 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=8571 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10027 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2779 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=6403 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7363 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8819 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10987 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9779 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=4870 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=14007 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2175 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=6982 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8215 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=9175 y=4654 sg13_hv_nmos
+x a_7075_7542# a_6745_11542# a_7075_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=7075 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7007 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=5551 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=12443 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=5574 y=18282 sg13_hv_pmos
+x a_11365_7542# a_11365_11542# a_11035_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=11365 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=7967 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11235 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss sg13g2_Clamp_N43N43D4R_0.gate iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=1298 y=13408 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=1650 y=13408 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=7686 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss sg13g2_Clamp_N43N43D4R_0.gate iovss s=68400,1876 d=68400,1876 l=100 w=1800 x=1298 y=15258 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=1650 y=15258 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=4166 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss sg13g2_Clamp_N43N43D4R_0.gate iovss s=122400,3736 d=68400,1876 l=100 w=1800 x=594 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3739 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss sg13g2_Clamp_N43N43D4R_0.gate iovss s=122400,3736 d=68400,1876 l=100 w=1800 x=594 y=15258 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3383 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=130240,2056 l=120 w=880 x=14255 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=9798 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=9423 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10631 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=6278 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=6630 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=11591 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13047 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5799 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2175 y=1750 sg13_hv_nmos
+x a_5755_7542# a_5425_11542# a_5755_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=5755 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8215 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3135 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=8742 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=11839 y=4654 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=5222 y=18282 sg13_hv_pmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=7578 y=13408 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5195 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=1927 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=13403 y=3686 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 iovss iovss iovss d=68400,1876 l=1900 w=1800 x=7578 y=15258 sg13_hv_nmos
+x a_4105_7542# a_4105_11542# a_3775_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=4105 y=7542 rppd
+x a_7405_7542# a_7405_11542# a_7075_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=7405 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=82720,1948 d=103840,1116 l=120 w=880 x=1571 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=7334 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7611 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=8571 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3987 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=10150 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=6403 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=130240,2056 l=120 w=880 x=14255 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=9446 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=2779 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=8819 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=10631 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=95200,2936 l=100 w=1400 x=12262 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4343 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=14007 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6759 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3135 y=1750 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=8038 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5195 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=13651 y=2718 sg13_hv_nmos
+x a_8065_7542# a_8065_11542# a_7735_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=8065 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=1927 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=12443 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=82720,1948 d=103840,1116 l=120 w=880 x=1571 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=6155 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=7611 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3987 y=1750 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=2531 y=2718 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss l=96 w=96 x=906 y=5348 dantenna
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=10383 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=4947 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=3814 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12799 y=3686 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=3739 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=4591 y=2718 sg13_hv_nmos
+x sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate iovdd iovdd s=53200,1476 d=53200,1476 l=100 w=1400 x=5926 y=18282 sg13_hv_pmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=3383 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=5799 y=4654 sg13_hv_nmos
+x sg13g2_Clamp_N43N43D4R_0.gate iovss iovdd iovss s=56320,1008 d=103840,1116 l=120 w=880 x=9423 y=4654 sg13_hv_nmos
+x a_6745_7542# a_6745_11542# a_6415_7456# iovss s=17200,572 d=17200,572 l=4000 w=200 x=6745 y=7542 rppd
+x sg13g2_Clamp_N43N43D4R_0.gate iovdd iovss iovss s=103840,1116 d=56320,1008 l=120 w=880 x=12195 y=2718 sg13_hv_nmos
+C sg13g2_Clamp_N43N43D4R_0.gate iovdd 136.0
+C sg13g2_RCClampResistor_0.pin2 iovdd 90.4
+C sg13g2_RCClampResistor_0.pin2 sg13g2_Clamp_N43N43D4R_0.gate 21.7
+R iovss 265
+= iovss vss
+= iovss sg13g2_RCClampInverter_0.iovss
+= iovss sg13g2_Clamp_N43N43D4R_0.iovss
+C iovdd0 294.6
+R iovdd 441
+= iovdd sg13g2_RCClampInverter_0.supply
+= iovdd sg13g2_Clamp_N43N43D4R_0.pad
+= iovdd sg13g2_RCClampResistor_0.pin1
+C vdd0 246.2
+R vdd 55
+C a_12025_7542#0 3.5
+R a_12025_7542# 5200
+C a_11695_7542#0 3.0
+R a_11695_7542# 5200
+C a_11365_7542#0 3.0
+R a_11365_7542# 5200
+C a_11035_7542#0 3.0
+R a_11035_7542# 5200
+C a_10705_7542#0 3.0
+R a_10705_7542# 5200
+C a_10375_7542#0 3.0
+R a_10375_7542# 5200
+C a_10045_7542#0 3.0
+R a_10045_7542# 5200
+C a_9715_7542#0 3.0
+R a_9715_7542# 5200
+C a_9385_7542#0 3.0
+R a_9385_7542# 5200
+C a_9055_7542#0 3.0
+R a_9055_7542# 5200
+C a_8725_7542#0 3.0
+R a_8725_7542# 5200
+C a_8395_7542#0 3.0
+R a_8395_7542# 5200
+C a_8065_7542#0 3.0
+R a_8065_7542# 5200
+C a_7735_7542#0 3.0
+R a_7735_7542# 5200
+C a_7405_7542#0 3.0
+R a_7405_7542# 5200
+C a_7075_7542#0 3.0
+R a_7075_7542# 5200
+C a_6745_7542#0 3.0
+R a_6745_7542# 5200
+C a_6415_7542#0 3.0
+R a_6415_7542# 5200
+C a_6085_7542#0 3.0
+R a_6085_7542# 5200
+C a_5755_7542#0 3.0
+R a_5755_7542# 5200
+C a_5425_7542#0 3.0
+R a_5425_7542# 5200
+C a_5095_7542#0 3.0
+R a_5095_7542# 5200
+C a_4765_7542#0 3.0
+R a_4765_7542# 5200
+C a_4435_7542#0 3.0
+R a_4435_7542# 5200
+C a_4105_7542#0 3.0
+R a_4105_7542# 5200
+C a_3775_7542#0 3.5
+R a_3775_7542# 5200
+C sg13g2_Clamp_N43N43D4R_0.gate0 239.8
+R sg13g2_Clamp_N43N43D4R_0.gate 743
+= sg13g2_Clamp_N43N43D4R_0.gate sg13g2_RCClampInverter_0.out
+C sg13g2_RCClampResistor_0.pin20 204.0
+R sg13g2_RCClampResistor_0.pin2 43
+= sg13g2_RCClampResistor_0.pin2 sg13g2_RCClampInverter_0.in

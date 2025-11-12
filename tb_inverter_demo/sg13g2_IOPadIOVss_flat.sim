@@ -1,0 +1,17 @@
+| units: 0.5 tech: ihp-sg13g2 format: MIT
+x iovss iovdd s=15778000,18320 l=5556 w=252 x=782 y=13860 dpantenna
+x iovss iovdd s=15778000,18320 l=5556 w=252 x=1682 y=13860 dpantenna
+x iovss iovss l=5556 w=252 x=1682 y=2060 dantenna
+x iovss iovss l=5556 w=252 x=782 y=2060 dantenna
+C iovdd0 310.5
+R iovdd 39
+= iovdd sg13g2_DCPDiode_0.cathode
+C vdd0 246.2
+R vdd 55
+R iovss 23
+= iovss vss
+= iovss sg13g2_DCNDiode_0.cathode
+= iovss sg13g2_DCNDiode_0.anode
+= iovss sg13g2_DCPDiode_0.anode
+= iovss sg13g2_DCPDiode_0.guard
+C sg13g2_DCNDiode_0.guard0 271.8

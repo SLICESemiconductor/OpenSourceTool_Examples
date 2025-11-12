@@ -1,0 +1,13 @@
+* NGSPICE file created from sg13g2_IOPadVss_flat.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_IOPadVss_flat vdd iovdd iovss
+X0 iovss iovdd dpantenna l=27.78u w=1.26u
+X1 iovss iovdd dpantenna l=27.78u w=1.26u
+X2 iovss iovss dantenna l=27.78u w=1.26u
+X3 iovss iovss dantenna l=27.78u w=1.26u
+C0 sg13g2_DCNDiode_0.guard iovdd 0.1269f
+C1 iovdd iovss 0.31233p
+C2 vdd iovss 0.24767p
+C3 sg13g2_DCNDiode_0.guard iovss 0.26938p $ **FLOATING
+.ends
+

@@ -1,0 +1,600 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11 7000 260000 1360000
+parameters sg13_hv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters rppd w=w l=l
+parameters dantenna w=w l=l
+port "iovss" 5 0 7200 780 11700 m7
+port "iovss" 5 15220 7200 16000 11700 m7
+port "iovss" 5 0 6900 16000 12000 m6
+port "iovss" 5 0 6900 16000 12000 m5
+port "iovss" 5 0 6900 16000 12000 m4
+port "iovss" 5 0 6900 16000 12000 m3
+port "iovdd" 4 0 13500 16000 18000 m7
+port "iovdd" 4 0 19000 16000 23500 m7
+port "iovdd" 4 1000 0 15000 600 m7
+port "iovdd" 4 0 18700 16000 23800 m6
+port "iovdd" 4 1000 0 15000 600 m6
+port "iovdd" 4 0 13200 16000 18300 m6
+port "iovdd" 4 0 18700 16000 23800 m5
+port "iovdd" 4 1000 0 15000 600 m5
+port "iovdd" 4 0 13200 16000 18300 m5
+port "iovdd" 4 0 18700 16000 23800 m4
+port "iovdd" 4 1000 0 15000 600 m4
+port "iovdd" 4 0 13200 16000 18300 m4
+port "iovdd" 4 0 18700 16000 23800 m3
+port "iovdd" 4 1000 0 15000 600 m3
+port "iovdd" 4 0 13200 16000 18300 m3
+port "iovdd" 0 1000 0 15000 600 m2
+port "vdd" 2 0 28000 16000 31600 m6
+port "vdd" 2 0 28000 16000 31600 m5
+port "vdd" 2 0 28000 16000 31160 m4
+port "vdd" 2 0 32000 16000 35600 m3
+port "iovss" 5 0 1700 780 6200 m7
+port "iovss" 5 0 25500 16000 26500 m7
+port "iovss" 5 15220 1700 16000 6200 m7
+port "iovss" 5 0 1400 16000 6500 m6
+port "iovss" 5 0 25200 16000 26800 m6
+port "vss" 3 0 32000 16000 35600 m6
+port "iovss" 5 0 1400 16000 6500 m5
+port "iovss" 5 0 25200 16000 26800 m5
+port "vss" 3 0 32000 16000 35600 m5
+port "iovss" 5 0 1400 16000 6500 m4
+port "iovss" 5 0 25200 16000 26800 m4
+port "vss" 3 0 32440 16000 35600 m4
+port "iovss" 5 0 1400 16000 6500 m3
+port "iovss" 5 0 25200 16000 26800 m3
+port "vss" 3 0 28000 16000 31600 m3
+node "iovss" 1 41724.3 0 6900 m3 0 0 0 0 0 0 0 0 81600000 42200 81600000 42200 81600000 42200 81600000 42200 7020000 21120 0 0 0 0 0 0
+node "a_12025_7542#" 5200 3120.97 12025 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_11695_7456#" 1 359.291 11695 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_11695_7542#" 5200 2711.9 11695 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_11365_7542#" 5200 2711.79 11365 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_11365_11542#" 1 332.335 11365 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_11035_7456#" 1 341.816 11035 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_11035_7542#" 5200 2711.9 11035 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_10705_7542#" 5200 2711.79 10705 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_10705_11542#" 1 332.335 10705 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_10375_7456#" 1 341.832 10375 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_10375_7542#" 5200 2711.87 10375 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_10045_7542#" 5200 2711.79 10045 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_10045_11542#" 1 332.335 10045 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_9715_7456#" 1 341.861 9715 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_9715_7542#" 5200 2711.79 9715 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_9385_7542#" 5200 2711.79 9385 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_9385_11542#" 1 332.335 9385 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_9055_7456#" 1 341.848 9055 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_9055_7542#" 5200 2711.79 9055 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_8725_7542#" 5200 2711.9 8725 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_8725_11542#" 1 332.335 8725 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8395_7456#" 1 341.818 8395 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_8395_7542#" 5200 2711.79 8395 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_8065_7542#" 5200 2711.9 8065 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_8065_11542#" 1 332.335 8065 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7735_7456#" 1 341.816 7735 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7735_7542#" 5200 2711.79 7735 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_7405_7542#" 5200 2711.9 7405 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_7405_11542#" 1 332.335 7405 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7075_7456#" 1 341.843 7075 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_7075_7542#" 5200 2711.79 7075 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_6745_7542#" 5200 2711.85 6745 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_6745_11542#" 1 332.335 6745 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_6415_7456#" 1 341.88 6415 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_6415_7542#" 5200 2711.79 6415 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_6085_7542#" 5200 2711.79 6085 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_6085_11542#" 1 332.335 6085 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5755_7456#" 1 341.862 5755 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5755_7542#" 5200 2711.79 5755 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_5425_7542#" 5200 2711.79 5425 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_5425_11542#" 1 332.335 5425 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5095_7456#" 1 341.862 5095 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_5095_7542#" 5200 2711.9 5095 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_4765_7542#" 5200 2711.79 4765 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_4765_11542#" 1 332.335 4765 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4435_7456#" 1 341.816 4435 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4435_7542#" 5200 2711.9 4435 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_4105_7542#" 5200 2711.79 4105 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "a_4105_11542#" 1 332.335 4105 11542 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3775_7456#" 1 359.283 3775 7456 p 0 0 0 0 31872 1124 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3775_7542#" 5200 3121.07 3775 7542 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800000 8400 0 0
+node "sg13g2_Clamp_N43N43D4R_0.gate" 743 237865 694 13408 hvndif 0 0 0 0 7677636 454594 24344119 54384 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_Clamp_N43N43D4R_0.gate" "sg13g2_RCClampInverter_0.out"
+node "sg13g2_RCClampResistor_0.pin2" 43 203160 594 13334 p 0 0 0 0 2178210 56114 22923266 62294 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_RCClampResistor_0.pin2" "sg13g2_RCClampInverter_0.in"
+node "iovdd" 441 257499 1000 0 m2 0 0 0 0 19009080 485772 25281896 330816 171600000 113600 171600000 113600 171600000 113600 171600000 113600 305272200 150608 0 0 0 0 0 0
+equiv "iovdd" "sg13g2_RCClampInverter_0.supply"
+equiv "iovdd" "sg13g2_Clamp_N43N43D4R_0.pad"
+equiv "iovdd" "sg13g2_RCClampResistor_0.pin1"
+node "vdd" 55 246213 0 32000 m3 0 0 0 0 544032 32168 71224 2688 57600000 39200 57248000 40080 57600000 39200 57600000 39200 0 0 0 0 0 0 0 0
+substrate "iovss" 0 0 0 25200 m3 0 0 0 0 89903596 504560 6186744 224816 164945200 123860 164448000 117480 164800000 116600 164800000 116600 23020000 55120 0 0 0 0 0 0
+equiv "iovss" "vss"
+equiv "iovss" "sg13g2_RCClampInverter_0.iovss"
+equiv "iovss" "sg13g2_Clamp_N43N43D4R_0.iovss"
+cap "a_11695_7542#" "a_12025_7542#" 372.127
+cap "a_8065_7542#" "a_7735_7456#" 37.7376
+cap "iovdd" "a_12025_7542#" 0.491704
+cap "a_6415_7542#" "a_6085_7542#" 372.127
+cap "iovdd" "a_4105_7542#" 0.521272
+cap "a_10375_7456#" "iovss" 92.0008
+cap "a_7405_7542#" "iovss" 330.388
+cap "iovdd" "a_6415_7542#" 0.235446
+cap "a_10375_7456#" "a_10705_7542#" 37.7376
+cap "a_9055_7542#" "iovss" 330.388
+cap "iovdd" "a_3775_7456#" 15.6158
+cap "iovdd" "a_7735_7542#" 0.521272
+cap "a_6745_7542#" "a_7075_7542#" 372.127
+cap "a_6745_7542#" "a_6745_11542#" 37.7376
+cap "a_11695_7456#" "iovss" 95.5752
+cap "a_11365_7542#" "a_11695_7542#" 372.127
+cap "iovdd" "a_7735_7456#" 15.6158
+cap "sg13g2_Clamp_N43N43D4R_0.gate" "sg13g2_RCClampResistor_0.pin2" 21673.1
+cap "a_7405_7542#" "a_7075_7456#" 37.7376
+cap "a_10705_11542#" "iovss" 84.8258
+cap "a_10705_7542#" "iovss" 330.388
+cap "a_5425_11542#" "a_5425_7542#" 37.7376
+cap "a_11365_7542#" "iovdd" 0.521272
+cap "a_9055_7456#" "a_9055_7542#" 37.7376
+cap "a_10705_11542#" "a_10705_7542#" 37.7376
+cap "a_8725_7542#" "a_8725_11542#" 37.7376
+cap "a_5095_7542#" "a_4765_7542#" 372.127
+cap "a_3775_7456#" "a_4105_7542#" 37.7376
+cap "a_7075_7456#" "iovss" 92.0008
+cap "a_9055_7456#" "iovss" 92.0008
+cap "a_8395_7542#" "a_8725_7542#" 372.127
+cap "a_9385_7542#" "a_9385_11542#" 37.7376
+cap "a_4765_11542#" "iovss" 84.8258
+cap "a_4435_7542#" "iovss" 330.388
+cap "iovdd" "a_5425_11542#" 18.8408
+cap "iovdd" "a_9385_11542#" 20.7684
+cap "a_11365_11542#" "a_11695_7542#" 37.7376
+cap "a_5095_7456#" "a_4435_7456#" 20.5811
+cap "a_9715_7542#" "iovss" 330.388
+cap "a_11365_11542#" "iovdd" 21.139
+cap "a_6085_11542#" "a_6745_11542#" 20.5811
+cap "iovdd" "a_11035_7542#" 0.120458
+cap "iovdd" "a_8395_7456#" 15.6195
+cap "a_7735_7456#" "a_7735_7542#" 37.7376
+cap "iovdd" "a_4105_11542#" 43.29
+cap "a_5095_7542#" "a_5425_7542#" 372.127
+cap "a_10045_11542#" "iovdd" 18.8144
+cap "a_10045_11542#" "a_10045_7542#" 37.7376
+cap "iovdd" "a_9715_7456#" 14.4936
+cap "a_7405_7542#" "a_7075_7542#" 372.127
+cap "a_10045_7542#" "a_9715_7456#" 37.7376
+cap "iovdd" "a_5095_7542#" 0.120458
+cap "a_10045_11542#" "a_10375_7542#" 37.7376
+cap "a_8395_7542#" "a_8065_7542#" 372.127
+cap "a_9055_7542#" "a_8725_7542#" 372.127
+cap "sg13g2_RCClampResistor_0.pin2" "iovss" 839.362
+cap "a_5755_7456#" "a_6085_7542#" 37.7376
+cap "a_4105_11542#" "a_4105_7542#" 37.7376
+cap "a_7405_11542#" "a_8065_11542#" 20.5811
+cap "iovdd" "a_6745_7542#" 0.120458
+cap "a_7075_7542#" "iovss" 330.388
+cap "a_6745_11542#" "iovss" 84.8258
+cap "a_8725_7542#" "iovss" 330.388
+cap "a_5425_7542#" "a_5095_7456#" 37.7376
+cap "iovdd" "a_5755_7456#" 14.4937
+cap "sg13g2_Clamp_N43N43D4R_0.gate" "iovdd" 136047
+cap "a_3775_7542#" "iovss" 418.689
+cap "a_8065_7542#" "a_8065_11542#" 37.7376
+cap "a_4435_7456#" "iovss" 92.0008
+cap "iovdd" "a_8725_11542#" 21.139
+cap "a_8395_7456#" "a_7735_7456#" 20.5811
+cap "iovdd" "a_5095_7456#" 14.4433
+cap "a_7075_7456#" "a_7075_7542#" 37.7376
+cap "a_11365_11542#" "a_11365_7542#" 37.7376
+cap "iovdd" "a_8395_7542#" 0.511416
+cap "a_7405_7542#" "a_7405_11542#" 37.7376
+cap "a_11365_7542#" "a_11035_7542#" 372.127
+cap "iovdd" "a_6415_7456#" 15.4943
+cap "a_4765_7542#" "iovss" 330.388
+cap "a_5755_7542#" "a_5425_7542#" 372.127
+cap "a_6745_7542#" "a_6415_7542#" 372.127
+cap "a_6085_11542#" "a_6085_7542#" 37.7376
+cap "a_7405_11542#" "iovss" 84.8258
+cap "a_4435_7456#" "a_4435_7542#" 37.7376
+cap "a_6085_7542#" "a_5755_7542#" 372.127
+cap "iovdd" "a_11035_7456#" 15.6158
+cap "iovdd" "a_8065_11542#" 21.139
+cap "iovdd" "a_6085_11542#" 20.7785
+cap "iovdd" "a_5755_7542#" 0.120458
+cap "a_4765_11542#" "a_4765_7542#" 37.7376
+cap "a_4765_7542#" "a_4435_7542#" 372.127
+cap "a_8065_7542#" "iovss" 330.388
+cap "a_10045_11542#" "a_9385_11542#" 20.5811
+cap "iovdd" "a_10375_7456#" 14.473
+cap "a_6415_7456#" "a_6415_7542#" 37.7376
+cap "a_5425_7542#" "iovss" 330.388
+cap "a_9055_7542#" "a_9385_7542#" 372.127
+cap "iovdd" "a_7405_7542#" 0.120458
+cap "a_11695_7542#" "a_11695_7456#" 37.7376
+cap "a_11695_7542#" "iovss" 330.388
+cap "a_6085_7542#" "iovss" 330.388
+cap "a_10375_7456#" "a_10375_7542#" 37.7376
+cap "iovdd" "a_9055_7542#" 0.327436
+cap "a_9385_7542#" "iovss" 330.388
+cap "a_6085_11542#" "a_6415_7542#" 37.7376
+cap "iovdd" "a_11695_7456#" 15.6033
+cap "a_7075_7542#" "a_6745_11542#" 37.7376
+cap "iovdd" "iovss" 37066.7
+cap "a_10045_7542#" "iovss" 330.388
+cap "a_10705_11542#" "iovdd" 20.5357
+cap "iovdd" "a_10705_7542#" 0.439138
+cap "a_10375_7542#" "iovss" 330.388
+cap "a_8725_11542#" "a_9385_11542#" 20.5811
+cap "a_9055_7456#" "a_9385_7542#" 37.7376
+cap "a_10705_7542#" "a_10375_7542#" 372.127
+cap "iovdd" "a_7075_7456#" 15.5725
+cap "iovdd" "a_9055_7456#" 15.4971
+cap "a_11365_7542#" "a_11035_7456#" 37.7376
+cap "iovdd" "a_4765_11542#" 20.7485
+cap "iovdd" "a_4435_7542#" 0.120458
+cap "a_12025_7542#" "a_11695_7456#" 37.7376
+cap "a_12025_7542#" "iovss" 418.689
+cap "a_4105_7542#" "iovss" 330.388
+cap "a_9715_7542#" "a_9385_7542#" 372.127
+cap "a_7405_7542#" "a_7735_7542#" 372.127
+cap "a_8395_7456#" "a_8395_7542#" 37.7376
+cap "a_6415_7542#" "iovss" 330.388
+cap "iovdd" "a_9715_7542#" 0.143456
+cap "a_7405_11542#" "a_6745_11542#" 20.5811
+cap "a_10045_7542#" "a_9715_7542#" 372.127
+cap "a_6085_11542#" "a_5425_11542#" 20.5811
+cap "a_4765_7542#" "a_4435_7456#" 37.7376
+cap "a_3775_7456#" "iovss" 95.5752
+cap "a_5425_11542#" "a_5755_7542#" 37.7376
+cap "a_7735_7542#" "iovss" 330.388
+cap "a_4435_7542#" "a_4105_7542#" 372.127
+cap "a_7735_7456#" "iovss" 92.0008
+cap "a_11035_7456#" "a_11035_7542#" 37.7376
+cap "a_5095_7542#" "a_5095_7456#" 37.7376
+cap "a_11365_7542#" "iovss" 330.388
+cap "a_7735_7456#" "a_7075_7456#" 20.5811
+cap "a_6745_7542#" "a_6415_7456#" 37.7376
+cap "a_5755_7456#" "a_5095_7456#" 20.5811
+cap "iovdd" "vdd" 60.0672
+cap "iovdd" "sg13g2_RCClampResistor_0.pin2" 90433.7
+cap "a_5425_11542#" "iovss" 84.8258
+cap "a_9385_11542#" "iovss" 84.8258
+cap "iovdd" "a_7075_7542#" 0.419426
+cap "iovdd" "a_8725_7542#" 0.120458
+cap "iovdd" "a_6745_11542#" 21.139
+cap "a_5755_7456#" "a_6415_7456#" 20.5811
+cap "a_11365_11542#" "iovss" 84.8258
+cap "iovdd" "a_3775_7542#" 62.3171
+cap "a_8395_7456#" "iovss" 92.0008
+cap "iovss" "a_11035_7542#" 330.388
+cap "iovdd" "a_4435_7456#" 15.6158
+cap "a_11365_11542#" "a_10705_11542#" 20.5811
+cap "a_10375_7456#" "a_9715_7456#" 20.5811
+cap "a_5425_11542#" "a_4765_11542#" 20.5811
+cap "a_4105_11542#" "iovss" 84.8258
+cap "a_10705_11542#" "a_11035_7542#" 37.7376
+cap "a_5755_7456#" "a_5755_7542#" 37.7376
+cap "sg13g2_RCClampResistor_0.pin2" "a_12025_7542#" 37.766
+cap "a_10705_7542#" "a_11035_7542#" 372.127
+cap "iovdd" "a_4765_7542#" 0.521272
+cap "a_10045_11542#" "iovss" 84.8258
+cap "a_8725_11542#" "a_8065_11542#" 20.5811
+cap "a_9715_7542#" "a_9385_11542#" 37.7376
+cap "a_8395_7542#" "a_8065_11542#" 37.7376
+cap "iovss" "a_9715_7456#" 92.0008
+cap "a_10045_11542#" "a_10705_11542#" 20.5811
+cap "a_9055_7456#" "a_8395_7456#" 20.5811
+cap "iovdd" "a_7405_11542#" 21.139
+cap "a_5095_7542#" "iovss" 330.388
+cap "a_3775_7542#" "a_4105_7542#" 372.127
+cap "a_4105_11542#" "a_4435_7542#" 37.7376
+cap "a_4105_11542#" "a_4765_11542#" 20.5811
+cap "a_6745_7542#" "iovss" 330.388
+cap "iovdd" "a_8065_7542#" 0.120458
+cap "a_3775_7542#" "a_3775_7456#" 37.7376
+cap "a_5755_7456#" "iovss" 92.0008
+cap "sg13g2_Clamp_N43N43D4R_0.gate" "iovss" 1938.4
+cap "a_9055_7456#" "a_9715_7456#" 20.5811
+cap "a_3775_7456#" "a_4435_7456#" 20.5811
+cap "a_9055_7542#" "a_8725_11542#" 37.7376
+cap "a_4765_11542#" "a_5095_7542#" 37.7376
+cap "iovdd" "a_5425_7542#" 0.347148
+cap "a_8725_11542#" "iovss" 84.8258
+cap "a_5095_7456#" "iovss" 92.0008
+cap "a_9715_7542#" "a_9715_7456#" 37.7376
+cap "a_8395_7542#" "iovss" 330.388
+cap "iovdd" "a_11695_7542#" 0.120458
+cap "a_10375_7456#" "a_11035_7456#" 20.5811
+cap "iovdd" "a_6085_7542#" 0.163168
+cap "iovdd" "a_9385_7542#" 0.120458
+cap "a_6415_7456#" "iovss" 92.0008
+cap "a_7405_11542#" "a_7735_7542#" 37.7376
+cap "a_10045_7542#" "iovdd" 0.255158
+cap "a_11365_11542#" "sg13g2_RCClampResistor_0.pin2" 20.5811
+cap "a_11695_7456#" "a_11035_7456#" 20.5811
+cap "iovdd" "a_10375_7542#" 0.120458
+cap "a_11035_7456#" "iovss" 92.0008
+cap "a_8065_11542#" "iovss" 84.8258
+cap "a_6085_11542#" "iovss" 84.8258
+cap "a_8395_7456#" "a_8725_7542#" 37.7376
+cap "a_10045_7542#" "a_10375_7542#" 372.127
+cap "a_8065_7542#" "a_7735_7542#" 372.127
+cap "a_7075_7456#" "a_6415_7456#" 20.5811
+cap "a_5755_7542#" "iovss" 330.388
+device msubckt sg13_hv_nmos 14255 1750 14256 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 130240,2056
+device msubckt sg13_hv_nmos 14007 1750 14008 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13651 1750 13652 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 13403 1750 13404 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13047 1750 13048 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12799 1750 12800 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 12443 1750 12444 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12195 1750 12196 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11839 1750 11840 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 11591 1750 11592 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11235 1750 11236 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10987 1750 10988 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10631 1750 10632 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10383 1750 10384 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10027 1750 10028 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9779 1750 9780 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 9423 1750 9424 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9175 1750 9176 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8819 1750 8820 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 8571 1750 8572 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8215 1750 8216 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7967 1750 7968 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7611 1750 7612 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7363 1750 7364 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7007 1750 7008 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6759 1750 6760 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 6403 1750 6404 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6155 1750 6156 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5799 1750 5800 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 5551 1750 5552 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5195 1750 5196 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4947 1750 4948 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 4591 1750 4592 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4343 1750 4344 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3987 1750 3988 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3739 1750 3740 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3383 1750 3384 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3135 1750 3136 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2779 1750 2780 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 2531 1750 2532 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2175 1750 2176 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 1927 1750 1928 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 1571 1750 1572 1751 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 82720,1948 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 14255 2718 14256 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 130240,2056
+device msubckt sg13_hv_nmos 14007 2718 14008 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13651 2718 13652 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 13403 2718 13404 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13047 2718 13048 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12799 2718 12800 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 12443 2718 12444 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12195 2718 12196 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11839 2718 11840 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 11591 2718 11592 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11235 2718 11236 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10987 2718 10988 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10631 2718 10632 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10383 2718 10384 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10027 2718 10028 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9779 2718 9780 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 9423 2718 9424 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9175 2718 9176 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8819 2718 8820 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 8571 2718 8572 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8215 2718 8216 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7967 2718 7968 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7611 2718 7612 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7363 2718 7364 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7007 2718 7008 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6759 2718 6760 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 6403 2718 6404 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6155 2718 6156 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5799 2718 5800 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 5551 2718 5552 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5195 2718 5196 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4947 2718 4948 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 4591 2718 4592 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4343 2718 4344 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3987 2718 3988 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3739 2718 3740 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3383 2718 3384 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3135 2718 3136 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2779 2718 2780 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 2531 2718 2532 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2175 2718 2176 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 1927 2718 1928 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 1571 2718 1572 2719 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 82720,1948 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 14255 3686 14256 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 130240,2056
+device msubckt sg13_hv_nmos 14007 3686 14008 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13651 3686 13652 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 13403 3686 13404 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13047 3686 13048 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12799 3686 12800 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 12443 3686 12444 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12195 3686 12196 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11839 3686 11840 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 11591 3686 11592 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11235 3686 11236 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10987 3686 10988 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10631 3686 10632 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10383 3686 10384 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10027 3686 10028 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9779 3686 9780 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 9423 3686 9424 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9175 3686 9176 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8819 3686 8820 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 8571 3686 8572 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8215 3686 8216 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7967 3686 7968 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7611 3686 7612 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7363 3686 7364 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7007 3686 7008 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6759 3686 6760 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 6403 3686 6404 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6155 3686 6156 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5799 3686 5800 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 5551 3686 5552 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5195 3686 5196 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4947 3686 4948 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 4591 3686 4592 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4343 3686 4344 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3987 3686 3988 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3739 3686 3740 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3383 3686 3384 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3135 3686 3136 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2779 3686 2780 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 2531 3686 2532 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2175 3686 2176 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 1927 3686 1928 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 1571 3686 1572 3687 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 82720,1948 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 14255 4654 14256 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 130240,2056
+device msubckt sg13_hv_nmos 14007 4654 14008 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13651 4654 13652 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 13403 4654 13404 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 13047 4654 13048 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12799 4654 12800 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 12443 4654 12444 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 12195 4654 12196 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11839 4654 11840 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 11591 4654 11592 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 11235 4654 11236 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10987 4654 10988 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10631 4654 10632 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 10383 4654 10384 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 10027 4654 10028 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9779 4654 9780 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 9423 4654 9424 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 9175 4654 9176 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8819 4654 8820 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 8571 4654 8572 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8215 4654 8216 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7967 4654 7968 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7611 4654 7612 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 7363 4654 7364 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7007 4654 7008 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6759 4654 6760 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 6403 4654 6404 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 6155 4654 6156 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5799 4654 5800 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 5551 4654 5552 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5195 4654 5196 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4947 4654 4948 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 4591 4654 4592 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 4343 4654 4344 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3987 4654 3988 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3739 4654 3740 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 3383 4654 3384 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 3135 4654 3136 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2779 4654 2780 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 2531 4654 2532 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 2175 4654 2176 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 56320,1008 "iovdd" 880 103840,1116
+device msubckt sg13_hv_nmos 1927 4654 1928 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovdd" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 1571 4654 1572 4655 l=120 w=880 "iovss" "sg13g2_Clamp_N43N43D4R_0.gate" 240 0 "iovss" 880 82720,1948 "iovdd" 880 103840,1116
+device dsubckt dantenna 906 5348 907 5349 w=96 l=96 "sg13g2_Clamp_N43N43D4R_0.gate" 0 0 "iovss" 0 0
+device rsubckt rppd 12025 7542 12026 7543 w=200 l=4000 "iovss" "a_12025_7542#" 0 0 "sg13g2_RCClampResistor_0.pin2" 200 17200,572 "a_11695_7456#" 200 17200,572
+device rsubckt rppd 11695 7542 11696 7543 w=200 l=4000 "iovss" "a_11695_7542#" 0 0 "a_11365_11542#" 200 17200,572 "a_11695_7456#" 200 17200,572
+device rsubckt rppd 11365 7542 11366 7543 w=200 l=4000 "iovss" "a_11365_7542#" 0 0 "a_11365_11542#" 200 17200,572 "a_11035_7456#" 200 17200,572
+device rsubckt rppd 11035 7542 11036 7543 w=200 l=4000 "iovss" "a_11035_7542#" 0 0 "a_10705_11542#" 200 17200,572 "a_11035_7456#" 200 17200,572
+device rsubckt rppd 10705 7542 10706 7543 w=200 l=4000 "iovss" "a_10705_7542#" 0 0 "a_10705_11542#" 200 17200,572 "a_10375_7456#" 200 17200,572
+device rsubckt rppd 10375 7542 10376 7543 w=200 l=4000 "iovss" "a_10375_7542#" 0 0 "a_10045_11542#" 200 17200,572 "a_10375_7456#" 200 17200,572
+device rsubckt rppd 10045 7542 10046 7543 w=200 l=4000 "iovss" "a_10045_7542#" 0 0 "a_10045_11542#" 200 17200,572 "a_9715_7456#" 200 17200,572
+device rsubckt rppd 9715 7542 9716 7543 w=200 l=4000 "iovss" "a_9715_7542#" 0 0 "a_9385_11542#" 200 17200,572 "a_9715_7456#" 200 17200,572
+device rsubckt rppd 9385 7542 9386 7543 w=200 l=4000 "iovss" "a_9385_7542#" 0 0 "a_9385_11542#" 200 17200,572 "a_9055_7456#" 200 17200,572
+device rsubckt rppd 9055 7542 9056 7543 w=200 l=4000 "iovss" "a_9055_7542#" 0 0 "a_8725_11542#" 200 17200,572 "a_9055_7456#" 200 17200,572
+device rsubckt rppd 8725 7542 8726 7543 w=200 l=4000 "iovss" "a_8725_7542#" 0 0 "a_8725_11542#" 200 17200,572 "a_8395_7456#" 200 17200,572
+device rsubckt rppd 8395 7542 8396 7543 w=200 l=4000 "iovss" "a_8395_7542#" 0 0 "a_8065_11542#" 200 17200,572 "a_8395_7456#" 200 17200,572
+device rsubckt rppd 8065 7542 8066 7543 w=200 l=4000 "iovss" "a_8065_7542#" 0 0 "a_8065_11542#" 200 17200,572 "a_7735_7456#" 200 17200,572
+device rsubckt rppd 7735 7542 7736 7543 w=200 l=4000 "iovss" "a_7735_7542#" 0 0 "a_7405_11542#" 200 17200,572 "a_7735_7456#" 200 17200,572
+device rsubckt rppd 7405 7542 7406 7543 w=200 l=4000 "iovss" "a_7405_7542#" 0 0 "a_7405_11542#" 200 17200,572 "a_7075_7456#" 200 17200,572
+device rsubckt rppd 7075 7542 7076 7543 w=200 l=4000 "iovss" "a_7075_7542#" 0 0 "a_6745_11542#" 200 17200,572 "a_7075_7456#" 200 17200,572
+device rsubckt rppd 6745 7542 6746 7543 w=200 l=4000 "iovss" "a_6745_7542#" 0 0 "a_6745_11542#" 200 17200,572 "a_6415_7456#" 200 17200,572
+device rsubckt rppd 6415 7542 6416 7543 w=200 l=4000 "iovss" "a_6415_7542#" 0 0 "a_6085_11542#" 200 17200,572 "a_6415_7456#" 200 17200,572
+device rsubckt rppd 6085 7542 6086 7543 w=200 l=4000 "iovss" "a_6085_7542#" 0 0 "a_6085_11542#" 200 17200,572 "a_5755_7456#" 200 17200,572
+device rsubckt rppd 5755 7542 5756 7543 w=200 l=4000 "iovss" "a_5755_7542#" 0 0 "a_5425_11542#" 200 17200,572 "a_5755_7456#" 200 17200,572
+device rsubckt rppd 5425 7542 5426 7543 w=200 l=4000 "iovss" "a_5425_7542#" 0 0 "a_5425_11542#" 200 17200,572 "a_5095_7456#" 200 17200,572
+device rsubckt rppd 5095 7542 5096 7543 w=200 l=4000 "iovss" "a_5095_7542#" 0 0 "a_4765_11542#" 200 17200,572 "a_5095_7456#" 200 17200,572
+device rsubckt rppd 4765 7542 4766 7543 w=200 l=4000 "iovss" "a_4765_7542#" 0 0 "a_4765_11542#" 200 17200,572 "a_4435_7456#" 200 17200,572
+device rsubckt rppd 4435 7542 4436 7543 w=200 l=4000 "iovss" "a_4435_7542#" 0 0 "a_4105_11542#" 200 17200,572 "a_4435_7456#" 200 17200,572
+device rsubckt rppd 4105 7542 4106 7543 w=200 l=4000 "iovss" "a_4105_7542#" 0 0 "a_4105_11542#" 200 17200,572 "a_3775_7456#" 200 17200,572
+device rsubckt rppd 3775 7542 3776 7543 w=200 l=4000 "iovss" "a_3775_7542#" 0 0 "iovdd" 200 17200,572 "a_3775_7456#" 200 17200,572
+device msubckt sg13_hv_nmos 13506 13408 13507 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 11530 13408 11531 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 9554 13408 9555 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 7578 13408 7579 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 5602 13408 5603 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 3626 13408 3627 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 1650 13408 1651 13409 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 1474 13408 1475 13409 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876 "iovss" 1800 68400,1876
+device msubckt sg13_hv_nmos 1298 13408 1299 13409 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovss" 1800 68400,1876 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876
+device msubckt sg13_hv_nmos 1122 13408 1123 13409 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876 "iovss" 1800 68400,1876
+device msubckt sg13_hv_nmos 946 13408 947 13409 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovss" 1800 68400,1876 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876
+device msubckt sg13_hv_nmos 770 13408 771 13409 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876 "iovss" 1800 68400,1876
+device msubckt sg13_hv_nmos 594 13408 595 13409 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovss" 1800 122400,3736 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876
+device msubckt sg13_hv_nmos 13506 15258 13507 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 11530 15258 11531 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 9554 15258 9555 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 7578 15258 7579 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 5602 15258 5603 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 3626 15258 3627 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 1650 15258 1651 15259 l=1900 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 3800 0 "iovss" 0 0 "iovss" 3600 68400,1876
+device msubckt sg13_hv_nmos 1474 15258 1475 15259 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876 "iovss" 1800 68400,1876
+device msubckt sg13_hv_nmos 1298 15258 1299 15259 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovss" 1800 68400,1876 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876
+device msubckt sg13_hv_nmos 1122 15258 1123 15259 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876 "iovss" 1800 68400,1876
+device msubckt sg13_hv_nmos 946 15258 947 15259 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovss" 1800 68400,1876 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876
+device msubckt sg13_hv_nmos 770 15258 771 15259 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876 "iovss" 1800 68400,1876
+device msubckt sg13_hv_nmos 594 15258 595 15259 l=100 w=1800 "iovss" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovss" 1800 122400,3736 "sg13g2_Clamp_N43N43D4R_0.gate" 1800 68400,1876
+device msubckt sg13_hv_pmos 12262 18282 12263 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 95200,2936
+device msubckt sg13_hv_pmos 12086 18282 12087 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 11910 18282 11911 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 11734 18282 11735 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 11558 18282 11559 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 11382 18282 11383 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 11206 18282 11207 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 11030 18282 11031 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 10854 18282 10855 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 10678 18282 10679 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 10502 18282 10503 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 10326 18282 10327 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 10150 18282 10151 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 9974 18282 9975 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 9798 18282 9799 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 9622 18282 9623 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 9446 18282 9447 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 9270 18282 9271 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 9094 18282 9095 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 8918 18282 8919 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 8742 18282 8743 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 8566 18282 8567 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 8390 18282 8391 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 8214 18282 8215 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 8038 18282 8039 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 7862 18282 7863 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 7686 18282 7687 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 7510 18282 7511 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 7334 18282 7335 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 7158 18282 7159 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 6982 18282 6983 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 6806 18282 6807 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 6630 18282 6631 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 6454 18282 6455 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 6278 18282 6279 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 6102 18282 6103 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 5926 18282 5927 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 5750 18282 5751 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 5574 18282 5575 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 5398 18282 5399 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 5222 18282 5223 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 5046 18282 5047 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 4870 18282 4871 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 4694 18282 4695 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 4518 18282 4519 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 4342 18282 4343 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 4166 18282 4167 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 3990 18282 3991 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 53200,1476 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476
+device msubckt sg13_hv_pmos 3814 18282 3815 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476 "iovdd" 1400 53200,1476
+device msubckt sg13_hv_pmos 3638 18282 3639 18283 l=100 w=1400 "iovdd" "sg13g2_RCClampResistor_0.pin2" 200 0 "iovdd" 1400 95200,2936 "sg13g2_Clamp_N43N43D4R_0.gate" 1400 53200,1476

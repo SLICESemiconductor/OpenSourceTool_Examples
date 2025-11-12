@@ -1,0 +1,317 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11 7000 260000 1360000
+parameters sg13_lv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_lv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_nmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sg13_hv_pmos l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters rppd w=w l=l
+parameters dpantenna w=w l=l
+parameters dantenna w=w l=l
+port "iovss" 10 0 7200 16000 11700 m7
+port "iovss" 10 0 6900 16000 12000 m6
+port "iovss" 10 0 6900 16000 12000 m5
+port "iovss" 10 0 6900 16000 12000 m4
+port "iovss" 10 0 6900 16000 12000 m3
+port "pad" 5 1000 0 15000 600 m7
+port "pad" 5 1000 0 15000 600 m6
+port "pad" 5 1000 0 15000 600 m5
+port "pad" 5 1000 0 15000 600 m4
+port "pad" 5 1000 0 15000 600 m3
+port "pad" 5 1000 0 15000 600 m2
+port "p2c" 2 11945 35942 12045 36000 m3
+port "p2c" 2 11966 31562 12024 36000 m2
+port "c2p_en" 3 4255 35942 4355 36000 m3
+port "c2p_en" 3 4276 34809 4334 36000 m2
+port "c2p" 4 3645 35942 3745 36000 m3
+port "c2p" 4 3666 35618 3724 36000 m2
+port "iovdd" 9 0 13500 16000 18000 m7
+port "iovdd" 9 0 13200 16000 18300 m6
+port "iovdd" 9 0 13200 16000 18300 m5
+port "iovdd" 9 0 13200 16000 18300 m4
+port "iovdd" 9 0 13200 16000 18300 m3
+port "iovdd" 9 0 19000 16000 23500 m7
+port "iovdd" 9 0 18700 16000 23800 m6
+port "iovdd" 9 0 18700 16000 23800 m5
+port "iovdd" 9 0 18700 16000 23800 m4
+port "iovdd" 9 0 18700 16000 23800 m3
+port "vdd" 7 0 28000 16000 31600 m6
+port "vdd" 7 0 28000 16000 31600 m5
+port "vdd" 7 0 28000 16000 31160 m4
+port "vdd" 7 0 32000 16000 35600 m3
+port "iovss" 10 0 1700 16000 6200 m7
+port "iovss" 10 0 25500 16000 26500 m7
+port "iovss" 10 0 1400 16000 6500 m6
+port "iovss" 10 0 25200 16000 26800 m6
+port "vss" 8 0 32000 16000 35600 m6
+port "iovss" 10 0 1400 16000 6500 m5
+port "iovss" 10 0 25200 16000 26800 m5
+port "vss" 8 0 32000 16000 35600 m5
+port "iovss" 10 0 1400 16000 6500 m4
+port "iovss" 10 0 25200 16000 26800 m4
+port "vss" 8 0 32440 16000 35600 m4
+port "iovss" 10 0 1400 16000 6500 m3
+port "iovss" 10 0 25200 16000 26800 m3
+port "vss" 8 0 28000 16000 31600 m3
+node "iovss" 1 56542.2 0 6900 m3 0 0 0 0 0 0 0 0 81600000 42200 81600000 42200 81600000 42200 81600000 42200 72000000 41000 0 0 0 0 0 0
+node "pad" 127 112209 1000 0 m2 0 0 0 0 9039552 108176 25783866 316086 8400000 29200 8400000 29200 8400000 29200 8400000 29200 8400000 29200 0 0 0 0 0 0
+equiv "pad" "sg13g2_DCNDiode_0.cathode"
+equiv "pad" "sg13g2_Clamp_P15N15D_0.pad"
+equiv "pad" "sg13g2_DCPDiode_0.anode"
+equiv "pad" "sg13g2_Clamp_N15N15D_0.pad"
+equiv "pad" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.pad"
+equiv "pad" "sg13g2_LevelDown_0.pad"
+node "a_12137_28308#" 520 473.616 12137 28308 pres 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80000 1200 0 0
+node "sg13g2_GateDecode_0.pgate" 211 28341 2992 16142 pdi 0 0 0 0 1677064 103668 711246 33908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_GateDecode_0.pgate" "sg13g2_Clamp_P15N15D_0.gate"
+equiv "sg13g2_GateDecode_0.pgate" "sg13g2_GateDecode_0.sg13g2_LevelUp_1.o"
+node "a_4358_30206#" 4 236.483 4358 30206 hvpdif 0 0 0 0 47872 2588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sg13g2_GateDecode_0.ngate" 142 45337.6 2986 2463 ndi 0 0 0 0 778798 47522 1813950 71756 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_GateDecode_0.ngate" "sg13g2_Clamp_N15N15D_0.gate"
+equiv "sg13g2_GateDecode_0.ngate" "sg13g2_GateDecode_0.sg13g2_LevelUp_0.o"
+node "a_3656_30206#" 4 453.395 3656 30206 hvpdif 0 0 0 0 47872 2588 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4426_30170#" 4 1283.02 4426 30170 p 0 0 0 0 58752 2928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3724_30170#" 4 1276.92 3724 30170 p 0 0 0 0 58752 2928 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 7 6278.06 12113 29438 pdi 0 0 0 0 198680 4356 602256 11430 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "p2c" 12 2102.09 11966 31562 m2 0 0 0 0 73164 3568 259840 9076 5800 316 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "p2c" "sg13g2_LevelDown_0.core"
+node "a_4358_31526#" 10 1339.07 4358 31526 ndif 0 0 0 0 79044 3932 116360 5358 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_3656_31526#" 10 1897.14 3656 31526 ndif 0 0 0 0 79044 3932 116360 5358 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_12038_31490#" 4 1369.53 12038 31490 p 0 0 0 0 109564 3912 28128 1148 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_4230_33842#" 0 14.6004 4230 33842 ndif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 14 3025.98 4230 34876 pdif 0 0 0 0 255081 7952 146624 7090 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" "sg13g2_GateDecode_0.sg13g2_LevelUp_1.i"
+node "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 14 2739.65 3724 31490 p 0 0 0 0 246799 7952 134212 6662 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "sg13g2_GateDecode_0.sg13g2_LevelUp_0.i"
+node "a_3750_34876#" 0 1.04193 3750 34876 pdif 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "c2p_en" 10 2186.41 4276 34809 m2 0 0 0 0 113190 5558 90770 3246 5800 316 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "c2p_en" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.i1"
+equiv "c2p_en" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.i"
+equiv "c2p_en" "sg13g2_GateDecode_0.en"
+node "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 9 1328.15 3786 34722 p 0 0 0 0 116634 5722 56376 2060 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.i1"
+node "c2p" 11 2437.46 3666 35618 m2 0 0 0 0 147168 7176 51388 1888 5800 316 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "c2p" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.i0"
+equiv "c2p" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.i0"
+equiv "c2p" "sg13g2_GateDecode_0.core"
+node "sg13g2_DCNDiode_0.guard" 10 49976.9 -124 1076 nw 0 0 0 0 39621584 120056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "iovdd" 135 44279.1 0 13200 m3 0 0 0 0 9002928 160016 4090612 102458 81660480 45224 81600000 42200 81600000 42200 81600000 42200 72000000 41000 0 0 0 0 0 0
+equiv "iovdd" "sg13g2_Clamp_P15N15D_0.iovdd"
+equiv "iovdd" "sg13g2_DCPDiode_0.cathode"
+node "iovdd" 62 83760.7 0 18700 m3 0 0 0 0 837836 41672 730414 12218 81600000 42200 81600000 42200 81600000 42200 81600000 42200 72000000 41000 0 0 0 0 0 0
+equiv "iovdd" "sg13g2_GateDecode_0.sg13g2_LevelUp_1.iovdd"
+equiv "iovdd" "sg13g2_GateDecode_0.sg13g2_LevelUp_0.iovdd"
+equiv "iovdd" "sg13g2_GateDecode_0.iovdd"
+equiv "iovdd" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.iovdd"
+equiv "iovdd" "sg13g2_LevelDown_0.iovdd"
+node "vdd" 46 246178 0 32000 m3 0 0 0 0 1321132 42360 167504 7582 57600000 39200 57248000 40080 57600000 39200 57600000 39200 0 0 0 0 0 0 0 0
+equiv "vdd" "sg13g2_GateDecode_0.sg13g2_LevelUp_1.vdd"
+equiv "vdd" "sg13g2_GateDecode_0.sg13g2_LevelUp_0.vdd"
+equiv "vdd" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.vdd"
+equiv "vdd" "sg13g2_GateDecode_0.sg13g2_io_tie_0.vdd"
+equiv "vdd" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.vdd"
+equiv "vdd" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.vdd"
+equiv "vdd" "sg13g2_GateDecode_0.vdd"
+equiv "vdd" "sg13g2_LevelDown_0.vdd"
+substrate "iovss" 0 0 0 25200 m3 0 0 0 0 186388270 367866 7086224 163078 164858240 119512 164448000 117480 164800000 116600 164800000 116600 88000000 75000 0 0 0 0 0 0
+equiv "iovss" "vss"
+equiv "iovss" "sg13g2_DCNDiode_0.anode"
+equiv "iovss" "sg13g2_Clamp_P15N15D_0.iovss"
+equiv "iovss" "sg13g2_DCPDiode_0.guard"
+equiv "iovss" "sg13g2_Clamp_N15N15D_0.iovss"
+equiv "iovss" "sg13g2_GateDecode_0.sg13g2_LevelUp_1.vss"
+equiv "iovss" "sg13g2_GateDecode_0.sg13g2_LevelUp_0.vss"
+equiv "iovss" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.vss"
+equiv "iovss" "sg13g2_GateDecode_0.sg13g2_io_tie_0.vss"
+equiv "iovss" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.vss"
+equiv "iovss" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.vss"
+equiv "iovss" "sg13g2_GateDecode_0.vss"
+equiv "iovss" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.iovss"
+equiv "iovss" "sg13g2_LevelDown_0.vss"
+equiv "iovss" "sg13g2_LevelDown_0.iovss"
+cap "c2p_en" "a_4230_33842#" 58.3195
+cap "iovdd" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 1373.55
+cap "iovss" "pad" 20593.1
+cap "sg13g2_GateDecode_0.ngate" "a_4358_31526#" 426.945
+cap "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" "a_12038_31490#" 314.08
+cap "iovdd" "pad" 2952.79
+cap "vdd" "a_3724_30170#" 1.90293
+cap "iovdd" "iovss" 14080.4
+cap "iovdd" "iovdd" 14612.6
+cap "iovdd" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 24.6484
+cap "iovdd" "a_4358_30206#" 284.07
+cap "a_3724_30170#" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 0.297348
+cap "iovdd" "a_3656_30206#" 304.615
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_4358_31526#" 305.859
+cap "sg13g2_GateDecode_0.ngate" "a_4426_30170#" 3.99528
+cap "a_4358_30206#" "a_4358_31526#" 154.909
+cap "sg13g2_GateDecode_0.ngate" "sg13g2_GateDecode_0.pgate" 1517.39
+cap "vdd" "p2c" 2600.1
+cap "vdd" "sg13g2_GateDecode_0.ngate" 16.4701
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "c2p" 653.383
+cap "pad" "sg13g2_GateDecode_0.pgate" 16798
+cap "a_4358_30206#" "a_4426_30170#" 371.061
+cap "sg13g2_DCNDiode_0.guard" "iovss" 3714.85
+cap "vdd" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 514.419
+cap "iovdd" "a_3656_31526#" 33.5155
+cap "iovdd" "sg13g2_GateDecode_0.pgate" 44089.2
+cap "vdd" "pad" 69.4328
+cap "vdd" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 1870.35
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_3750_34876#" 1.39888
+cap "a_12137_28308#" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 51.2047
+cap "vdd" "a_4358_30206#" -2.4637e-16
+cap "c2p" "c2p_en" 532.726
+cap "vdd" "a_3656_30206#" -3.09248e-15
+cap "pad" "a_12137_28308#" 45.0547
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 54.7155
+cap "a_4358_30206#" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 14.2575
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 1306.85
+cap "c2p" "a_4230_33842#" 22.8638
+cap "sg13g2_GateDecode_0.ngate" "a_3724_30170#" 142.002
+cap "c2p" "a_3656_31526#" 0.738873
+cap "vdd" "c2p_en" 1465.33
+cap "c2p_en" "a_3750_34876#" 4.19016
+cap "c2p_en" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 1596.73
+cap "vdd" "a_4230_33842#" 13.8741
+cap "iovdd" "a_4358_31526#" 32.9381
+cap "vdd" "a_3656_31526#" 796.051
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_3724_30170#" 128.596
+cap "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" "c2p_en" 1601.2
+cap "a_4358_30206#" "a_3724_30170#" 2.09184
+cap "a_3724_30170#" "a_3656_30206#" 371.061
+cap "a_4230_33842#" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 1.98436
+cap "p2c" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 103.356
+cap "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" "a_4230_33842#" 4.82511
+cap "iovdd" "a_4426_30170#" 841.258
+cap "iovss" "sg13g2_GateDecode_0.pgate" 0.856832
+cap "iovdd" "sg13g2_GateDecode_0.pgate" 2445.83
+cap "sg13g2_GateDecode_0.ngate" "pad" 6468.54
+cap "a_4426_30170#" "a_4358_31526#" 6.01092
+cap "pad" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 29.021
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "sg13g2_GateDecode_0.ngate" 57.6654
+cap "iovdd" "sg13g2_GateDecode_0.ngate" 4052.97
+cap "a_4358_30206#" "sg13g2_GateDecode_0.ngate" 597.35
+cap "iovdd" "vdd" 60.0672
+cap "a_3724_30170#" "a_3656_31526#" 6.01092
+cap "vdd" "a_12038_31490#" 1108.66
+cap "iovdd" "pad" 44685
+cap "iovdd" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 24.6484
+cap "vdd" "a_4358_31526#" 817.469
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_4358_30206#" 0.0404154
+cap "a_4358_31526#" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 995.838
+cap "sg13g2_GateDecode_0.pgate" "a_4426_30170#" 142.002
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_3656_30206#" 14.2575
+cap "vdd" "c2p" 1520.81
+cap "c2p" "a_3750_34876#" 34.4327
+cap "vdd" "a_4426_30170#" 1.90293
+cap "sg13g2_DCNDiode_0.guard" "sg13g2_GateDecode_0.ngate" 3677.5
+cap "vdd" "sg13g2_GateDecode_0.pgate" 15.2716
+cap "iovdd" "a_3724_30170#" 849.243
+cap "c2p" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 439.018
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "c2p_en" 8.4831
+cap "a_4426_30170#" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 128.596
+cap "c2p" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 567.663
+cap "sg13g2_GateDecode_0.pgate" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 57.6654
+cap "sg13g2_DCNDiode_0.guard" "pad" 7466.84
+cap "a_3724_30170#" "a_4358_31526#" 11.649
+cap "vdd" "a_3750_34876#" 32.3193
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_3656_31526#" 992.178
+cap "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" "a_4230_33842#" 0.577495
+cap "iovdd" "sg13g2_DCNDiode_0.guard" 17.2087
+cap "vdd" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 2115.33
+cap "a_3656_31526#" "a_3656_30206#" 154.909
+cap "vdd" "a_12137_28308#" 5.00946e-16
+cap "vdd" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 1002.61
+cap "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" "a_3750_34876#" 66.1479
+cap "p2c" "a_12038_31490#" 253.108
+cap "sg13g2_GateDecode_0.ngate" "iovss" 1672.01
+cap "a_3724_30170#" "a_4426_30170#" 4.46367
+cap "iovdd" "sg13g2_GateDecode_0.ngate" 2489.51
+cap "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 48.3496
+device msubckt sg13_hv_nmos 10027 1750 10028 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 130240,2056
+device msubckt sg13_hv_nmos 9779 1750 9780 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 9423 1750 9424 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 103840,1116
+device msubckt sg13_hv_nmos 9175 1750 9176 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8819 1750 8820 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 103840,1116
+device msubckt sg13_hv_nmos 8571 1750 8572 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 8215 1750 8216 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 103840,1116
+device msubckt sg13_hv_nmos 7967 1750 7968 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7611 1750 7612 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 103840,1116
+device msubckt sg13_hv_nmos 7363 1750 7364 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 7007 1750 7008 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 103840,1116
+device msubckt sg13_hv_nmos 6759 1750 6760 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 6403 1750 6404 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 56320,1008 "pad" 880 103840,1116
+device msubckt sg13_hv_nmos 6155 1750 6156 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "pad" 880 103840,1116 "iovss" 880 56320,1008
+device msubckt sg13_hv_nmos 5799 1750 5800 1751 l=120 w=880 "iovss" "sg13g2_GateDecode_0.ngate" 240 0 "iovss" 880 82720,1948 "pad" 880 103840,1116
+device dsubckt dantenna 2986 2463 2987 2464 w=156 l=156 "sg13g2_GateDecode_0.ngate" 0 0 "iovss" 0 0
+device dsubckt dantenna 5222 3962 5223 3963 w=5556 l=252 "pad" 0 0 "iovss" 0 0
+device dsubckt dantenna 5222 4862 5223 4863 w=5556 l=252 "pad" 0 0 "iovss" 0 0
+device csubckt dpantenna 5222 11066 5223 11067 w=5556 l=252 "None" "pad" 0 0 "iovdd" 0 15778000,18320
+device csubckt dpantenna 5222 11966 5223 11967 w=5556 l=252 "None" "pad" 0 0 "iovdd" 0 15778000,18320
+device msubckt sg13_hv_pmos 10027 13550 10028 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 197136,2960
+device msubckt sg13_hv_pmos 9779 13550 9780 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 9423 13550 9424 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 9175 13550 9176 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 8819 13550 8820 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 8571 13550 8572 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 8215 13550 8216 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 7967 13550 7968 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 7611 13550 7612 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 7363 13550 7364 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 7007 13550 7008 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 6759 13550 6760 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 6403 13550 6404 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 6155 13550 6156 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 5799 13550 5800 13551 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 125208,2852 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 10027 14970 10028 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 197136,2960
+device msubckt sg13_hv_pmos 9779 14970 9780 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 9423 14970 9424 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 9175 14970 9176 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 8819 14970 8820 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 8571 14970 8572 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 8215 14970 8216 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 7967 14970 7968 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 7611 14970 7612 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 7363 14970 7364 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 7007 14970 7008 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 6759 14970 6760 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 6403 14970 6404 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 85248,1460 "pad" 1332 157176,1568
+device msubckt sg13_hv_pmos 6155 14970 6156 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "pad" 1332 157176,1568 "iovdd" 1332 85248,1460
+device msubckt sg13_hv_pmos 5799 14970 5800 14971 l=120 w=1332 "iovdd" "sg13g2_GateDecode_0.pgate" 240 0 "iovdd" 1332 125208,2852 "pad" 1332 157176,1568
+device csubckt dpantenna 2992 16142 2993 16143 w=156 l=156 "None" "sg13g2_GateDecode_0.pgate" 0 0 "iovdd" 0 52484640,37816
+device dsubckt dantenna 12981 28198 12982 28199 w=128 l=620 "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 0 0 "iovss" 0 0
+device rsubckt rppd 12137 28308 12138 28309 w=200 l=400 "iovss" "a_12137_28308#" 0 0 "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 200 17200,572 "pad" 200 17200,572
+device csubckt dpantenna 12113 29438 12114 29439 w=996 l=128 "None" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 0 0 "iovdd" 0 7107088,35696
+device msubckt sg13_hv_pmos 4860 29846 4861 29847 l=90 w=780 "iovdd" "a_4426_30170#" 180 0 "iovdd" 780 53040,1696 "sg13g2_GateDecode_0.pgate" 780 53040,1696
+device msubckt sg13_hv_pmos 4592 30206 4593 30207 l=90 w=60 "iovdd" "a_4358_30206#" 180 0 "iovdd" 60 2280,136 "a_4426_30170#" 60 4080,256
+device msubckt sg13_hv_pmos 4426 30206 4427 30207 l=90 w=60 "iovdd" "a_4426_30170#" 180 0 "a_4358_30206#" 60 4080,256 "iovdd" 60 2280,136
+device msubckt sg13_hv_pmos 4158 29846 4159 29847 l=90 w=780 "iovdd" "a_3724_30170#" 180 0 "iovdd" 780 53040,1696 "sg13g2_GateDecode_0.ngate" 780 53040,1696
+device msubckt sg13_hv_pmos 3890 30206 3891 30207 l=90 w=60 "iovdd" "a_3656_30206#" 180 0 "iovdd" 60 2280,136 "a_3724_30170#" 60 4080,256
+device msubckt sg13_hv_pmos 3724 30206 3725 30207 l=90 w=60 "iovdd" "a_3724_30170#" 180 0 "a_3656_30206#" 60 4080,256 "iovdd" 60 2280,136
+device msubckt sg13_hv_nmos 4860 30874 4861 30875 l=90 w=380 "iovss" "a_4426_30170#" 180 0 "iovss" 380 25840,896 "sg13g2_GateDecode_0.pgate" 380 25840,896
+device msubckt sg13_hv_nmos 4592 30874 4593 30875 l=90 w=380 "iovss" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 180 0 "iovss" 380 14440,456 "a_4426_30170#" 380 25840,896
+device msubckt sg13_hv_nmos 4426 30874 4427 30875 l=90 w=380 "iovss" "a_4358_31526#" 180 0 "a_4358_30206#" 380 25840,896 "iovss" 380 14440,456
+device msubckt sg13_hv_nmos 4158 30874 4159 30875 l=90 w=380 "iovss" "a_3724_30170#" 180 0 "iovss" 380 25840,896 "sg13g2_GateDecode_0.ngate" 380 25840,896
+device msubckt sg13_hv_nmos 3890 30874 3891 30875 l=90 w=380 "iovss" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 180 0 "iovss" 380 14440,456 "a_3724_30170#" 380 25840,896
+device msubckt sg13_hv_nmos 3724 30874 3725 30875 l=90 w=380 "iovss" "a_3656_31526#" 180 0 "a_3656_30206#" 380 25840,896 "iovss" 380 14440,456
+device msubckt sg13_hv_nmos 12308 31546 12309 31547 l=90 w=530 "iovss" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 180 0 "iovss" 530 36040,1196 "a_12038_31490#" 530 36040,1196
+device msubckt sg13_lv_nmos 12038 31526 12039 31527 l=26 w=550 "iovss" "a_12038_31490#" 52 0 "p2c" 550 37400,1236 "iovss" 550 37400,1236
+device msubckt sg13_lv_nmos 4426 31526 4427 31527 l=26 w=550 "iovss" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 52 0 "a_4358_31526#" 550 37400,1236 "iovss" 550 37400,1236
+device msubckt sg13_lv_nmos 3724 31526 3725 31527 l=26 w=550 "iovss" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 52 0 "a_3656_31526#" 550 37400,1236 "iovss" 550 37400,1236
+device msubckt sg13_hv_pmos 12308 32324 12309 32325 l=90 w=930 "vdd" "sg13g2_LevelDown_0.sg13g2_SecondaryProtection_0.core" 180 0 "vdd" 930 63240,1996 "a_12038_31490#" 930 63240,1996
+device msubckt sg13_lv_pmos 12038 32324 12039 32325 l=26 w=950 "vdd" "a_12038_31490#" 52 0 "p2c" 950 64600,2036 "vdd" 950 64600,2036
+device msubckt sg13_lv_pmos 4426 32324 4427 32325 l=26 w=950 "vdd" "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 52 0 "a_4358_31526#" 950 64600,2036 "vdd" 950 64600,2036
+device msubckt sg13_lv_pmos 3724 32324 3725 32325 l=26 w=950 "vdd" "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 52 0 "a_3656_31526#" 950 64600,2036 "vdd" 950 64600,2036
+device msubckt sg13_lv_nmos 4684 33842 4685 33843 l=26 w=786 "iovss" "c2p_en" 52 0 "iovss" 786 53448,1708 "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 786 53448,1708
+device msubckt sg13_lv_nmos 4306 33842 4307 33843 l=26 w=786 "iovss" "c2p_en" 52 0 "a_4230_33842#" 786 29868,862 "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 786 56592,1716
+device msubckt sg13_lv_nmos 4204 33842 4205 33843 l=26 w=786 "iovss" "c2p" 52 0 "iovss" 786 53448,1708 "a_4230_33842#" 786 29868,862
+device msubckt sg13_lv_nmos 3826 33842 3827 33843 l=26 w=786 "iovss" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 52 0 "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 786 29868,862 "iovss" 786 56592,1716
+device msubckt sg13_lv_nmos 3724 33842 3725 33843 l=26 w=786 "iovss" "c2p" 52 0 "iovss" 786 53448,1708 "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 786 29868,862
+device msubckt sg13_lv_pmos 4684 34876 4685 34877 l=26 w=882 "vdd" "c2p_en" 52 0 "vdd" 882 59976,1900 "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 882 59976,1900
+device msubckt sg13_lv_pmos 4306 34876 4307 34877 l=26 w=882 "vdd" "c2p_en" 52 0 "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 882 33516,958 "vdd" 882 63504,1908
+device msubckt sg13_lv_pmos 4204 34876 4205 34877 l=26 w=882 "vdd" "c2p" 52 0 "vdd" 882 59976,1900 "sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq" 882 33516,958
+device msubckt sg13_lv_pmos 3826 34876 3827 34877 l=26 w=882 "vdd" "sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq" 52 0 "a_3750_34876#" 882 33516,958 "sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq" 882 63504,1908
+device msubckt sg13_lv_pmos 3724 34876 3725 34877 l=26 w=882 "vdd" "c2p" 52 0 "vdd" 882 59976,1900 "a_3750_34876#" 882 33516,958

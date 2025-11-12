@@ -1,0 +1,138 @@
+* NGSPICE file created from sg13g2_IOPadTriOut30mA_flat.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_IOPadTriOut30mA_flat c2p_en c2p pad vdd iovdd iovss
+X0 sg13g2_GateDecode_0.pgate iovdd dpantenna l=0.78u w=0.78u
+X1 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X2 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X3 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X4 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=3.1302p ps=14.26u w=6.66u l=0.6u
+X5 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X6 sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq c2p_en a_8230_33842# iovss sg13_lv_nmos ad=1.4148p pd=8.58u as=0.7467p ps=4.31u w=3.93u l=0.13u
+X7 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=4.9284p pd=14.8u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X8 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X9 iovss pad dantenna l=1.26u w=27.78u
+X10 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=3.256p pd=10.28u as=1.408p ps=5.04u w=4.4u l=0.6u
+X11 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X12 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X13 iovss sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq iovss sg13_lv_nmos ad=1.4148p pd=8.58u as=0.7467p ps=4.31u w=3.93u l=0.13u
+X14 a_7724_30170# sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq iovss iovss sg13_hv_nmos ad=0.646p pd=4.48u as=0.361p ps=2.28u w=1.9u l=0.45u
+X15 iovdd a_7724_30170# a_7656_30206# iovdd sg13_hv_pmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=0.45u
+X16 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=3.1302p ps=14.26u w=6.66u l=0.6u
+X17 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X18 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X19 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X20 sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq c2p vdd vdd sg13_lv_pmos ad=0.8379p pd=4.79u as=1.4994p ps=9.5u w=4.41u l=0.13u
+X21 sg13g2_GateDecode_0.ngate a_7724_30170# iovdd iovdd sg13_hv_pmos ad=1.326p pd=8.48u as=1.326p ps=8.48u w=3.9u l=0.45u
+X22 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=4.9284p pd=14.8u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X23 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X24 a_8426_30170# a_8358_30206# iovdd iovdd sg13_hv_pmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=0.45u
+X25 a_7750_34876# c2p vdd vdd sg13_lv_pmos ad=0.8379p pd=4.79u as=1.4994p ps=9.5u w=4.41u l=0.13u
+X26 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X27 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X28 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X29 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X30 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X31 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X32 sg13g2_GateDecode_0.ngate a_7724_30170# iovss iovss sg13_hv_nmos ad=0.646p pd=4.48u as=0.646p ps=4.48u w=1.9u l=0.45u
+X33 vdd sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq a_8358_31526# vdd sg13_lv_pmos ad=1.615p pd=10.18u as=1.615p ps=10.18u w=4.75u l=0.13u
+X34 iovss a_8358_31526# a_8358_30206# iovss sg13_hv_nmos ad=0.361p pd=2.28u as=0.646p ps=4.48u w=1.9u l=0.45u
+X35 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X36 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X37 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=2.068p ps=9.74u w=4.4u l=0.6u
+X38 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X39 sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq c2p_en iovss iovss sg13_lv_nmos ad=1.3362p pd=8.54u as=1.3362p ps=8.54u w=3.93u l=0.13u
+X40 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X41 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X42 iovss sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq a_8358_31526# iovss sg13_lv_nmos ad=0.935p pd=6.18u as=0.935p ps=6.18u w=2.75u l=0.13u
+X43 iovss sg13g2_GateDecode_0.ngate dantenna l=0.78u w=0.78u
+X44 vdd c2p_en sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq vdd sg13_lv_pmos ad=1.5876p pd=9.54u as=0.8379p ps=4.79u w=4.41u l=0.13u
+X45 pad iovdd dpantenna l=1.26u w=27.78u
+X46 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X47 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X48 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X49 sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq a_7750_34876# vdd sg13_lv_pmos ad=1.5876p pd=9.54u as=0.8379p ps=4.79u w=4.41u l=0.13u
+X50 a_7724_30170# a_7656_30206# iovdd iovdd sg13_hv_pmos ad=0.102p pd=1.28u as=57f ps=0.68u w=0.3u l=0.45u
+X51 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X52 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X53 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X54 iovss sg13g2_GateDecode_0.ngate pad iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X55 sg13g2_GateDecode_0.pgate a_8426_30170# iovdd iovdd sg13_hv_pmos ad=1.326p pd=8.48u as=1.326p ps=8.48u w=3.9u l=0.45u
+X56 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X57 vdd sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq a_7656_31526# vdd sg13_lv_pmos ad=1.615p pd=10.18u as=1.615p ps=10.18u w=4.75u l=0.13u
+X58 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X59 pad iovdd dpantenna l=1.26u w=27.78u
+X60 a_8230_33842# c2p iovss iovss sg13_lv_nmos ad=0.7467p pd=4.31u as=1.3362p ps=8.54u w=3.93u l=0.13u
+X61 iovss a_7656_31526# a_7656_30206# iovss sg13_hv_nmos ad=0.361p pd=2.28u as=0.646p ps=4.48u w=1.9u l=0.45u
+X62 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X63 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X64 iovss sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq a_7656_31526# iovss sg13_lv_nmos ad=0.935p pd=6.18u as=0.935p ps=6.18u w=2.75u l=0.13u
+X65 a_8426_30170# sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq iovss iovss sg13_hv_nmos ad=0.646p pd=4.48u as=0.361p ps=2.28u w=1.9u l=0.45u
+X66 iovdd a_8426_30170# a_8358_30206# iovdd sg13_hv_pmos ad=57f pd=0.68u as=0.102p ps=1.28u w=0.3u l=0.45u
+X67 iovss pad dantenna l=1.26u w=27.78u
+X68 sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq c2p iovss iovss sg13_lv_nmos ad=0.7467p pd=4.31u as=1.3362p ps=8.54u w=3.93u l=0.13u
+X69 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X70 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X71 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+X72 sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq c2p_en vdd vdd sg13_lv_pmos ad=1.4994p pd=9.5u as=1.4994p ps=9.5u w=4.41u l=0.13u
+X73 sg13g2_GateDecode_0.pgate a_8426_30170# iovss iovss sg13_hv_nmos ad=0.646p pd=4.48u as=0.646p ps=4.48u w=1.9u l=0.45u
+X74 iovdd sg13g2_GateDecode_0.pgate pad iovdd sg13_hv_pmos ad=2.1312p pd=7.3u as=3.9294p ps=7.84u w=6.66u l=0.6u
+X75 pad sg13g2_GateDecode_0.ngate iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X76 pad sg13g2_GateDecode_0.pgate iovdd iovdd sg13_hv_pmos ad=3.9294p pd=7.84u as=2.1312p ps=7.3u w=6.66u l=0.6u
+C0 vdd sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq 2.09027f
+C1 sg13g2_GateDecode_0.pgate a_8426_30170# 0.142f
+C2 sg13g2_GateDecode_0.ngate a_8358_31526# 0.42695f
+C3 a_7656_31526# a_7656_30206# 0.15491f
+C4 vdd c2p_en 1.46533f
+C5 sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq c2p 0.65338f
+C6 c2p sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq 0.56766f
+C7 c2p_en sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq 1.59673f
+C8 a_8426_30170# iovdd 0.84126f
+C9 sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq a_8358_31526# 0.30586f
+C10 a_7656_30206# a_7724_30170# 0.37106f
+C11 a_7656_31526# sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq 0.99218f
+C12 sg13g2_GateDecode_0.ngate a_7724_30170# 0.142f
+C13 sg13g2_GateDecode_0.ngate sg13g2_DCNDiode_0.guard 3.6775f
+C14 vdd sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq 1.86758f
+C15 vdd sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq 1.00261f
+C16 sg13g2_GateDecode_0.ngate a_8358_30206# 0.59735f
+C17 pad sg13g2_DCNDiode_0.guard 7.46684f
+C18 a_7724_30170# iovdd 0.84924f
+C19 a_7724_30170# sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq 0.1286f
+C20 sg13g2_GateDecode_0.ngate sg13g2_GateDecode_0.pgate 3.619f
+C21 c2p_en sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq 1.6012f
+C22 pad sg13g2_GateDecode_0.ngate 6.46854f
+C23 pad sg13g2_GateDecode_0.pgate 17.1521f
+C24 a_8358_30206# iovdd 0.28407f
+C25 a_7656_30206# iovdd 0.30461f
+C26 sg13g2_GateDecode_0.ngate iovdd 7.85333f
+C27 vdd c2p 1.52081f
+C28 sg13g2_GateDecode_0.pgate iovdd 48.03263f
+C29 sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq c2p 0.43902f
+C30 pad iovdd 43.7879f
+C31 vdd a_8358_31526# 0.80342f
+C32 sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq a_8426_30170# 0.1286f
+C33 c2p_en c2p 0.53273f
+C34 a_7656_31526# vdd 0.79589f
+C35 sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq 1.30685f
+C36 sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq a_8358_31526# 0.99584f
+C37 a_8358_30206# a_8426_30170# 0.37106f
+C38 a_8358_30206# a_8358_31526# 0.15491f
+C39 pad iovss 0.12121p
+C40 c2p_en iovss 2.18641f
+C41 c2p iovss 2.43746f
+C42 iovdd iovss 0.14208p
+C43 vdd iovss 0.24697p
+C44 sg13g2_GateDecode_0.pgate iovss 29.70406f
+C45 a_8358_30206# iovss 0.23648f
+C46 sg13g2_GateDecode_0.ngate iovss 48.82551f
+C47 a_7656_30206# iovss 0.45339f
+C48 a_8426_30170# iovss 1.28351f
+C49 a_7724_30170# iovss 1.27718f
+C50 a_8358_31526# iovss 1.34776f
+C51 a_7656_31526# iovss 1.89714f
+C52 sg13g2_GateDecode_0.sg13g2_io_nand2_x1_0.nq iovss 3.05104f
+C53 sg13g2_GateDecode_0.sg13g2_io_nor2_x1_0.nq iovss 2.75308f
+C54 sg13g2_GateDecode_0.sg13g2_io_inv_x1_0.nq iovss 1.32815f
+C55 sg13g2_DCNDiode_0.guard iovss 53.69175f $ **FLOATING
+.ends
+

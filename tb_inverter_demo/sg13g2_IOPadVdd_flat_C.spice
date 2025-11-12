@@ -1,0 +1,371 @@
+* NGSPICE file created from sg13g2_IOPadVdd_flat.ext - technology: ihp-sg13g2
+
+.subckt sg13g2_IOPadVdd_flat vdd iovdd iovss
+X0 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X1 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X2 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X3 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X4 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X5 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X6 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X7 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X8 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X9 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X10 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X11 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X12 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X13 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X14 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X15 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X16 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X17 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X18 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X19 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X20 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X21 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X22 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X23 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X24 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X25 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X26 a_11365_11542# a_11695_7456# iovss rppd l=20u w=1u
+X27 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X28 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X29 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X30 a_8725_11542# a_9055_7456# iovss rppd l=20u w=1u
+X31 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X32 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X33 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X34 a_10045_11542# a_9715_7456# iovss rppd l=20u w=1u
+X35 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X36 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X37 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X38 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X39 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X40 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X41 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X42 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X43 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X44 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=2.24759n ps=2.5228m w=9u l=9.5u
+X45 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X46 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X47 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X48 a_4105_11542# a_4435_7456# iovss rppd l=20u w=1u
+X49 a_7405_11542# a_7735_7456# iovss rppd l=20u w=1u
+X50 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X51 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X52 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X53 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X54 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=3.256p pd=10.28u as=1.408p ps=5.04u w=4.4u l=0.6u
+X55 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X56 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X57 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X58 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X59 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X60 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X61 iovss sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X62 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X63 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X64 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X65 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X66 iovss sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X67 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X68 iovss sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X69 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X70 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X71 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X72 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X73 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X74 iovss sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X75 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X76 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=2.068p ps=9.74u w=4.4u l=0.6u
+X77 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X78 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X79 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X80 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X81 a_4765_11542# a_5095_7456# iovss rppd l=20u w=1u
+X82 a_8065_11542# a_8395_7456# iovss rppd l=20u w=1u
+X83 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X84 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X85 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X86 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X87 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X88 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X89 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X90 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X91 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X92 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X93 iovss sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X94 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X95 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X96 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X97 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X98 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X99 iovss sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X100 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X101 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X102 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X103 a_10705_11542# a_11035_7456# iovss rppd l=20u w=1u
+X104 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X105 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X106 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X107 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X108 vdd a_3775_7456# iovss rppd l=20u w=1u
+X109 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X110 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X111 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X112 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X113 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X114 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X115 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X116 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X117 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X118 a_5425_11542# a_5095_7456# iovss rppd l=20u w=1u
+X119 a_8725_11542# a_8395_7456# iovss rppd l=20u w=1u
+X120 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=3.256p pd=10.28u as=1.408p ps=5.04u w=4.4u l=0.6u
+X121 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X122 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X123 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X124 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X125 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X126 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X127 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X128 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X129 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X130 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=2.38p ps=14.68u w=7u l=0.5u
+X131 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X132 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X133 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X134 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X135 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X136 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X137 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=2.068p ps=9.74u w=4.4u l=0.6u
+X138 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X139 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X140 a_6085_11542# a_5755_7456# iovss rppd l=20u w=1u
+X141 a_9385_11542# a_9055_7456# iovss rppd l=20u w=1u
+X142 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X143 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X144 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X145 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X146 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X147 a_10045_11542# a_10375_7456# iovss rppd l=20u w=1u
+X148 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X149 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X150 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X151 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X152 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X153 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X154 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X155 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X156 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X157 sg13g2_RCClampInverter_0.in a_11695_7456# iovss rppd l=20u w=1u
+X158 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X159 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X160 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X161 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X162 a_4765_11542# a_4435_7456# iovss rppd l=20u w=1u
+X163 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X164 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X165 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X166 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X167 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X168 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X169 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X170 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in vdd vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X171 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X172 a_9385_11542# a_9715_7456# iovss rppd l=20u w=1u
+X173 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X174 a_6085_11542# a_6415_7456# iovss rppd l=20u w=1u
+X175 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X176 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X177 a_10705_11542# a_10375_7456# iovss rppd l=20u w=1u
+X178 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X179 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X180 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X181 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X182 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X183 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X184 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X185 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X186 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X187 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X188 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X189 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X190 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X191 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X192 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X193 a_6745_11542# a_7075_7456# iovss rppd l=20u w=1u
+X194 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X195 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X196 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X197 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X198 a_11365_11542# a_11035_7456# iovss rppd l=20u w=1u
+X199 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X200 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X201 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X202 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X203 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X204 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=1.71p ps=9.38u w=9u l=0.5u
+X205 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X206 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X207 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=3.06p ps=18.68u w=9u l=0.5u
+X208 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X209 sg13g2_RCClampInverter_0.out sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=3.06p ps=18.68u w=9u l=0.5u
+X210 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X211 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=3.256p pd=10.28u as=1.408p ps=5.04u w=4.4u l=0.6u
+X212 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X213 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X214 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X215 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X216 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X217 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X218 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X219 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X220 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X221 a_5425_11542# a_5755_7456# iovss rppd l=20u w=1u
+X222 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X223 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X224 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X225 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X226 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X227 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X228 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X229 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X230 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X231 iovss sg13g2_RCClampInverter_0.in iovss iovss sg13_hv_nmos ad=1.71p pd=9.38u as=0 ps=0 w=9u l=9.5u
+X232 a_4105_11542# a_3775_7456# iovss rppd l=20u w=1u
+X233 a_7405_11542# a_7075_7456# iovss rppd l=20u w=1u
+X234 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=2.068p ps=9.74u w=4.4u l=0.6u
+X235 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X236 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X237 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X238 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X239 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X240 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X241 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=3.256p pd=10.28u as=1.408p ps=5.04u w=4.4u l=0.6u
+X242 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X243 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X244 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X245 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X246 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=2.38p pd=14.68u as=1.33p ps=7.38u w=7u l=0.5u
+X247 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X248 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X249 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X250 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X251 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X252 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X253 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X254 a_8065_11542# a_7735_7456# iovss rppd l=20u w=1u
+X255 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X256 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X257 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=2.068p ps=9.74u w=4.4u l=0.6u
+X258 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X259 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X260 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X261 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X262 iovss sg13g2_RCClampInverter_0.out dantenna l=0.48u w=0.48u
+X263 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X264 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X265 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X266 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X267 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+X268 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X269 vdd sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out vdd sg13_hv_pmos ad=1.33p pd=7.38u as=1.33p ps=7.38u w=7u l=0.5u
+X270 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X271 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X272 vdd sg13g2_RCClampInverter_0.out iovss iovss sg13_hv_nmos ad=2.596p pd=5.58u as=1.408p ps=5.04u w=4.4u l=0.6u
+X273 a_6745_11542# a_6415_7456# iovss rppd l=20u w=1u
+X274 iovss sg13g2_RCClampInverter_0.out vdd iovss sg13_hv_nmos ad=1.408p pd=5.04u as=2.596p ps=5.58u w=4.4u l=0.6u
+C0 sg13g2_RCClampInverter_0.out vdd 89.81529f
+C1 a_3775_7542# a_4105_7542# 0.37213f
+C2 w_n124_1076# vdd 6.51124f
+C3 a_7405_7542# a_7735_7542# 0.37213f
+C4 a_11365_7542# a_11695_7542# 0.37213f
+C5 a_8065_7542# a_7735_7542# 0.37213f
+C6 a_5095_7542# a_5425_7542# 0.37213f
+C7 a_4435_7542# a_4105_7542# 0.37213f
+C8 a_6415_7542# a_6085_7542# 0.37213f
+C9 sg13g2_RCClampInverter_0.in iovdd 55.64351f
+C10 a_4435_7542# a_4765_7542# 0.37213f
+C11 a_9385_7542# a_9715_7542# 0.37213f
+C12 a_6085_7542# a_5755_7542# 0.37213f
+C13 a_11365_7542# a_11035_7542# 0.37213f
+C14 w_n124_1076# sg13g2_RCClampInverter_0.out 2.16343f
+C15 a_10705_7542# a_11035_7542# 0.37213f
+C16 sg13g2_RCClampInverter_0.in vdd 31.5477f
+C17 a_10045_7542# a_10375_7542# 0.37213f
+C18 a_6745_7542# a_7075_7542# 0.37213f
+C19 iovdd vdd 0.12505p
+C20 a_12025_7542# a_11695_7542# 0.37213f
+C21 a_8725_7542# a_8395_7542# 0.37213f
+C22 a_7405_7542# a_7075_7542# 0.37213f
+C23 a_5755_7542# a_5425_7542# 0.37213f
+C24 a_10045_7542# a_9715_7542# 0.37213f
+C25 a_8065_7542# a_8395_7542# 0.37213f
+C26 sg13g2_RCClampInverter_0.in sg13g2_RCClampInverter_0.out 21.6731f
+C27 a_6745_7542# a_6415_7542# 0.37213f
+C28 sg13g2_RCClampInverter_0.in w_n124_1076# 3.24089f
+C29 iovdd sg13g2_RCClampInverter_0.out 43.9772f
+C30 iovdd w_n124_1076# 1.22195f
+C31 a_4765_7542# a_5095_7542# 0.37213f
+C32 a_9385_7542# a_9055_7542# 0.37213f
+C33 a_10375_7542# a_10705_7542# 0.37213f
+C34 a_8725_7542# a_9055_7542# 0.37213f
+C35 iovdd iovss 62.48961f
+C36 vdd iovss 0.64924p
+C37 a_12025_7542# iovss 3.53966f $ **FLOATING
+C38 a_11695_7456# iovss 0.45487f
+C39 a_11695_7542# iovss 3.04229f $ **FLOATING
+C40 a_11365_7542# iovss 3.04218f $ **FLOATING
+C41 a_11365_11542# iovss 0.41716f
+C42 a_11035_7456# iovss 0.43382f
+C43 a_11035_7542# iovss 3.04229f $ **FLOATING
+C44 a_10705_7542# iovss 3.04218f $ **FLOATING
+C45 a_10705_11542# iovss 0.41716f
+C46 a_10375_7456# iovss 0.43383f
+C47 a_10375_7542# iovss 3.04226f $ **FLOATING
+C48 a_10045_7542# iovss 3.04218f $ **FLOATING
+C49 a_10045_11542# iovss 0.41716f
+C50 a_9715_7456# iovss 0.43386f
+C51 a_9715_7542# iovss 3.04218f $ **FLOATING
+C52 a_9385_7542# iovss 3.04218f $ **FLOATING
+C53 a_9385_11542# iovss 0.41716f
+C54 a_9055_7456# iovss 0.43385f
+C55 a_9055_7542# iovss 3.04218f $ **FLOATING
+C56 a_8725_7542# iovss 3.04229f $ **FLOATING
+C57 a_8725_11542# iovss 0.41716f
+C58 a_8395_7456# iovss 0.43382f
+C59 a_8395_7542# iovss 3.04218f $ **FLOATING
+C60 a_8065_7542# iovss 3.04229f $ **FLOATING
+C61 a_8065_11542# iovss 0.41716f
+C62 a_7735_7456# iovss 0.43382f
+C63 a_7735_7542# iovss 3.04218f $ **FLOATING
+C64 a_7405_7542# iovss 3.04229f $ **FLOATING
+C65 a_7405_11542# iovss 0.41716f
+C66 a_7075_7456# iovss 0.43384f
+C67 a_7075_7542# iovss 3.04218f $ **FLOATING
+C68 a_6745_7542# iovss 3.04224f $ **FLOATING
+C69 a_6745_11542# iovss 0.41716f
+C70 a_6415_7456# iovss 0.43388f
+C71 a_6415_7542# iovss 3.04218f $ **FLOATING
+C72 a_6085_7542# iovss 3.04218f $ **FLOATING
+C73 a_6085_11542# iovss 0.41716f
+C74 a_5755_7456# iovss 0.43386f
+C75 a_5755_7542# iovss 3.04218f $ **FLOATING
+C76 a_5425_7542# iovss 3.04218f $ **FLOATING
+C77 a_5425_11542# iovss 0.41716f
+C78 a_5095_7456# iovss 0.43386f
+C79 a_5095_7542# iovss 3.04229f $ **FLOATING
+C80 a_4765_7542# iovss 3.04218f $ **FLOATING
+C81 a_4765_11542# iovss 0.41716f
+C82 a_4435_7456# iovss 0.43382f
+C83 a_4435_7542# iovss 3.04229f $ **FLOATING
+C84 a_4105_7542# iovss 3.04218f $ **FLOATING
+C85 a_4105_11542# iovss 0.41716f
+C86 a_3775_7456# iovss 0.45486f
+C87 a_3775_7542# iovss 3.53976f $ **FLOATING
+C88 sg13g2_RCClampInverter_0.out iovss 0.2398p
+C89 sg13g2_RCClampInverter_0.in iovss 0.204p
+C90 w_n124_1076# iovss 32.29903f $ **FLOATING
+.ends
+

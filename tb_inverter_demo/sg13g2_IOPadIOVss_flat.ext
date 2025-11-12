@@ -1,0 +1,63 @@
+timestamp 0
+version 8.3
+tech ihp-sg13g2
+style ngspice()
+scale 1000 1 0.5
+resistclasses 3000000 67000 110 88 88 88 88 18 11 7000 260000 1360000
+parameters dpantenna w=w l=l
+parameters dantenna w=w l=l
+port "iovdd" 4 0 19000 16000 23500 m7
+port "iovdd" 4 0 13500 16000 18000 m7
+port "iovdd" 4 0 18700 16000 23800 m6
+port "iovdd" 4 0 13200 16000 18300 m6
+port "iovdd" 4 0 18700 16000 23800 m5
+port "iovdd" 4 0 13200 16000 18300 m5
+port "iovdd" 4 0 18700 16000 23800 m4
+port "iovdd" 4 0 13200 16000 18300 m4
+port "iovdd" 4 0 18700 16000 23800 m3
+port "iovdd" 4 0 13200 16000 18300 m3
+port "vdd" 2 0 28000 16000 31600 m6
+port "vdd" 2 0 28000 16000 31600 m5
+port "vdd" 2 0 28000 16000 31160 m4
+port "vdd" 2 0 32000 16000 35600 m3
+port "iovss" 5 0 7200 16000 11700 m7
+port "iovss" 5 0 1700 16000 6200 m7
+port "iovss" 5 1000 0 15000 600 m7
+port "iovss" 5 0 25500 16000 26500 m7
+port "iovss" 5 0 1400 16000 6500 m6
+port "iovss" 5 1000 0 15000 600 m6
+port "iovss" 5 0 6900 16000 12000 m6
+port "iovss" 5 0 25200 16000 26800 m6
+port "vss" 3 0 32000 16000 35600 m6
+port "iovss" 5 0 1400 16000 6500 m5
+port "iovss" 5 1000 0 15000 600 m5
+port "iovss" 5 0 6900 16000 12000 m5
+port "iovss" 5 0 25200 16000 26800 m5
+port "vss" 3 0 32000 16000 35600 m5
+port "iovss" 5 0 1400 16000 6500 m4
+port "iovss" 5 1000 0 15000 600 m4
+port "iovss" 5 0 6900 16000 12000 m4
+port "iovss" 5 0 25200 16000 26800 m4
+port "vss" 3 0 32440 16000 35600 m4
+port "iovss" 5 0 1400 16000 6500 m3
+port "iovss" 5 1000 0 15000 600 m3
+port "iovss" 5 0 6900 16000 12000 m3
+port "iovss" 5 0 25200 16000 26800 m3
+port "vss" 3 0 28000 16000 31600 m3
+port "iovss" 0 1000 0 15000 600 m2
+node "sg13g2_DCNDiode_0.guard" 2 271833 -124 1076 nw 0 0 0 0 154928400 100344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "iovdd" 39 310510 0 13200 m3 0 0 0 0 6167080 76468 5729086 53402 163502400 85288 163200000 84400 163200000 84400 163200000 84400 144000000 82000 0 0 0 0 0 0
+equiv "iovdd" "sg13g2_DCPDiode_0.cathode"
+node "vdd" 55 246213 0 32000 m3 0 0 0 0 544032 32168 71224 2688 57600000 39200 57248000 40080 57600000 39200 57600000 39200 0 0 0 0 0 0 0 0
+substrate "iovss" 0 0 1000 0 m2 0 0 0 0 228081536 263668 327963696 288480 255304000 189480 254448000 188880 254800000 188000 254800000 188000 168400000 145200 0 0 0 0 0 0
+equiv "iovss" "vss"
+equiv "iovss" "sg13g2_DCNDiode_0.cathode"
+equiv "iovss" "sg13g2_DCNDiode_0.anode"
+equiv "iovss" "sg13g2_DCPDiode_0.anode"
+equiv "iovss" "sg13g2_DCPDiode_0.guard"
+cap "sg13g2_DCNDiode_0.guard" "iovdd" 69.6274
+cap "vdd" "iovdd" 60.0672
+device dsubckt dantenna 1682 2060 1683 2061 w=252 l=5556 "iovss" 0 0 "iovss" 0 0
+device dsubckt dantenna 782 2060 783 2061 w=252 l=5556 "iovss" 0 0 "iovss" 0 0
+device csubckt dpantenna 1682 13860 1683 13861 w=252 l=5556 "None" "iovss" 0 0 "iovdd" 0 15778000,18320
+device csubckt dpantenna 782 13860 783 13861 w=252 l=5556 "None" "iovss" 0 0 "iovdd" 0 15778000,18320

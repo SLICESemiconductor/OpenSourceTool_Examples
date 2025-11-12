@@ -1,0 +1,4 @@
+iovdd 0 19000 m7
+vdd 0 28000 m6
+iovss 0 7200 m7
+sg13g2_DCNDiode_0.guard -123 1076 nw

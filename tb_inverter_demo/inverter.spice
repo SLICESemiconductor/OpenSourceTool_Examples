@@ -1,0 +1,13 @@
+* NGSPICE file created from inverter.ext - technology: ihp-sg13g2
+
+.subckt inverter vout vin vddd vssd
+X0 vout vin vssd vssd sg13_lv_nmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=0.13u
+X1 vout vin vddd vddd sg13_lv_pmos ad=0.1005p pd=1.34u as=0.1005p ps=1.34u w=0.15u l=0.13u
+C0 vout vddd 0.05255f
+C1 vout vin 0.04041f
+C2 vddd vin 0.09527f
+R0 vin vin.n0 7.64907
+C3 vout vssd 0.16993f
+C4 vin vssd 0.28737f
+C5 vddd vssd 0.14084f $ **FLOATING
+.ends
