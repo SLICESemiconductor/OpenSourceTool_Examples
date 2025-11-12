@@ -1,0 +1,7 @@
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[vgs]
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[vds]
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[vth]
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[gds]
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[gm]
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[ids]
+  +  @n.xota.xmpmirr.nsg13_lv_pmos[vsat]

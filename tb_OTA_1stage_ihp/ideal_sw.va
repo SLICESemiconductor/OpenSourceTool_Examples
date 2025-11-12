@@ -1,0 +1,34 @@
+// VerilogA for work_dc, switch, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module ideal_sw (cn, cp, n, p, vdd);
+       input cn;
+       input cp;
+       input vdd;
+       inout n;
+       inout p;
+       electrical cn, cp, vdd, n, p ;
+
+parameter real ron=1e-3;
+
+// !!! Increased roff from 1G to 100G on 13/03/24 for stb analysis
+// Be minful of this change if transient sims experience converging issues !!!
+
+parameter real roff=100e9;
+
+// set vth = vdda/2
+parameter real vth=0.5;
+
+real rsw;
+
+    analog begin
+	if(V(cp,cn)>vth) rsw=ron;
+	else if(V(cp,cn)<vth)  rsw=roff;
+
+  I(p, n) <+ V(p,n)/rsw;
+
+    end
+
+endmodule

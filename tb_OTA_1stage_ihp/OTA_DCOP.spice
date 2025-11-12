@@ -1,0 +1,19 @@
+** sch_path: /home/slice/xschem/tb_OTA_1stage_ihp/OTA_DCOP.sch
+**.subckt OTA_DCOP ibias vdda vssa vinp vinn vout
+*.iopin ibias
+*.ipin vdda
+*.ipin vssa
+*.ipin vinp
+*.ipin vinn
+*.opin vout
+Vilhs pdio net2 0
+Virhs net3 vout 0
+Vitail net1 net4 0
+XM5 net3 pdio vdda vdda sg13_lv_pmos w=10u l=2u ng=1 m=1
+XM8 net2 vinp net1 vssa sg13_lv_nmos w=10u l=0.13u ng=4 m=1
+XM6 pdio pdio vdda vdda sg13_lv_pmos w=10u l=2u ng=1 m=1
+XM3 vout vinn net1 vssa sg13_lv_nmos w=10u l=0.13u ng=4 m=1
+XM1 net4 ibias vssa vssa sg13_lv_nmos w=10u l=2u ng=1 m=1
+XM2 ibias ibias vssa vssa sg13_lv_nmos w=10u l=2u ng=1 m=1
+**.ends
+.end

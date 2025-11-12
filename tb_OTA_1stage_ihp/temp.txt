@@ -1,0 +1,80 @@
+Ii 0 x DC 0 AC 0
+Vi x a DC 0 AC 1
+Vnodebuffer b x 0
+
+.lib $::SG13G2_MODELS/cornerCAP.lib cap_typ
+
+[to_eng [ngspice::get_node {@n.${path}xm5.nsg13_lv_pmos[gm]}]]
+
+
+Modified the PMOS/NMOS symbols to automatically annotate DC operating
+points on the schematic (vgs, vds, vdsat, id, gm and gds)
+The DC operating points are now automatically displayed for each transistor without the need to add
+ngspice_get_value.sym blocks manually.
+It looks like this:
+To allow the display (not enabled by default): View > Show/Hide > Show hidden texts
+Here is the modified symbol for the NMOS
+(/usr/local/share/xschem/xschem_library/devices/nmos4.sym):
+Text has been added using the tcleval function (in yellow):
+tcleval(vgs=[to_eng {@#1:spice_get_voltage - @#2:spice_get_voltage }])
+tcleval(vds=[to_eng {@#0:spice_get_voltage - @#2:spice_get_voltage }])
+tcleval(vdsat=[to_eng [ngspice::get_node {v(\@m.${path}@spiceprefix@name\[vdsat])}]])
+tcleval(id=[to_eng [ngspice::get_node {i(\@m.${path}@spiceprefix@name\[id])}]])
+tcleval(gm=[to_eng [ngspice::get_node {\@m.${path}@spiceprefix@name\[gm]}]])
+
+tcleval(gm=[to_eng [ngspice::get_node {@n.${path}xm5.nsg13_lv_pmos[gm]}]])
+
+
+tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[gm]}]]])
+
+
+  +  @n.xota.xm5.nsg13_lv_pmos[vgs]
+  +  @n.xota.xm5.nsg13_lv_pmos[vds]
+  +  @n.xota.xm5.nsg13_lv_pmos[vth]
+  +  @n.xota.xm5.nsg13_lv_pmos[gds]
+  +  @n.xota.xm5.nsg13_lv_pmos[gm]
+  +  @n.xota.xm5.nsg13_lv_pmos[ids]
+  +  @n.xota.xm5.nsg13_lv_pmos[vsat]
+  
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vgs]}]]])
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vds]}]]])
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vth]}]]])
+  
+  v(@n.${path}xm5.nsg13_lv_pmos[vth])}
+  
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[gm]}]]])
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[gds]}]]])
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[ids]}]]])
+  tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vsat]}]]])
+  
+  
+  name=r11 node="[to_eng [ngspice::get_node {v(@n.${path}xm5.nsg13_lv_pmos[vth])}]]"
+descr = "vth"
+
+tcleval(vth=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vth]}]]])
+
+tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[gm]}]]])
+
+name=r9 node="[to_eng [ngspice::get_node {@n.${path}xm5.nsg13_lv_pmos[gm]}]]"
+descr = "gm"
+
+tcleval(vth=[to_eng [ngspice::get_node [subst -nocommand {v(\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vth])}]]])
+
+tcleval(vov=[to_eng [ngspice::get_node [subst -nocommand {v(\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vgs])}]]-[ngspice::get_node [subst -nocommand {v(\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[vth])}]]])
+
+
+tcleval(gm=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[gm]}]]])
+
+tcleval(id=[to_eng [ngspice::get_node [subst -nocommand {i(\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[ids])}]]])
+
+
+tcleval(gmoverid=[to_eng [ngspice::get_node [subst -nocommand {\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[gm]}]]/[ngspice::get_node [subst -nocommand {i(\@n.${path}@spiceprefix@name\.nsg13_lv_pmos\[ids])}]]])
+
+
+
+
+
+
+
+
+  
