@@ -1,0 +1,254 @@
+** sch_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/tb_OTA.sch
+**.subckt tb_OTA
+Vvdda vdda vssa xvdda
+Iisnk vdda ibias xibias
+C2 vout vssa {xCload} m=1
+xota vdda vinp vfb vssa vout ibias OTA_DCOP
+Vstep vinp net1 pwl (0 0 {xtsim/2} 0 {{xtsim/2}+xtrf} {xstep_en*10m})
+Vvinp net1 vssa xvinp
+Vvssa vssa GND 0
+x1 vfb vout loopgainprobe
+**** begin user architecture code
+
+** opencircuitdesign pdks install
+
+
+* Parameters
+.param xvdda = 1.8
+.param xvinp = 1
+.param xibias = 2u
+.param xCload = 0p
+.param xgm_dp = 1e-3
+.param xRin = 1/xgm_dp
+.param xCout = 1p
+.param xRout = 1e6
+.param xtrf = 50p
+.param xtsim = 5u
+.param xstep_en = 1
+
+.model OTA_vcvs OTA_vcvs
+* vlogA instantiation
+
+
+  ** 1. DCOP analysis **
+  ** must save the below for DCOP analysis to be back annotated onto the schematic
+  .option savecurrents
+  .save
+  +  @m.xota.m1[vgs]
+  +  @m.xota.m1[vth]
+  +  @m.xota.m1[gds]
+  +  @m.xota.m1[gm]
+  +  @m.xota.m1[id]
+  +  @m.xota2.m1[vgs]
+  +  @m.xota2.m1[vth]
+  +  @m.xota2.m1[gds]
+  +  @m.xota2.m1[gm]
+  +  @m.xota2.m1[id]
+
+  +  @m.xota.m2[vgs]
+  +  @m.xota.m2[vth]
+  +  @m.xota.m2[gds]
+  +  @m.xota.m2[gm]
+  +  @m.xota.m2[id]
+  +  @m.xota2.m2[vgs]
+  +  @m.xota2.m2[vth]
+  +  @m.xota2.m2[gds]
+  +  @m.xota2.m2[gm]
+  +  @m.xota2.m2[id]
+
+  +  @m.xota.m3[vgs]
+  +  @m.xota.m3[vth]
+  +  @m.xota.m3[gds]
+  +  @m.xota.m3[gm]
+  +  @m.xota.m3[id]
+  +  @m.xota2.m3[vgs]
+  +  @m.xota2.m3[vth]
+  +  @m.xota2.m3[gds]
+  +  @m.xota2.m3[gm]
+  +  @m.xota2.m3[id]
+
+  +  @m.xota.m4[vgs]
+  +  @m.xota.m4[vth]
+  +  @m.xota.m4[gds]
+  +  @m.xota.m4[gm]
+  +  @m.xota.m4[id]
+  +  @m.xota2.m4[vgs]
+  +  @m.xota2.m4[vth]
+  +  @m.xota2.m4[gds]
+  +  @m.xota2.m4[gm]
+  +  @m.xota2.m4[id]
+
+  +  @m.xota.m5[vgs]
+  +  @m.xota.m5[vth]
+  +  @m.xota.m5[gds]
+  +  @m.xota.m5[gm]
+  +  @m.xota.m5[id]
+  +  @m.xota2.m5[vgs]
+  +  @m.xota2.m5[vth]
+  +  @m.xota2.m5[gds]
+  +  @m.xota2.m5[gm]
+  +  @m.xota2.m5[id]
+
+  +  @m.xota.m6[vgs]
+  +  @m.xota.m6[vth]
+  +  @m.xota.m6[gds]
+  +  @m.xota.m6[gm]
+  +  @m.xota.m6[id]
+  +  @m.xota.m6[vdsat]
+  +  @m.xota2.m6vgs]
+  +  @m.xota2.m6[vth]
+  +  @m.xota2.m6[gds]
+  +  @m.xota2.m6[gm]
+  +  @m.xota2.m6[id]
+
+  .control
+  let xtsim = 5u
+  pre_osdi OTA_vcvs.osdi
+  save all
+
+  op
+  write tb_ota_1stage_op.raw
+
+** 2. TRAN ANALYSIS **
+
+  remzerovec
+  set appendwrite
+  tran 1n $&xtsim
+  write tb_ota_1stage_op.raw
+  *write tb_ota_1stage_tran.raw
+ * plot v(vout) v(vinp) v(vdda)
+ unset appendwrite
+
+** 3. AC ANALYSIS **
+
+  alter i.xstb.Ii acmag=0
+  alter v.xstb.Vi acmag=1
+
+  ac dec 10 1 100G
+  remzerovec
+
+*  unset appendwrite
+
+  write tb_OTA_1stage_ac1.raw
+
+  alter i.xstb.Ii acmag=1
+  alter v.xstb.Vi acmag=0
+
+  ac dec 10 1 100G
+
+  * use this line if you want the phase response to start at 180deg
+  *let av = {1/(1-1/(2*(ac1.i(v.xstb.Vi)*ac2.v(xstb.x)-ac1.v(xstb.x)*ac2.i(v.xstb.Vi))+ac1.v(xstb.x)+ac2.i(v.xstb.Vi)))}
+
+  * use this line if you want the phase response to start at 0deg (more conventional and directly corresponds to Franks derivation)
+  let av = {1/(1/(2*(ac1.i(v.xstb.Vi)*ac2.v(xstb.x)-ac1.v(xstb.x)*ac2.i(v.xstb.Vi))+ac1.v(xstb.x)+ac2.i(v.xstb.Vi))-1)}
+
+  remzerovec
+  write tb_OTA_1stage_ac2.raw
+
+  *ngspice plots
+  *plot vdb(av) xlog
+  *plot {(180/pi)*vp(av)} xlog
+  *plot 180*cph(av)/pi
+
+  ** 4. MEASURES **
+
+  let n45_rads = -45*(pi/180)
+  meas AC Av_0 FIND vdb(av) AT=10
+  echo --
+  meas AC BW WHEN vp(av)=n45_rads CROSS=1
+  echo --
+  meas AC Av_BW FIND vdb(av) WHEN vp(av)=n45_rads CROSS=1
+  echo --
+  meas AC ULGF WHEN vdb(av)=0
+  echo --
+  meas AC ULGF_phi_rads FIND vp(av) WHEN vdb(av)=0 CROSS=1
+  let ULGF_phi_deg = ULGF_phi_rads*(180/pi)
+  print ULGF_phi_deg
+  let PM = 180+ULGF_phi_deg
+  print PM
+  echo --
+  * putting in -170 since this is a 2nd-order system so doesnt ever achieve -180
+  let n180_rads = -170*(pi/180)
+  meas AC GM FIND vdb(av) WHEN vp(av)=n180_rads CROSS=1
+
+  setplot
+
+.endc
+
+
+
+** opencircuitdesign pdks install
+.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
+.lib /home/slice/pdk/SW130/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice ff
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  OTA.sym # of pins=6
+** sym_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/OTA.sym
+** sch_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/OTA.sch
+.subckt OTA vdda vinp vinn vssa vout ibias
+*.iopin ibias
+*.ipin vdda
+*.ipin vssa
+*.ipin vinp
+*.ipin vinn
+*.opin vout
+XM3 pdio vinp net1 vssa sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+XM4 vout vinn net1 vssa sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+XM5 pdio pdio vdda vdda sky130_fd_pr__pfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM2 net1 ibias vssa vssa sky130_fd_pr__nfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM1 ibias ibias vssa vssa sky130_fd_pr__nfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM6 vout pdio vdda vdda sky130_fd_pr__pfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+.ends
+
+
+* expanding   symbol:  loopgainprobe.sym # of pins=2
+** sym_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/loopgainprobe.sym
+** sch_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/loopgainprobe.sch
+.subckt loopgainprobe a b
+*.iopin b
+*.iopin a
+**** begin user architecture code
+Ii 0 x DC 0 AC 0
+Vi x a DC 0 AC 1
+Vnodebuffer b x 0
+**** end user architecture code
+.ends
+
+
+* expanding   symbol:  OTA_DCOP.sym # of pins=6
+** sym_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/OTA.sym
+** sch_path: /home/slice/xschem/tb_OTA_1stage_sw130/tb_OTA/OTA_DCOP.sch
+.subckt OTA_DCOP vdda vinp vinn vssa vout ibias
+*.iopin ibias
+*.ipin vdda
+*.ipin vssa
+*.ipin vinp
+*.ipin vinn
+*.opin vout
+XM3 net2 vinp net1 vssa sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+XM4 vout vinn net1 vssa sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=40 m=40
+XM5 pdio pdio vdda vdda sky130_fd_pr__pfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=16 m=16
+XM2 net4 ibias vssa vssa sky130_fd_pr__nfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM1 ibias ibias vssa vssa sky130_fd_pr__nfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=4 m=4
+XM6 net3 pdio vdda vdda sky130_fd_pr__pfet_01v8 L=2 W=1 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)'
++ ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=16 m=16
+Vilhs pdio net2 0
+Virhs net3 vout 0
+Vitail net1 net4 0
+.ends
+
+.GLOBAL GND
+.end
